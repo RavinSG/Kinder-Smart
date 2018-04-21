@@ -58,10 +58,16 @@ if (isset($_GET['msg'])){
     $msg = $_GET['msg'];
 
     if ($msg == 'insufficient'){
-        echo "<p class='error'>You don't have enough leaves left!</p>";
+        echo "<p class='error'>You don't have enough leaves left!<br>Would you like to apply for no pay leave?</p>";
 
-    } elseif ($msg='registered'){
+    } elseif ($msg == 'empty'){
+        echo "<p class='error'>Please fill in all the details!</p>";
+    }
+    elseif ($msg =='registered'){
         echo "<p class='success'>Your leave form has been registered!</p>";
+
+    } elseif ($msg == 'unavailable'){
+        echo "<p class='error'>Please enter a valid ID!</p>";
     }
 }
 ?>
