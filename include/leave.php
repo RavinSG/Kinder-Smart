@@ -1,5 +1,5 @@
 <?php
-$a = 1;
+
 require_once 'pdo.inc.php';
 $id = $_POST['id'];
 $leave_date = $_POST['date'];

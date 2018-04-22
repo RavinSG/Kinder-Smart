@@ -3,6 +3,7 @@
 <head>
     <title>Accept</title>
     <link rel="stylesheet" href="include/table.css">
+    <link rel="stylesheet" href="include/style.css">
 </head>
 <body>
 <div class="table-users">
@@ -30,8 +31,8 @@
             echo "</td><td>";
             echo ($row['note']);
             echo "</td><td>";
-            echo "<a href='nikan.php?id=".$row['id']."' class='button'>Accept</a>
-<a href='nikan.php?id=".$row['id']."' class='button'>Decline</a>";
+            echo "<a href='include/deleteLeave.php?state=accept&id=".$row['id']."' class='button'>Accept</a>
+<a href='include/deleteLeave.php?state=decline&id=".$row['id']."' class='button'>Decline</a>";
             echo "</td></tr>\n";
         }
 
@@ -39,5 +40,21 @@
     </table>
 
 </div>
+<?php
+    if (isset($_GET['state'])){
+        $msg = $_GET['state'];
+        $id = $_GET['id'];
+        if ($msg == 'decline'){
+
+            echo "<p class='error' style='font-size: 18px'>You rejected ".$id."'s leave </p>";
+        }
+
+        elseif ($msg =='accept') {
+
+            echo "<p class='success'  style='font-size: 18px'>You accepted ".$id."'s leave</p>";
+
+        }
+    }
+?>
 </body>
 </html>
