@@ -11,7 +11,7 @@ session_start();
 <body>
 
 <h2>Add Teacher</h2>
-<form action="include/add.php" method="post">
+<form action="include/conToTeacher.php" method="post">
     <?php
         if(isset($_GET['first'])){
             $first = $_GET['first'];
