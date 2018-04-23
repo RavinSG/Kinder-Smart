@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="da9b2324-bb26-4074-9b31-b7cb3050fcb6" name="Revert &quot;Set theme jekyll-theme-cayman&quot;" comment="Revert &quot;Set theme jekyll-theme-cayman&quot;&#10;&#10;This reverts commit 93bce6b" />
-    <list default="true" id="1acddfa8-0ddc-4155-a804-75f7564c8373" name="Default" comment="Added the function to add view the syllabus.">
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/syllabus.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/parentNote.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/viewSyllabus.php" />
+    <list default="true" id="1acddfa8-0ddc-4155-a804-75f7564c8373" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/classes/leave.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/classes/syllabus.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
-      <change beforePath="$PROJECT_DIR$/addChild.php" afterPath="$PROJECT_DIR$/addChild.php" />
-      <change beforePath="$PROJECT_DIR$/addTeacher.php" afterPath="$PROJECT_DIR$/addTeacher.php" />
-      <change beforePath="$PROJECT_DIR$/applyLeave.php" afterPath="$PROJECT_DIR$/applyLeave.php" />
-      <change beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
       <change beforePath="$PROJECT_DIR$/viewLeave.php" afterPath="$PROJECT_DIR$/viewLeave.php" />
+      <change beforePath="$PROJECT_DIR$/viewSyllabus.php" afterPath="$PROJECT_DIR$/viewSyllabus.php" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,23 +33,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="viewSyllabus.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/viewSyllabus.php">
+      <file leaf-file-name="syllabus.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/syllabus.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
-                <marker date="1524494975488" expanded="true" signature="516:538" ph="SELECT * FRO... syllabus" />
+                <marker date="1524501389074" expanded="true" signature="175:197" ph="SELECT * FRO... syllabus" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="syllabus.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/include/syllabus.css">
+      <file leaf-file-name="leave.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/leave.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+            <state relative-caret-position="330">
+              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <folding>
+                <marker date="1524502256583" expanded="true" signature="169:193" ph="SELECT * FRO... leaveforms" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewLeave.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/viewLeave.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+              <folding>
+                <marker date="1524502306327" expanded="true" signature="1641:1656" ph="..." />
+                <marker date="1524502306327" expanded="true" signature="1786:1801" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewSyllabus.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/viewSyllabus.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -108,13 +128,16 @@
         <option value="$PROJECT_DIR$/addChild.php" />
         <option value="$PROJECT_DIR$/addTeacher.php" />
         <option value="$PROJECT_DIR$/applyLeave.php" />
-        <option value="$PROJECT_DIR$/viewLeave.php" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$USER_HOME$/Desktop/KinderSmart/table/syl.php" />
         <option value="$PROJECT_DIR$/test/syl.css" />
         <option value="$PROJECT_DIR$/test/syl.php" />
-        <option value="$PROJECT_DIR$/viewSyllabus.php" />
         <option value="$PROJECT_DIR$/include/syllabus.css" />
+        <option value="$USER_HOME$/Downloads/lunch.php" />
+        <option value="$PROJECT_DIR$/viewSyllabus.php" />
+        <option value="$PROJECT_DIR$/classes/syllabus.php" />
+        <option value="$PROJECT_DIR$/classes/leave.php" />
+        <option value="$PROJECT_DIR$/viewLeave.php" />
       </list>
     </option>
   </component>
@@ -129,6 +152,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1080" />
   </component>
@@ -158,6 +182,11 @@
             <path>
               <item name="KinderSmart" type="b2602c69:ProjectViewProjectNode" />
               <item name="KinderSmart" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="KinderSmart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KinderSmart" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="include" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -179,6 +208,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\XAMPP\htdocs\KinderSmart" />
       <recent name="H:\XAMPP\htdocs\KinderSmart\include" />
     </key>
   </component>
@@ -327,7 +357,7 @@
       <workItem from="1524233943066" duration="1978000" />
       <workItem from="1524282866722" duration="3574000" />
       <workItem from="1524320688779" duration="1620000" />
-      <workItem from="1524370418620" duration="22584000" />
+      <workItem from="1524370418620" duration="26317000" />
     </task>
     <task id="LOCAL-00001" summary="Added function to view applied leave.">
       <created>1524384218990</created>
@@ -357,11 +387,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524404717389</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added the function to add view the syllabus.">
+      <created>1524495113889</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1524495113889</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54052000" />
+    <option name="totallyTimeSpent" value="57785000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -369,12 +406,12 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75078535" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.50208336" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75078535" sideWeight="0.49791667" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18802084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21822916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51623034" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -446,42 +483,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/conToTeacher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <marker date="1524055302252" expanded="true" signature="686:829" ph="INSERT INTO teachers... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applyLeave.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2130">
-          <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/leave.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-          <folding>
-            <marker date="1524394237640" expanded="true" signature="472:507" ph="SELECT * FRO... teachers" />
-            <marker date="1524394237640" expanded="true" signature="955:1035" ph="INSERT INTO leaveforms... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/conToTeacher.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -784,18 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewLeave.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="28" />
-          <folding>
-            <marker date="1524485734225" expanded="true" signature="855:879" ph="SELECT * FRO... leaveforms" />
-            <marker date="1524485734225" expanded="true" signature="1684:1699" ph="..." />
-            <marker date="1524485734225" expanded="true" signature="1829:1844" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/applyLeave.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -822,21 +811,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewSyllabus.php">
+    <entry file="file://$PROJECT_DIR$/include/font.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding>
-            <marker date="1524494975488" expanded="true" signature="516:538" ph="SELECT * FRO... syllabus" />
-          </folding>
+        <state relative-caret-position="-4230">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/syllabus.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+        <state relative-caret-position="600">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/lunch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <marker date="1524499510855" expanded="true" signature="301:355" ph="SELECT ${{$d... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewSyllabus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/syllabus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <marker date="1524501389074" expanded="true" signature="175:197" ph="SELECT * FRO... syllabus" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/leave.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <marker date="1524502256583" expanded="true" signature="169:193" ph="SELECT * FRO... leaveforms" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewLeave.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <marker date="1524502306327" expanded="true" signature="1641:1656" ph="..." />
+            <marker date="1524502306327" expanded="true" signature="1786:1801" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

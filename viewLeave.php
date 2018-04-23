@@ -27,9 +27,10 @@
         </tr>
 
         <?php
-        require_once 'include/pdo.inc.php';
-        $stmt = $pdo->query("SELECT * FROM leaveforms");
-        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+
+        require_once 'classes/leave.php';
+        $forms = $leave->getForms();
+        foreach ($forms as $row){
             echo "<tr><td>";
             echo ($row['id']);
             echo "</td><td>";
@@ -43,7 +44,6 @@
 <a href='include/deleteLeave.php?state=decline&id=".$row['id']."' class='button'>Decline</a>";
             echo "</td></tr>\n";
         }
-
         ?>
     </table>
 

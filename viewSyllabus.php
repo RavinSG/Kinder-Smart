@@ -12,15 +12,18 @@
     <thead>
     <tr>
         <th class="text-left">Time Period</th>
-        <th class="text-left">Content</th>
+        <th class="text-center">Content</th>
         <th class="text-left">Status</th>
     </tr>
     </thead>
     <tbody class="table-hover">
+
     <?php
-    require_once "include/pdo.inc.php";
-    $stmt = $pdo->query("SELECT * FROM syllabus");
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+
+    require_once 'classes/syllabus.php';
+    $content = $syllabus->getContent();
+
+    foreach ($content as $row){
         echo "<tr><td class='text-left'>";
         echo ($row['start_date']." - ".$row['end_date']);
         echo "</td><td class='text-center'>";
@@ -29,7 +32,9 @@
         echo ($row['status']);
         echo "</td></tr>";
     }
+
     ?>
+
     </tbody>
 </table>
 
