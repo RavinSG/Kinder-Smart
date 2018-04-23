@@ -9,7 +9,14 @@ session_start();
     <link rel="stylesheet" href="include/style.css">
 </head>
 <body>
-
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a class="active" href="addTeacher.php">Add Teacher Info</a>
+    <a href="applyLeave.php">Apply for Leave</a>
+    <a href="addChild.php">Add Child</a>
+    <a href="viewLeave.php">Manage Leave</a>
+</div>
 <h2>Add Teacher</h2>
 <form action="include/conToTeacher.php" method="post">
     <?php

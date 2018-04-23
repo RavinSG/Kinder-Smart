@@ -9,7 +9,14 @@ session_start();
     <link rel="stylesheet" href="include/style.css">
 </head>
 <body>
-
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="addTeacher.php">Add Teacher Info</a>
+    <a href="applyLeave.php">Apply for Leave</a>
+    <a class="active" href="addChild.php">Add Child</a>
+    <a href="viewLeave.php">Manage Leave</a>
+</div>
 <h2>Add Child</h2>
 <form action="include/conToChildren.php" method="post">
     <?php
@@ -73,11 +80,8 @@ else {
     } elseif ($check == 'empty'){
         echo "<p class = 'error'>Please fill in all the details!</p>";
 
-    }elseif ($check == 'invalidemail'){
-        echo "<p class = 'error'>Please enter a valid email address!</p>";
-
     }elseif ($check == 'successful'){
-        echo "<p class = 'success'>You have been registered!</p>";
+        echo "<p class = 'success'>The child has been registered!</p>";
     }
 }
 

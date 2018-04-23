@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="include/style.css">
 </head>
 <body>
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="addTeacher.php">Add Teacher Info</a>
+    <a href="applyLeave.php">Apply for Leave</a>
+    <a href="addChild.php">Add Child</a>
+    <a class="active" href="viewLeave.php">Manage Leave</a>
+</div>
 <div class="table-users">
     <div class="header">Applied Leaves</div>
 

@@ -5,7 +5,14 @@
     <link rel="stylesheet" href="include/style.css">
 </head>
 <body>
-
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="addTeacher.php">Add Teacher Info</a>
+    <a class="active" href="applyLeave.php">Apply for Leave</a>
+    <a href="addChild.php">Add Child</a>
+    <a href="viewLeave.php">Manage Leave</a>
+</div>
 <h2>Leave Form</h2>
 <form action="include/leave.php" method="post" id="target">
     <?php
