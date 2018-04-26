@@ -1,0 +1,97 @@
+body,h1,a{
+	padding: 0px;
+	margin : 0px;
+	font-family: sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+body{
+	background: url("../images/future3.png") no-repeat;
+	background-size: cover;
+}
+
+.wrapper{
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box; 
+}
+
+.name{
+	width: 290px;
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+	text-align: center;
+	color: white;
+}
+
+.name span{
+	color: #F99200;
+}
+.login{
+	background-color: rgba(0, 12, 14,0.8);
+	width: 295px;
+	height: 400px;
+	position: relative;
+	left: 51%;
+	color: white;
+}
+img{
+	margin: 0px;
+	padding: 0;
+	width:100px;
+	height: 100px;
+	border-radius: 50%;
+	position: relative;
+	transform: translate(100px,-50px);
+
+}
+.login input[type="text"], input[type="password"]{
+	outline: none;
+	background: transparent;
+	border:none;
+	color: white;
+	width: 235px;
+	position: relative;
+	left: 30px;
+	margin: 20px 0;
+}
+.login label{
+	padding: 20px;
+}
+.login input[type="submit"]{
+	background: #D24A4A;
+	opacity: 1;
+	color: white;
+	font-weight: bold;
+	border: none;
+	width: 100px;
+	height: 40px;
+	border-radius: 20px;
+	margin: 15px 0;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+.login input[type="submit"]:hover{
+	cursor: pointer;
+	background: #FF9800;
+}
+
+a{
+	color: #949491;
+}
+
+a span{
+	color: white;
+}
+select{
+	background: transparent;
+	border: 0 0 5px 0;
+	border-color: black;
+	color: white;
+}

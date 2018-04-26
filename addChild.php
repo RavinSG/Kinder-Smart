@@ -16,6 +16,7 @@ session_start();
     <a href="applyLeave.php">Apply for Leave</a>
     <a class="active" href="addChild.php">Add Child</a>
     <a href="viewLeave.php">Manage Leave</a>
+    <a href="viewSyllabus.php">View Syllabus</a>
 </div>
 <h2>Add Child</h2>
 <form action="include/conToChildren.php" method="post">
@@ -38,10 +39,10 @@ session_start();
 
     if(isset($_GET['age'])){
         $age = $_GET['age'];
-        echo '<input type="text" name="age" placeholder="Age" value="'.$age.'">';
+        echo '<input type="number" name="age" placeholder="Age" value="'.$age.'">';
     }
     else{
-        echo '<input type="text" name="age" placeholder="Age">';
+        echo '<input type="number" name="age" placeholder="Age">';
     }
 
     if(isset($_GET['contact'])){

@@ -13,6 +13,7 @@
     <a href="applyLeave.php">Apply for Leave</a>
     <a href="addChild.php">Add Child</a>
     <a class="active" href="viewLeave.php">Manage Leave</a>
+    <a href="viewSyllabus.php">View Syllabus</a>
 </div>
 <div class="table-users">
     <div class="header">Applied Leaves</div>
@@ -24,6 +25,7 @@
             <th>Duration</th>
             <th width="230">Note</th>
             <th align="center">Action</th>
+            <th>Leave State</th>
         </tr>
 
         <?php
@@ -42,6 +44,8 @@
             echo "</td><td>";
             echo "<a href='include/deleteLeave.php?state=accept&id=".$row['id']."' class='button'>Accept</a>
 <a href='include/deleteLeave.php?state=decline&id=".$row['id']."' class='button'>Decline</a>";
+            echo "</td><td style='text-align: center'>";
+            echo ($row['state']);
             echo "</td></tr>\n";
         }
         ?>

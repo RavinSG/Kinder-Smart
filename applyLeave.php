@@ -12,6 +12,7 @@
     <a class="active" href="applyLeave.php">Apply for Leave</a>
     <a href="addChild.php">Add Child</a>
     <a href="viewLeave.php">Manage Leave</a>
+    <a href="viewSyllabus.php">View Syllabus</a>
 </div>
 <h2>Leave Form</h2>
 <form action="include/leave.php" method="post" id="target">

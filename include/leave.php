@@ -30,14 +30,16 @@ if (empty($id) or empty($leave_date) or empty($leave_duration) or empty($note)){
             return;
 
         } else {
-            $sql = "INSERT INTO leaveforms VALUES (:id, :leave_date, :leave_duration, :nopay, :note)";
+            $sql = "INSERT INTO leaveforms (id, leave_date, leave_duration, no_pay, note, state)
+VALUES (:id, :leave_date, :leave_duration, :nopay, :note, :state)";
             $stmt = $pdo->prepare($sql);
             $stmt->execute(array(
                 'id' => $id,
                 'leave_date' => $leave_date,
                 'leave_duration' => $leave_duration,
                 'nopay' => $nopay,
-                'note' => $note
+                'note' => $note,
+                'state' => "Pending"
             ));
             header("Location: ../applyLeave.php?msg=registered");
             return;

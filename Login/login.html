@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LoginOne</title>
+    <link rel="stylesheet" type="text/css" href="../include/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="name">
+        <h1><span>Kinder</span>Smart</h1>
+    </div>
+    <div class="login">
+        <img src="../images/future2.jpg" width="80%">
+        <form action="login.php" method="post">
+            <label for="email">E-Mail</label><br>
+            <input type="text" name="email" placeholder="Enter E mail" value=""><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" placeholder="Enter Password" value=""><br>
+            <label for="acc_type">Account Type :</label>
+            <select name="acc_type" id="acc_type">
+                <option value="teacher">Teacher</option>
+                <option value="parent">Parent</option>
+                <option value="administration">Administration</option>
+            </select>
+            <input type="submit" name="submit" value="Login"><br>
+        </form>
+    </div>
+</div>
+</body>
+</html>

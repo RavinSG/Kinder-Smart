@@ -16,6 +16,7 @@ session_start();
     <a href="applyLeave.php">Apply for Leave</a>
     <a href="addChild.php">Add Child</a>
     <a href="viewLeave.php">Manage Leave</a>
+    <a href="viewSyllabus.php">View Syllabus</a>
 </div>
 <h2>Add Teacher</h2>
 <form action="include/conToTeacher.php" method="post">

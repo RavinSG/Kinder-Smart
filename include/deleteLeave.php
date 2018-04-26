@@ -12,7 +12,7 @@ $id = $_GET['id'];
 $state = $_GET['state'];
 
 if ($state == "accept"){
-    $sql = "UPDATE leaveforms SET state = 'Accept' WHERE id = :id ";
+    $sql = "UPDATE leaveforms SET state = 'Accepted' WHERE id = :id ";
     $stmt = $pdo->prepare($sql);
     $stmt->execute(array('id'=>$id));
 } elseif ($state == "decline") {

@@ -3,8 +3,18 @@
 <head>
     <title>Table</title>
     <link rel="stylesheet" type="text/css" href="include/syllabus.css">
+    <link rel="stylesheet" type="text/css" href="include/style.css">
 </head>
 <body>
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="addTeacher.php">Add Teacher Info</a>
+    <a href="applyLeave.php">Apply for Leave</a>
+    <a href="addChild.php">Add Child</a>
+    <a href="viewLeave.php">Manage Leave</a>
+    <a class="active" href="viewSyllabus.php">View Syllabus</a>
+</div>
 <div class="table-title">
     <h3>Syllabus for 2018</h3>
 </div>
