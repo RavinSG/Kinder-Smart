@@ -2,10 +2,14 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="kindersmart@localhost" uuid="08a8524a-d012-47d2-af71-cc2d323f8a17">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="MySQL" version="5.5.5-10.1.30-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <secret-storage>master_key</secret-storage>
-      <first-sync>true</first-sync>
       <user-name>root</user-name>
+      <introspection-schemas>*:</introspection-schemas>
     </data-source>
   </component>
 </project>

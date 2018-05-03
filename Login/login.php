@@ -12,23 +12,32 @@ if (!isset($_POST['submit'])){
     header("Location: login.html?error=empty");
 
 }else{
-    //$password = sha1($password);
-    $sql = "SELECT * FROM parent_login WHERE email= :email and password= :pass";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute(array(
-        'email'=>$email,
-        'pass'=>$password
-    ));
-    $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if (empty($row)){
-        header("Location: login.html?error=invalid");
+    if ($_POST['acc_type'] == 'teacher'){
+        //$password = sha1($password);
+        $sql = "SELECT * FROM parent_login WHERE email= :email and password= :pass";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute(array(
+            'email'=>$email,
+            'pass'=>$password
+        ));
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    }else {
-        $parent = new KinderParent($row['id']);
-        $_SESSION['parent'] = $parent;
-        header("Location: ../Parent/index.php");
+        if (empty($row)){
+            header("Location: login.html?error=invalid");
+
+        }else {
+            $parent = new KinderParent($row['id']);
+            $_SESSION['parent'] = $parent;
+            header("Location: ../Parent/index.php");
+        }
+
     }
+
+    else{
+        echo "You are not a teacher!";
+    }
+
 
 
 }
