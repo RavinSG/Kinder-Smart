@@ -20,7 +20,7 @@ if ($state == "accept"){
     $stmt = $pdo->prepare($sql);
     $stmt->execute(array('id'=>$id));
 }
-header("Location: ../viewLeave.php?id=$id&state=$state");
+header("Location: ../Admin/viewLeave.php?id=$id&state=$state");
 ?>
 
 </body>

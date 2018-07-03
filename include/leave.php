@@ -13,7 +13,7 @@ if (isset($_POST['nopay'])){
 }
 
 if (empty($id) or empty($leave_date) or empty($leave_duration) or empty($note)){
-    header("Location: ../applyLeave.php?msg=empty&id=$id&date=$leave_date&duration=$leave_duration&note=$note");
+    header("Location: ../Teacher/applyLeave.php?msg=empty&id=$id&date=$leave_date&duration=$leave_duration&note=$note");
     return;
 
 } else {
@@ -26,7 +26,7 @@ if (empty($id) or empty($leave_date) or empty($leave_duration) or empty($note)){
     if (isset($leave_left)){
 
         if (($leave_left < $leave_duration) && !($nopay)){
-            header("Location: ../applyLeave.php?msg=insufficient&id=$id&date=$leave_date&duration=$leave_duration&note=$note");
+            header("Location: ../Teacher/applyLeave.php?msg=insufficient&id=$id&date=$leave_date&duration=$leave_duration&note=$note");
             return;
 
         } else {
@@ -41,11 +41,11 @@ VALUES (:id, :leave_date, :leave_duration, :nopay, :note, :state)";
                 'note' => $note,
                 'state' => "Pending"
             ));
-            header("Location: ../applyLeave.php?msg=registered");
+            header("Location: ../Teacher/applyLeave.php?msg=registered");
             return;
         }
     } else {
-        header("Location: ../applyLeave.php?msg=unavailable&id=$id&date=$leave_date&duration=$leave_duration&note=$note");
+        header("Location: ../Teacher/applyLeave.php?msg=unavailable&id=$id&date=$leave_date&duration=$leave_duration&note=$note");
         return;
     }
 

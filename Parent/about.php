@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['parent'])) {
+    header("Location: ../Login/login.html?error=login");
+    return;
+}
+include('navbar.html');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +15,6 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<?php include('navbar.php'); ?>
 	<h1>Nursery Name</h1>
 	<h2>Our Vision</h2>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo architecto quaerat, non fugiat eos aspernatur repellat voluptate, rerum blanditiis provident dolore nesciunt optio aliquid, reprehenderit reiciendis, voluptatibus corrupti voluptatem sequi!</p>

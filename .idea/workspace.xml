@@ -2,295 +2,263 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="da9b2324-bb26-4074-9b31-b7cb3050fcb6" name="Revert &quot;Set theme jekyll-theme-cayman&quot;" comment="Revert &quot;Set theme jekyll-theme-cayman&quot;&#10;&#10;This reverts commit 93bce6b" />
-    <list default="true" id="1acddfa8-0ddc-4155-a804-75f7564c8373" name="Default" comment="Merged Harith's login system and parent profile to the project.">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Parent/navbar.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/css/bootstrap-grid.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/css/bootstrap-grid.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/css/bootstrap-grid.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/css/bootstrap-grid.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/css/bootstrap-reboot.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/css/bootstrap-reboot.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/css/bootstrap-reboot.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/css/bootstrap-reboot.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/css/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/css/bootstrap.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/css/bootstrap.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/js/bootstrap.bundle.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/js/bootstrap.bundle.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/js/bootstrap.bundle.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/js/bootstrap.bundle.min.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/js/bootstrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/js/bootstrap.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/js/bootstrap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/boot/js/bootstrap.min.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/DesignRevision.url" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/Kindersey.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/README.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/._DesignRevision.url" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/._LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/._README.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/._agency-landing.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/._app-promo.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/._css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/._images" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/._js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/._scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/._shards-demo.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards-demo.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards-demo.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards-demo.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards-demo.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards-extras.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards-extras.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards-extras.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards-extras.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/._.DS_Store" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/._agency-landing" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/._app-promo" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/._common" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/._demo" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/agency-landing/._shards-logo-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/agency-landing/._welcome-cover.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/app-promo/._badge-apple-store.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/app-promo/._badge-google-play-store.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/app-promo/._features-background.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/app-promo/._iphone-app-mockup.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/app-promo/._iphone-app-screenshot.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/app-promo/._shards-logo-green.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/app-promo/._welcome-cover.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/common/._avatar-1.jpeg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/common/._avatar-2.jpeg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/common/._avatar-3.jpeg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/common/._card-1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/common/._card-2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/common/._card-3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/._fontawesome-icons.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/._material-icons.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/._shard-1-5x-3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/._shards-agency-landing-page-demo.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/._shards-app-demo-page-demo.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/._shards-logo-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/._shards-logo.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/._stock-photos" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/stock-photos/._1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/stock-photos/._2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/stock-photos/._3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/js/._demo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/js/._demo.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/js/._shards.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/js/._shards.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/._.DS_Store" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__alert.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__badge.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__button-group.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__buttons.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__card.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__carousel.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__close.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__code.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__custom-datepicker.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__custom-forms.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__custom-sliders.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__dropdown.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__forms.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__functions.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__icons.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__images.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__input-group.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__jumbotron.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__list-group.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__mixins.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__modal.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__nav.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__navbar.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__pagination.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__popover.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__progress.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__reboot.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__root.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__tables.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__tooltip.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__transitions.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__type.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__utilities.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__variables.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/._extras" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/._mixins" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/._shards.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/._utilities" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/extras/.__agency-landing.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/extras/.__app-promo.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/extras/._shards-demo.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/extras/._shards-extras.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__alert.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__background-variant.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__badge.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__border-radius.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__box-shadow.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__breakpoints.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__buttons.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__clearfix.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__float.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__forms.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__gradients.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__hover.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__image.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__list-group.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__lists.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__nav-divider.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__pagination.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__reset-text.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__resize.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__screen-reader.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__size.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__table-row.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__text-emphasis.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__text-hide.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__text-truncate.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__transition.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__visibility.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/utilities/.__background.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/utilities/.__borders.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/utilities/.__position.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/utilities/.__shadows.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/__MACOSX/scss/utilities/.__text.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/agency-landing.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/app-promo.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/fa-brands.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/fa-brands.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/fa-regular.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/fa-regular.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/fa-solid.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/fa-solid.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/fontawesome-all.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/fontawesome-all.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/fontawesome.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/fontawesome.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/shards-demo.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/shards-demo.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/shards-demo.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/shards-demo.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/shards-extras.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/shards-extras.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/shards-extras.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/shards-extras.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/shards.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/shards.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/shards.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/css/shards.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/font-awesome.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/agency-landing/Thumbs.db" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/agency-landing/shards-logo-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/agency-landing/welcome-cover.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/app-promo/Thumbs.db" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/app-promo/badge-apple-store.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/app-promo/badge-google-play-store.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/app-promo/features-background.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/app-promo/iphone-app-mockup.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/app-promo/iphone-app-screenshot.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/app-promo/shards-logo-green.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/app-promo/welcome-cover.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/common/Thumbs.db" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/common/avatar-1.jpeg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/common/avatar-2.jpeg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/common/avatar-3.jpeg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/common/card-1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/common/card-2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/common/card-3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/demo/fontawesome-icons.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/demo/material-icons.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/demo/shard-1-5x-3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/demo/shards-agency-landing-page-demo.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/demo/shards-app-demo-page-demo.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/demo/shards-logo-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/demo/shards-logo.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/demo/stock-photos/1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/demo/stock-photos/2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/images/demo/stock-photos/3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/js/demo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/js/demo.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/js/shards.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/js/shards.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_alert.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_badge.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_button-group.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_buttons.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_card.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_carousel.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_close.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_code.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_custom-datepicker.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_custom-forms.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_custom-sliders.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_dropdown.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_forms.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_functions.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_icons.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_images.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_input-group.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_jumbotron.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_list-group.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_mixins.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_modal.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_nav.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_navbar.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_pagination.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_popover.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_progress.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_reboot.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_root.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_tables.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_tooltip.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_transitions.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_type.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_utilities.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/_variables.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/extras/_agency-landing.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/extras/_app-promo.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/extras/shards-demo.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/extras/shards-extras.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_alert.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_background-variant.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_badge.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_border-radius.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_box-shadow.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_breakpoints.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_buttons.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_clearfix.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_float.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_forms.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_gradients.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_hover.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_image.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_list-group.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_lists.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_nav-divider.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_pagination.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_reset-text.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_resize.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_screen-reader.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_size.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_table-row.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_text-emphasis.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_text-hide.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_text-truncate.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_transition.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/mixins/_visibility.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/shards.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/utilities/_background.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/utilities/_borders.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/utilities/_position.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/utilities/_shadows.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/scss/utilities/_text.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/shards/shards-demo.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+    <list default="true" id="1acddfa8-0ddc-4155-a804-75f7564c8373" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Parent/DailyDetails.php" afterPath="$PROJECT_DIR$/Parent/DailyDetails.php" />
+      <change beforePath="$PROJECT_DIR$/Parent/about.php" afterPath="$PROJECT_DIR$/Parent/about.php" />
+      <change beforePath="$PROJECT_DIR$/Parent/index.php" afterPath="$PROJECT_DIR$/Parent/index.php" />
+      <change beforePath="$PROJECT_DIR$/Parent/navbar.html" afterPath="$PROJECT_DIR$/Parent/navbar.html" />
+      <change beforePath="$PROJECT_DIR$/addChild.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/addTeacher.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/applyLeave.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/leave.php" afterPath="$PROJECT_DIR$/classes/leave.php" />
+      <change beforePath="$PROJECT_DIR$/classes/syllabus.php" afterPath="$PROJECT_DIR$/classes/syllabus.php" />
+      <change beforePath="$PROJECT_DIR$/include/conToChildren.php" afterPath="$PROJECT_DIR$/include/conToChildren.php" />
+      <change beforePath="$PROJECT_DIR$/include/conToTeacher.php" afterPath="$PROJECT_DIR$/include/conToTeacher.php" />
+      <change beforePath="$PROJECT_DIR$/include/deleteLeave.php" afterPath="$PROJECT_DIR$/include/deleteLeave.php" />
+      <change beforePath="$PROJECT_DIR$/include/leave.php" afterPath="$PROJECT_DIR$/include/leave.php" />
+      <change beforePath="$PROJECT_DIR$/include/shards/DesignRevision.url" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/Kindersey.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/README.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/._DesignRevision.url" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/._LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/._README.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/._agency-landing.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/._app-promo.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/._css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/._images" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/._js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/._scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/._shards-demo.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards-demo.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards-demo.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards-demo.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards-demo.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards-extras.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards-extras.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards-extras.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards-extras.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/css/._shards.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/._.DS_Store" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/._agency-landing" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/._app-promo" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/._common" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/._demo" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/agency-landing/._shards-logo-white.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/agency-landing/._welcome-cover.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/app-promo/._badge-apple-store.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/app-promo/._badge-google-play-store.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/app-promo/._features-background.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/app-promo/._iphone-app-mockup.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/app-promo/._iphone-app-screenshot.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/app-promo/._shards-logo-green.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/app-promo/._welcome-cover.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/common/._avatar-1.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/common/._avatar-2.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/common/._avatar-3.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/common/._card-1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/common/._card-2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/common/._card-3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/._fontawesome-icons.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/._material-icons.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/._shard-1-5x-3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/._shards-agency-landing-page-demo.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/._shards-app-demo-page-demo.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/._shards-logo-black.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/._shards-logo.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/._stock-photos" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/stock-photos/._1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/stock-photos/._2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/images/demo/stock-photos/._3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/js/._demo.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/js/._demo.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/js/._shards.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/js/._shards.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/._.DS_Store" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__alert.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__badge.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__button-group.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__buttons.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__card.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__carousel.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__close.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__code.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__custom-datepicker.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__custom-forms.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__custom-sliders.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__dropdown.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__forms.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__functions.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__icons.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__images.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__input-group.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__jumbotron.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__list-group.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__mixins.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__modal.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__nav.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__navbar.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__pagination.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__popover.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__progress.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__reboot.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__root.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__tables.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__tooltip.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__transitions.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__type.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__utilities.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/.__variables.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/._extras" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/._mixins" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/._shards.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/._utilities" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/extras/.__agency-landing.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/extras/.__app-promo.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/extras/._shards-demo.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/extras/._shards-extras.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__alert.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__background-variant.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__badge.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__border-radius.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__box-shadow.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__breakpoints.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__buttons.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__clearfix.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__float.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__forms.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__gradients.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__hover.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__image.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__list-group.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__lists.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__nav-divider.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__pagination.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__reset-text.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__resize.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__screen-reader.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__size.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__table-row.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__text-emphasis.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__text-hide.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__text-truncate.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__transition.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/mixins/.__visibility.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/utilities/.__background.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/utilities/.__borders.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/utilities/.__position.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/utilities/.__shadows.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/__MACOSX/scss/utilities/.__text.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/agency-landing.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/app-promo.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/agency-landing/Thumbs.db" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/agency-landing/shards-logo-white.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/agency-landing/welcome-cover.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/app-promo/Thumbs.db" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/app-promo/badge-apple-store.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/app-promo/badge-google-play-store.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/app-promo/features-background.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/app-promo/iphone-app-mockup.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/app-promo/iphone-app-screenshot.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/app-promo/shards-logo-green.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/app-promo/welcome-cover.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/common/Thumbs.db" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/common/avatar-1.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/common/avatar-2.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/common/avatar-3.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/common/card-1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/common/card-2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/common/card-3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/demo/fontawesome-icons.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/demo/material-icons.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/demo/shard-1-5x-3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/demo/shards-agency-landing-page-demo.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/demo/shards-app-demo-page-demo.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/demo/shards-logo-black.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/demo/shards-logo.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/demo/stock-photos/1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/demo/stock-photos/2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/images/demo/stock-photos/3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_alert.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_badge.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_button-group.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_buttons.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_card.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_carousel.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_close.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_code.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_custom-datepicker.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_custom-forms.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_custom-sliders.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_dropdown.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_forms.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_functions.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_icons.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_images.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_input-group.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_jumbotron.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_list-group.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_mixins.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_modal.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_nav.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_navbar.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_pagination.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_popover.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_progress.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_reboot.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_root.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_tables.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_tooltip.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_transitions.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_type.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_utilities.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/_variables.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/extras/_agency-landing.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/extras/_app-promo.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/extras/shards-demo.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/extras/shards-extras.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_alert.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_background-variant.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_badge.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_border-radius.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_box-shadow.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_breakpoints.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_buttons.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_clearfix.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_float.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_forms.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_gradients.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_hover.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_image.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_list-group.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_lists.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_nav-divider.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_pagination.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_reset-text.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_resize.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_screen-reader.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_size.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_table-row.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_text-emphasis.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_text-hide.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_text-truncate.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_transition.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/mixins/_visibility.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/shards.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/utilities/_background.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/utilities/_borders.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/utilities/_position.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/utilities/_shadows.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/scss/utilities/_text.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/shards/shards-demo.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/markAttendance.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/viewLeave.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/viewSyllabus.php" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -315,23 +283,82 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Parent/navbar.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="markAttendance.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Teacher/markAttendance.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-531">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="300">
+              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+              <folding>
+                <marker date="1530629076863" expanded="true" signature="524:546" ph="SELECT * FRO... children" />
+                <marker date="1530629076863" expanded="true" signature="690:709" ph="..." />
+                <marker date="1530629076863" expanded="true" signature="774:796" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Teacher/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Parent/test.php">
+      <file leaf-file-name="applyLeave.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Teacher/applyLeave.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leave.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/leave.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="38" column="52" lean-forward="false" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+              <folding>
+                <marker date="1530629218880" expanded="true" signature="480:515" ph="SELECT * FRO... teachers" />
+                <marker date="1530629218880" expanded="true" signature="971:1113" ph="INSERT INTO leaveforms... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parentNote.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Parent/parentNote.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewSyllabus.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Teacher/viewSyllabus.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="syllabus.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/syllabus.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+              <folding>
+                <marker date="1530629135426" expanded="true" signature="178:200" ph="SELECT * FRO... syllabus" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -341,12 +368,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>input</find>
+    </findStrings>
     <replaceStrings>
       <replace>addChild</replace>
       <replace>$age</replace>
@@ -362,25 +392,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/deleteLeave.php" />
-        <option value="$PROJECT_DIR$/include/table.css" />
-        <option value="$PROJECT_DIR$/include/conToChildren.php" />
-        <option value="$PROJECT_DIR$/parentNote.php" />
-        <option value="$PROJECT_DIR$/../PHP/WA4E/json-02-chat/json-02-chat/index.php" />
-        <option value="$PROJECT_DIR$/../PHP/WA4E/json-02-chat/json-02-chat/chatlist.php" />
-        <option value="$USER_HOME$/Desktop/KinderSmart/table/syl.php" />
-        <option value="$PROJECT_DIR$/test/syl.css" />
-        <option value="$PROJECT_DIR$/test/syl.php" />
-        <option value="$PROJECT_DIR$/include/syllabus.css" />
-        <option value="$USER_HOME$/Downloads/lunch.php" />
-        <option value="$USER_HOME$/Downloads/record-child-remove-request.php" />
-        <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/applyLeave.php" />
         <option value="$PROJECT_DIR$/viewSyllabus.php" />
         <option value="$PROJECT_DIR$/viewLeave.php" />
-        <option value="$PROJECT_DIR$/include/deleteLeave.php" />
-        <option value="$PROJECT_DIR$/include/leave.php" />
         <option value="$PROJECT_DIR$/include/check.css" />
         <option value="$PROJECT_DIR$/markAttendance.php" />
         <option value="$PROJECT_DIR$/Sriyoucan/AddData.php" />
@@ -390,7 +405,6 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/classes/parent.php" />
         <option value="$PROJECT_DIR$/Login/index.html" />
-        <option value="$PROJECT_DIR$/classes/leave.php" />
         <option value="$PROJECT_DIR$/addTeacher.php" />
         <option value="$PROJECT_DIR$/addChild.php" />
         <option value="$PROJECT_DIR$/classes/KinderParent.php" />
@@ -399,20 +413,36 @@
         <option value="$PROJECT_DIR$/Login/changepassword.php" />
         <option value="$PROJECT_DIR$/Parent/parent.php" />
         <option value="$PROJECT_DIR$/include/main.css" />
-        <option value="$PROJECT_DIR$/classes/syllabus.php" />
-        <option value="$PROJECT_DIR$/Login/login.html" />
         <option value="$PROJECT_DIR$/Parent/logout.php" />
-        <option value="$PROJECT_DIR$/Parent/index.php" />
         <option value="$PROJECT_DIR$/Login/login.php" />
         <option value="$PROJECT_DIR$/classes/homework.php" />
         <option value="$PROJECT_DIR$/classes/SpecialNote.php" />
-        <option value="$PROJECT_DIR$/Parent/DailyDetails.php" />
         <option value="$PROJECT_DIR$/boot.html" />
         <option value="$PROJECT_DIR$/shards.html" />
         <option value="$PROJECT_DIR$/shards/css/font-awesome.css" />
         <option value="$PROJECT_DIR$/shards/shards-demo.html" />
-        <option value="$PROJECT_DIR$/Parent/navbar.html" />
         <option value="$PROJECT_DIR$/Parent/test.php" />
+        <option value="$PROJECT_DIR$/Parent/about.php" />
+        <option value="$PROJECT_DIR$/Parent/DailyDetails.php" />
+        <option value="$PROJECT_DIR$/Parent/index.php" />
+        <option value="$PROJECT_DIR$/Parent/navbar.html" />
+        <option value="$PROJECT_DIR$/Login/login.html" />
+        <option value="$PROJECT_DIR$/Login/login1.html" />
+        <option value="$PROJECT_DIR$/Login/form.html" />
+        <option value="$PROJECT_DIR$/Admin/addChild.php" />
+        <option value="$PROJECT_DIR$/Admin/home.html" />
+        <option value="$PROJECT_DIR$/Admin/addTeacher.php" />
+        <option value="$PROJECT_DIR$/Admin/viewLeave.php" />
+        <option value="$PROJECT_DIR$/classes/leave.php" />
+        <option value="$PROJECT_DIR$/include/conToChildren.php" />
+        <option value="$PROJECT_DIR$/include/conToTeacher.php" />
+        <option value="$PROJECT_DIR$/include/deleteLeave.php" />
+        <option value="$PROJECT_DIR$/Teacher/home.html" />
+        <option value="$PROJECT_DIR$/Teacher/markAttendance.php" />
+        <option value="$PROJECT_DIR$/Teacher/applyLeave.php" />
+        <option value="$PROJECT_DIR$/Teacher/viewSyllabus.php" />
+        <option value="$PROJECT_DIR$/classes/syllabus.php" />
+        <option value="$PROJECT_DIR$/include/leave.php" />
       </list>
     </option>
   </component>
@@ -447,7 +477,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -455,20 +484,11 @@
               <item name="KinderSmart" type="b2602c69:ProjectViewProjectNode" />
               <item name="KinderSmart" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="KinderSmart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KinderSmart" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="include" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="KinderSmart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KinderSmart" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Parent" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -530,7 +550,10 @@
       <workItem from="1525356583682" duration="3030000" />
       <workItem from="1525364133456" duration="1381000" />
       <workItem from="1525493999341" duration="2941000" />
-      <workItem from="1525532739209" duration="354000" />
+      <workItem from="1525532739209" duration="1873000" />
+      <workItem from="1525576432733" duration="6533000" />
+      <workItem from="1527833092509" duration="37000" />
+      <workItem from="1530627791242" duration="1620000" />
     </task>
     <task id="LOCAL-00001" summary="Added function to view applied leave.">
       <created>1524384218990</created>
@@ -588,26 +611,34 @@
       <option name="project" value="LOCAL" />
       <updated>1525366080248</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Introduced Bootstrap 4 with Shards to the project.">
+      <created>1525533248039</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1525533248039</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89711000" />
+    <option name="totallyTimeSpent" value="99420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23072916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18958333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7706806" sideWeight="0.5064447" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24293193" sideWeight="0.5083333" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7277487" sideWeight="0.49166667" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7497303" sideWeight="0.4935553" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947916" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -670,7 +701,8 @@
     <MESSAGE value="Introduced OOP principles to the project." />
     <MESSAGE value="Added the basic functions of the login system." />
     <MESSAGE value="Merged Harith's login system and parent profile to the project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Merged Harith's login system and parent profile to the project." />
+    <MESSAGE value="Introduced Bootstrap 4 with Shards to the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Introduced Bootstrap 4 with Shards to the project." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -679,76 +711,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Sriyoucan/Front.php" />
-    <entry file="file://$PROJECT_DIR$/Sriyoucan/InsertData.php" />
-    <entry file="file://$PROJECT_DIR$/Sriyoucan/ParentsNumber.php" />
-    <entry file="file://$PROJECT_DIR$/Parent/Login/index.html" />
-    <entry file="file://$PROJECT_DIR$/Parent/Login/validate-parent.php" />
-    <entry file="file://$PROJECT_DIR$/test.html" />
-    <entry file="file://$PROJECT_DIR$/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/pdo.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applyLeave.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1320">
-          <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/parent.php" />
-    <entry file="file://$PROJECT_DIR$/include/conToTeacher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addChild.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addTeacher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markAttendance.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="25" column="61" lean-forward="false" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Login/main.css" />
     <entry file="file://$PROJECT_DIR$/Parent/login.php" />
     <entry file="file://$PROJECT_DIR$/Login/index.html" />
@@ -756,13 +718,6 @@
     <entry file="file://$PROJECT_DIR$/Parent/parent.php" />
     <entry file="file://$PROJECT_DIR$/Login/validate-parent.php" />
     <entry file="file://$PROJECT_DIR$/Login/changepassword.html" />
-    <entry file="file://$PROJECT_DIR$/classes/leave.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -781,34 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-540">
           <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/deleteLeave.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/syllabus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/navbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -838,52 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/DailyDetails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/SpecialNote.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -910,18 +791,252 @@
     <entry file="file://$PROJECT_DIR$/shards.html" />
     <entry file="file://$PROJECT_DIR$/shards/css/font-awesome.css" />
     <entry file="file://$PROJECT_DIR$/shards/shards-demo.html" />
-    <entry file="file://$PROJECT_DIR$/Parent/navbar.html">
+    <entry file="file://$PROJECT_DIR$/Parent/test.php" />
+    <entry file="file://$PROJECT_DIR$/Parent/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-531">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state relative-caret-position="300">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/DailyDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/navbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Login_v16/Login_v16/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-906">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#select#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addChild.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/test.php">
+    <entry file="file://$PROJECT_DIR$/Parent/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="14" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding>
+            <marker date="1525357854972" expanded="true" signature="422:488" ph="SELECT * FRO... parent_login" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/login1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#span#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#span#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/addChild.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/conToChildren.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding>
+            <marker date="1530628657950" expanded="true" signature="495:618" ph="INSERT INTO children... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/addTeacher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/conToTeacher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding>
+            <marker date="1530628712710" expanded="true" signature="698:841" ph="INSERT INTO teachers... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/viewLeave.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="41" column="37" lean-forward="false" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+          <folding>
+            <marker date="1530628458284" expanded="true" signature="1393:1411" ph="..." />
+            <marker date="1530628458284" expanded="true" signature="1696:1711" ph="..." />
+            <marker date="1530628458284" expanded="true" signature="1841:1856" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/deleteLeave.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <marker date="1530628778121" expanded="true" signature="211:266" ph="UPDATE leaveforms... " />
+            <marker date="1530628778121" expanded="true" signature="386:441" ph="UPDATE leaveforms... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/leave.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <marker date="1530628539356" expanded="true" signature="172:196" ph="SELECT * FRO... leaveforms" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Teacher/markAttendance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <marker date="1530629076863" expanded="true" signature="524:546" ph="SELECT * FRO... children" />
+            <marker date="1530629076863" expanded="true" signature="690:709" ph="..." />
+            <marker date="1530629076863" expanded="true" signature="774:796" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Teacher/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Teacher/viewSyllabus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/syllabus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding>
+            <marker date="1530629135426" expanded="true" signature="178:200" ph="SELECT * FRO... syllabus" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Teacher/applyLeave.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/leave.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="38" column="52" lean-forward="false" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+          <folding>
+            <marker date="1530629218880" expanded="true" signature="480:515" ph="SELECT * FRO... teachers" />
+            <marker date="1530629218880" expanded="true" signature="971:1113" ph="INSERT INTO leaveforms... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/parentNote.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>

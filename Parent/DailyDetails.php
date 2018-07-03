@@ -5,7 +5,9 @@ require_once('../classes/SpecialNote.php');
 session_start();
 if (!isset($_SESSION['parent'])) {
     header("Location: ../Login/login.html?error=login");
+    return;
 }
+include('navbar.html');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +17,6 @@ if (!isset($_SESSION['parent'])) {
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<?php include('navbar.php'); ?>
 	<div class="wrapper">
 		<h1 class="topic"> <?php 
 			$tom = new DateTime('tomorrow');
