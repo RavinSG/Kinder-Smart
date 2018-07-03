@@ -78,6 +78,15 @@ else {
     } elseif ($check == 'empty'){
         echo "<p class = 'error'>Please fill in all the details!</p>";
 
+    }elseif ($check == 'ageError'){
+        echo "<p class = 'error'>Please enter a valid age!</p>";
+
+    }elseif ($check == 'nameError'){
+        echo "<p class = 'error'>Please enter a valid name!</p>";
+
+    }elseif ($check == 'contactError'){
+        echo "<p class = 'error'>Please enter a valid contact number!</p>";
+
     }elseif ($check == 'successful'){
         echo "<p class = 'success'>The child has been registered!</p>";
     }

@@ -8,11 +8,25 @@ if (isset($_POST['submit'])){
     $age = $_POST['age'];
     $contact = $_POST['contact'];
     $parent = $_POST['parent'];
+
     if (empty($first) or empty($last) or empty($age) or empty($contact) or empty($parent)){
         header("Location: ../Admin/addChild.php?add=empty&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
         return;
 
-    } else{
+    } elseif ($age<=0){
+        header("Location: ../Admin/addChild.php?add=ageError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
+        return;
+
+    } elseif ((1 === preg_match('~[0-9]~', $first)) or (1 === preg_match('~[0-9]~', $last))){
+        header("Location: ../Admin/addChild.php?add=nameError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
+        return;
+
+    } elseif (preg_match('~[a-z]~', $contact)){
+        header("Location: ../Admin/addChild.php?add=contactError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
+        return;
+
+    }
+    else{
         $sql = "INSERT INTO children (child_fname, child_lname, age, contact_num, parent) 
 VALUES (:fname, :lname, :age, :contact, :parent)";
         $stmt = $pdo->prepare($sql);
