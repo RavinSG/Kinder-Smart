@@ -67,12 +67,19 @@ if (isset($_GET['msg'])){
 
     } elseif ($msg == 'empty'){
         echo "<p class='error'>Please fill in all the details!</p>";
-    }
-    elseif ($msg =='registered'){
-        echo "<p class='success'>Your leave form has been registered!</p>";
+
+    } elseif ($msg == 'date'){
+        echo "<p class='error'>Please enter a valid date!</p>";
 
     } elseif ($msg == 'unavailable'){
         echo "<p class='error'>Please enter a valid ID!</p>";
+
+    } elseif ($msg == 'duration'){
+        echo "<p class='error'>Please enter a valid leave duration!</p>";
+
+    }  elseif ($msg =='registered'){
+        echo "<p class='success'>Your leave form has been registered!</p>";
+
     }
 }
 ?>

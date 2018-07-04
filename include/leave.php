@@ -16,6 +16,14 @@ if (empty($id) or empty($leave_date) or empty($leave_duration) or empty($note)){
     header("Location: ../Teacher/applyLeave.php?msg=empty&id=$id&date=$leave_date&duration=$leave_duration&note=$note");
     return;
 
+} elseif($leave_duration < 1){
+    header("Location: ../Teacher/applyLeave.php?msg=duration&id=$id&date=$leave_date&duration=$leave_duration&note=$note");
+    return;
+
+}  elseif(strtotime($leave_date)<strtotime(date('y-m-d'))){
+    header("Location: ../Teacher/applyLeave.php?msg=date&id=$id&date=$leave_date&duration=$leave_duration&note=$note");
+    return;
+
 } else {
     $chkleave = "SELECT * FROM teachers WHERE id=:id";
     $stmtchk = $pdo->prepare($chkleave);
