@@ -4,6 +4,7 @@
     <title>Accept</title>
     <link rel="stylesheet" href="../include/table.css">
     <link rel="stylesheet" href="../include/style.css">
+    <link rel="stylesheet" href="../include/form.css">
 </head>
 <body>
 <div class="navbar">
@@ -11,6 +12,7 @@
     <a href="addTeacher.php">Add Teacher Info</a>
     <a href="addChild.php">Add Child</a>
     <a class="active" href="viewLeave.php">Manage Leave</a>
+    <a href="update-lunch-front.php">Update Food</a>
 </div>
 <div class="table-users">
     <div class="header">Applied Leaves</div>

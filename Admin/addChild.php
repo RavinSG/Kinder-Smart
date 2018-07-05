@@ -7,6 +7,7 @@ session_start();
 <head>
     <title>Add Child</title>
     <link rel="stylesheet" href="../include/style.css">
+    <link rel="stylesheet" href="../include/form.css">
 </head>
 <body>
 <div class="navbar">
@@ -14,6 +15,7 @@ session_start();
     <a href="addTeacher.php">Add Teacher Info</a>
     <a class="active" href="addChild.php">Add Child</a>
     <a href="viewLeave.php">Manage Leave</a>
+    <a href="update-lunch-front.php">Update Food</a>
 </div>
 <h2>Add Child</h2>
 <form action="../include/conToChildren.php" method="post">

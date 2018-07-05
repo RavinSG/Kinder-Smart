@@ -6,7 +6,9 @@ class KinderParent{
     private $name;
     private $nicNo;
     private $email;
+    private $address;
     private $telNo;
+    private $mobileNo;
     private $children = array();
 
     function __construct($id)
