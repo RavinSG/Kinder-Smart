@@ -1,0 +1,9 @@
+<?php 
+	session_start();
+	if (isset($_SESSION['uid'])) {
+		require('home.php');
+	} 
+	else {
+		echo "You are logged out. <a href='../login'>Login Again</a>";
+	}
+ ?>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kinder Smart</title>
+	<link rel="stylesheet" type="text/css" href="login/style/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<script type="text/javascript">
+		function validateForm(){
+			var email=document.getElementById('email').value;
+			var password=document.getElementById('password').value;
+			var err_msg = document.getElementById('err_msg');
+
+			if (email=="" || password=="") {
+				err_msg.innerHTML = "Please enter email and password both.";
+				err_msg.style.color = "red";
+				return false;
+			}
+
+			else{
+				
+				var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+				if(!reg.test(email)){
+					err_msg.innerHTML = "Enter a valid email"
+					err_msg.style.color = "red";
+					return false;
+				}
+			}
+		}	
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="name"><h1><span>Kinder<span>Smart</h1></div>
+		<div class="login">
+			<img src="" alt="">
+			<form action="login/validate.php" method='POST' onsubmit="return validateForm();">
+				<label for="email">email</label>
+				<span class="inputWithIcon">
+					<i class="fas fa-user icon"></i>
+					<input type="text" name="email" id="email"><br>
+				</span>
+				<label for="password">Password</label>
+				<span class="inputWithIcon">
+					<i class="fas fa-unlock-alt icon"></i>
+					<input type="password" name="password" id="password"><br>
+				</span>
+				<input type="checkbox" name="remember" value="remember">Keep me logged in<br>
+				<p id="err_msg"></p>
+				<button type="submit">Login</button>
+			</form>
+			<p>Forgot login details? <a href="login/recovery.php">Click Here</a></p>
+		</div>
+	</div>
+</body>
+</html>
