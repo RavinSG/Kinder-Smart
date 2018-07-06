@@ -7,17 +7,18 @@
 		$rePassword = $_POST['rePassword'];
 		if((!(empty($newPassword)||empty($rePassword))) && $newPassword == $rePassword){
 			$hashed_password = sha1($_POST['newPassword']);
-			$query = "UPDATE parent_db SET password = '{$hashed_password}' WHERE id='{$_SESSION['uid']}'";
+			$query = "UPDATE super_table SET password = '{$hashed_password}' WHERE id='{$_SESSION['uid']}'";
 			$result = mysqli_query($connection,$query);
 
-			$query = "UPDATE parent_db SET pass_changed = '1' WHERE id='{$_SESSION['uid']}'";
+			$query = "UPDATE super_table SET pass_changed = '1' WHERE id='{$_SESSION['uid']}'";
 			$result = mysqli_query($connection,$query);
 
 			if (!$result) {
 				echo "Query Failed!";
 			}
 			else{
-				header("Location : ../");
+			    $url = "Location: ../".$_SESSION['type'];
+				header($url);
 			}
 			
 		}

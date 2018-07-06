@@ -1,7 +1,6 @@
-<?php session_start(); ?>
+<?php require_once('../inc/checklogin.admin.inc.php'); ?>
 <html>
 	<head>
-        <link rel="stylesheet" href="../include/style.css">
 		<title>Parent Registration</title>
 		<style>
 		input[type="text"] {
@@ -23,14 +22,6 @@
 		</style>
 	</head>
 	<body>
-    <div class="navbar">
-        <a href="home.html">Home</a>
-        <a href="addTeacher.php">Add Teacher Info</a>
-        <a href="addChild.php">Add Child</a>
-        <a class="active" href="registration.parent.php">Register Parent</a>
-        <a href="viewLeave.php">Manage Leave</a>
-        <a href="update-lunch-front.php">Update Food</a>
-    </div>
 		<h1>Parent Registration</h1>
 		<form action="register.parent.php" method="post">
 			<label for='salutation'>Select Salutation</label>

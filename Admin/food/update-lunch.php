@@ -1,0 +1,1 @@
+<?php require_once('../inc/checklogin.admin.inc.php'); ?>

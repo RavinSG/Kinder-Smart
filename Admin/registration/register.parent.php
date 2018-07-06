@@ -1,9 +1,7 @@
-<?php require_once('../include/connection.inc.php'); ?>
+<?php require_once('../../include/connection.inc.php');
+		require_once('../inc/checklogin.admin.inc.php');
+ ?>
 <?php
-	session_start();
-			echo "<pre>";
-			print_r($_POST);
-			echo "</pre>";
 	if (isset($_POST['submit'])) {
 		$salutation = $_POST['salutation'];
 		$full_name = $_POST['full_name'];
@@ -14,6 +12,7 @@
 		$tele_no = $_POST['tele_no'];
 		$mobile_no = $_POST['mobile_no'];
 		$occupation = $_POST['occupation'];
+        $password = sha1($nic);
 
 		if (empty($full_name) or empty($ini_name) or empty($nic) or empty($email) or empty($address) or empty($tele_no) or empty($mobile_no) or empty($occupation)) {
 			autofill($salutation,$full_name,$ini_name,$nic,$email,$address,$tele_no,$mobile_no,$occupation);
@@ -28,21 +27,26 @@
 			
 		}
 		else{
-			$query = "SELECT * FROM parent_db WHERE email='{$email}'";
+			$query = "SELECT * FROM super_table WHERE email='{$email}' and password='{$password}'";
 			$result_set = mysqli_query($connection,$query);
 
 			if(!(mysqli_num_rows($result_set))){
-				$password = sha1($nic);
+
 				$query = "INSERT INTO parent_db (salutation,full_name,ini_name,nic,email,address,tele_no,mobile_no,occupation,password) VALUES('{$salutation}','{$full_name}','{$ini_name}','{$nic}','{$email}','{$address}','{$tele_no}','{$mobile_no}','{$occupation}','{$password}')";
-				echo $query;
+				
 				$result = mysqli_query($connection,$query);
 
 				if (!($result)) {
-					echo "<h1>Registration Failed1</h1>";
+					echo "<h1>Registration Failed!</h1>";
 				}
 				else{
-					echo "<h1>Registration Succesful!</h1>";
-					header("Location: registration.parent.php");
+                    $query = "SELECT uid FROM parent_db where email = '{$email}'";
+                    $result = mysqli_query($connection,$query);
+                    $row = mysqli_fetch_assoc($result);
+
+                    $query = "INSERT INTO super_table (email,password,uid,acc_type) VALUES ('{$email}','{$password}','{$row["uid"]}','parent')";
+                    $result = mysqli_query($connection,$query);
+                    header("Location: ../");
 				}
 			}
 			else{
