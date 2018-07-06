@@ -6,5 +6,7 @@
 	} 
 	else {
 		echo "You are logged out. <a href='../login'>Login Again</a>";
+
 	}
+print_r($_SESSION);
  ?>

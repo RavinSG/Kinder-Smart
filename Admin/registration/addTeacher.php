@@ -12,9 +12,10 @@ session_start();
 <body>
 <div class="navbar">
     <a href="../home.php">Home</a>
-    <a href="addTeacher.php">Add Teacher Info</a>
-    <a class="active" href="addChild.php">Add Child</a>
+    <a class="active" href="addTeacher.php">Add Teacher Info</a>
+    <a href="addChild.php">Add Child</a>
     <a href="registration.parent.php">Register Parent</a>
+    <a href="registration.admin.php">Add Admin</a>
     <a href="../viewLeave.php">Manage Leave</a>
     <a href="../food/update-lunch-front.php">Update Food</a>
 </div>

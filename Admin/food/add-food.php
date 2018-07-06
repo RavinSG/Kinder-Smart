@@ -14,7 +14,7 @@
 				$result = mysqli_query($connection,$query);
 			}
 		}
-	header("Location: ../");
+	header("Location: ../food/add-food-front.php");
 	}
 	else{
 		echo "Error! Login Again";
