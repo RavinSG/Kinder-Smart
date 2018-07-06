@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1acddfa8-0ddc-4155-a804-75f7564c8373" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Admin/registration/registration.admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/registration/registration.admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SpecialNote.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SpecialNote.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/homework.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/homework.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/lunch.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/lunch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Teacher/update-daily-details-front.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Teacher/update-daily-details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parent/child-remove-request.php" beforeDir="false" afterPath="$PROJECT_DIR$/Parent/child-remove-request.php" afterDir="false" />
     </list>
     <list id="da9b2324-bb26-4074-9b31-b7cb3050fcb6" name="Revert &quot;Set theme jekyll-theme-cayman&quot;" comment="Revert &quot;Set theme jekyll-theme-cayman&quot;&#10;&#10;This reverts commit 93bce6b" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -39,33 +39,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add-food.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/food/add-food.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registration.admin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/registration/registration.admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="registration.parent.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin/registration/registration.parent.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,11 +89,34 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="SpecialNote.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SpecialNote.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/SpecialNote.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update-daily-details-front.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Teacher/update-daily-details-front.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="update-daily-details.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Teacher/update-daily-details.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="child-remove-request.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Parent/child-remove-request.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -159,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Admin/addfood.php" />
         <option value="$PROJECT_DIR$/classes/parent.php" />
         <option value="$PROJECT_DIR$/include/logout.inc.php" />
         <option value="$PROJECT_DIR$/login/index.html" />
@@ -181,7 +176,6 @@
         <option value="$PROJECT_DIR$/Parent/index.php" />
         <option value="$PROJECT_DIR$/Parent/record-child-remove-request.php" />
         <option value="$PROJECT_DIR$/Parent/navbar.html" />
-        <option value="$PROJECT_DIR$/Parent/child-remove-request.php" />
         <option value="$PROJECT_DIR$/Login/validate.php" />
         <option value="$PROJECT_DIR$/Admin/register.parent.php" />
         <option value="$PROJECT_DIR$/include/conToTeacher.php" />
@@ -210,6 +204,8 @@
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/classes/homework.php" />
         <option value="$PROJECT_DIR$/classes/SpecialNote.php" />
+        <option value="$PROJECT_DIR$/Teacher/update-daily-details.php" />
+        <option value="$PROJECT_DIR$/Parent/child-remove-request.php" />
       </list>
     </option>
   </component>
@@ -247,7 +243,7 @@
             <path>
               <item name="Kinder-Smart" type="b2602c69:ProjectViewProjectNode" />
               <item name="Kinder-Smart" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="Parent" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -317,7 +313,7 @@
       <workItem from="1530627791242" duration="1620000" />
       <workItem from="1530678545851" duration="16892000" />
       <workItem from="1530850092630" duration="9269000" />
-      <workItem from="1530868317373" duration="27496000" />
+      <workItem from="1530868317373" duration="27956000" />
     </task>
     <task id="LOCAL-00001" summary="Added function to view applied leave.">
       <created>1524384218990</created>
@@ -435,7 +431,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156531000" />
+    <option name="totallyTimeSpent" value="156991000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -553,20 +549,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/classes/KinderParent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Parent/navbar.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -606,13 +588,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/home.html" />
-    <entry file="file://$PROJECT_DIR$/Parent/child-remove-request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-681">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Parent/about.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-30">
@@ -857,6 +832,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Teacher/update-daily-details-front.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Teacher/update-daily-details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/child-remove-request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
         </state>
       </provider>
     </entry>
