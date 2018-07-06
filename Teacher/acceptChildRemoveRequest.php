@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    require_once ("checklogin.teacher.php");
 	$connection = mysqli_connect("localhost","root","","kindersmart");
 	if (!$connection){
 		die("Database connection failed". mysqli_error());

@@ -1,4 +1,7 @@
-<?php 
+<?php
+session_start();
+require_once ("checklogin.teacher.php")?>
+<?php
 require_once('../include/connectDbaseMysql.php');
 
 if (!isset($_GET["note"])) {

@@ -1,5 +1,6 @@
 <?php  
-
+session_start();
+require_once ("checklogin.teacher.php");
 require_once('../include/connectDbaseMysql.php');
 $query="SELECT * FROM children";
 $children= mysqli_query($connection,$query);
