@@ -14,7 +14,9 @@
 				$result = mysqli_query($connection,$query);
 			}
 		}
-	header("Location: ../");
+	echo "<script> alert('Food item added successfully'); </script>";
+	
+	echo "<meta http-equiv='refresh' content=\"0 ; URL = '../'\">";
 	}
 	else{
 		echo "Error! Login Again";

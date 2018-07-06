@@ -25,9 +25,21 @@
     <a href="../food/update-lunch-front.php">Update Food</a>
 </div>
 <div class = "form">
-
 	<h1>Lunch Deatails</h1>
 	<form action="update-lunch.php" method="POST">
+        <select name="str_date">
+            <?php
+                $query = "SELECT str_date,end_date FROM lunch";
+                $res = mysqli_query($connection,$query);
+                while($row = mysqli_fetch_assoc($res)):;
+                    $monday = strtotime($row['str_date']);
+                    $friday = strtotime($row['end_date']);
+                     $mon = date('d M',$monday);
+                     $fri = date('d M',$friday);
+                ?>
+                    <option value="<?php echo $row['str_date'];?>"><?php echo $mon.' - '.$fri;?></option>
+                <?php endwhile; ?>
+        </select>
 		<h2>Monday</h2>
 		<?php if(isset($_POST['mon_num'])){$_SESSION['mon_num']=$_POST['mon_num'];} ?>
 		<?php if (isset($_SESSION['mon_num'])):; ?>
@@ -54,7 +66,7 @@
         <?php if(isset($_POST['tue_num'])){$_SESSION['tue_num']=$_POST['tue_num'];} ?>
         <?php if (isset($_SESSION['tue_num'])):; ?>
             <?php $i=0; while($i<$_SESSION['tue_num']):; $i++?>
-                <select name = <?php $name="tue-item".strval($i) ; echo $name;?>>
+                <select name = <?php $name="tue-item-".strval($i) ; echo $name;?>>
                     <?php while($row = mysqli_fetch_assoc($result)):;?>
                         <option value="<?php echo $row['food'];?>"><?php echo $row['food'];?></option>
                     <?php endwhile;
@@ -75,7 +87,7 @@
         <?php if(isset($_POST['wed_num'])){$_SESSION['wed_num']=$_POST['wed_num'];} ?>
         <?php if (isset($_SESSION['wed_num'])):; ?>
             <?php $i=0; while($i<$_SESSION['wed_num']):; $i++?>
-                <select name = <?php $name="wed-item".strval($i) ; echo $name;?>>
+                <select name = <?php $name="wed-item-".strval($i) ; echo $name;?>>
                     <?php while($row = mysqli_fetch_assoc($result)):;?>
                         <option value="<?php echo $row['food'];?>"><?php echo $row['food'];?></option>
                     <?php endwhile;
@@ -96,7 +108,7 @@
         <?php if(isset($_POST['thurs_num'])){$_SESSION['thurs_num']=$_POST['thurs_num'];} ?>
         <?php if (isset($_SESSION['thurs_num'])):; ?>
             <?php $i=0; while($i<$_SESSION['thurs_num']):; $i++?>
-                <select name = <?php $name="thurs-item".strval($i) ; echo $name;?>>
+                <select name = <?php $name="thurs-item-".strval($i) ; echo $name;?>>
                     <?php while($row = mysqli_fetch_assoc($result)):;?>
                         <option value="<?php echo $row['food'];?>"><?php echo $row['food'];?></option>
                     <?php endwhile;
@@ -117,7 +129,7 @@
         <?php if(isset($_POST['fri_num'])){$_SESSION['fri_num']=$_POST['fri_num'];} ?>
         <?php if (isset($_SESSION['fri_num'])):; ?>
             <?php $i=0; while($i<$_SESSION['fri_num']):; $i++?>
-                <select name = <?php $name="fri-item".strval($i) ; echo $name;?>>
+                <select name = <?php $name="fri-item-".strval($i) ; echo $name;?>>
                     <?php while($row = mysqli_fetch_assoc($result)):;?>
                         <option value="<?php echo $row['food'];?>"><?php echo $row['food'];?></option>
                     <?php endwhile;
