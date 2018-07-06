@@ -10,6 +10,14 @@
  	<title>Add Food</title>
  </head>
  <body>
+ <div class="navbar">
+     <a href="../home.php">Home</a>
+     <a href="addTeacher.php">Add Teacher Info</a>
+     <a class="active" href="addChild.php">Add Child</a>
+     <a href="registration.parent.php">Register Parent</a>
+     <a href="../viewLeave.php">Manage Leave</a>
+     <a href="../food/update-lunch-front.php">Update Food</a>
+ </div>
  	<?php if(!isset($_POST['number'])):;?>
 	 	<h1>Add Food items to list</h1>
 	 	<form action= "add-food-front.php" method="POST">

@@ -31,11 +31,11 @@
                         break;
 
                     CASE 'admin':
-                        header("Location: ../parent");
+                        header("Location: ../admin");
                         break;
 
                     CASE 'teacher':
-                        header("Location: ../parent");
+                        header("Location: ../teacher");
                         break;
                 }
             } else {

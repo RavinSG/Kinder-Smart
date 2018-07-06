@@ -26,31 +26,38 @@
 			
 		}
 		else{
-			$query = "SELECT * FROM super_table WHERE email='{$email}' and password='{$password}'";
-			$result_set = mysqli_query($connection,$query);
+            $query = "SELECT * FROM admin_db WHERE email='{$email}'";
+            $result = mysqli_query($connection,$query);
+            if(!mysqli_num_rows($result)){
+                $query = "SELECT * FROM super_table WHERE email='{$email}' and password='{$password}'";
+                $result_set = mysqli_query($connection,$query);
 
-			if(!(mysqli_num_rows($result_set))){
+                if(!(mysqli_num_rows($result_set))){
 
-				$query = "INSERT INTO admin_db (salutation,full_name,ini_name,nic,email,address,tele_no,mobile_no) VALUES('{$salutation}','{$full_name}','{$ini_name}','{$nic}','{$email}','{$address}','{$tele_no}','{$mobile_no}')";
+                    $query = "INSERT INTO admin_db (salutation,full_name,ini_name,nic,email,address,tele_no,mobile_no) VALUES('{$salutation}','{$full_name}','{$ini_name}','{$nic}','{$email}','{$address}','{$tele_no}','{$mobile_no}')";
 
-				$result = mysqli_query($connection,$query);
+                    $result = mysqli_query($connection,$query);
 
-				if (!($result)) {
-					echo "<h1>Registration Failed!</h1>";
-				}
-				else{
-					$query = "SELECT uid FROM admin_db where email = '{$email}'";
-					$result = mysqli_query($connection,$query);
-					$row = mysqli_fetch_assoc($result);
+                    if (!($result)) {
+                        echo "<h1>Registration Failed!</h1>";
+                    }
+                    else{
+                        $query = "SELECT id FROM admin_db where email = '{$email}'";
+                        $result = mysqli_query($connection,$query);
+                        $row = mysqli_fetch_assoc($result);
 
-					$query = "INSERT INTO super_table (email,password,uid,acc_type) VALUES ('{$email}','{$password}','{$row["uid"]}','admin')";
-					$result = mysqli_query($connection,$query);
-					header("Location: ../");
-				}
-			}
-			else{
-				echo "<h1>This E - Mail already exist</h1>";
-			}
+                        $query = "INSERT INTO super_table (email,password,uid,acc_type) VALUES ('{$email}','{$password}','{$row["id"]}','admin')";
+                        $result = mysqli_query($connection,$query);
+                        header("Location: ../");
+                    }
+                }
+                else{
+                    echo "<h1>Error!</h1> <a href='registration.admin.php'>Try Again</a>";
+                }
+            }
+            else{
+                echo "This Email Already Exist!<br> <a href='registration.admin.php'>Try Again</a>";
+            }
 		}
 	}
 
@@ -65,3 +72,5 @@
 		$_SESSION['mobile_no'] = $mobile_no;
 	}
  ?>
+
+

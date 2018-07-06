@@ -14,6 +14,14 @@
 	<title>Update Lunch</title>
 </head>
 <body>
+<div class="navbar">
+    <a href="../home.php">Home</a>
+    <a href="addTeacher.php">Add Teacher Info</a>
+    <a class="active" href="addChild.php">Add Child</a>
+    <a href="registration.parent.php">Register Parent</a>
+    <a href="../viewLeave.php">Manage Leave</a>
+    <a href="../food/update-lunch-front.php">Update Food</a>
+</div>
 	<h1>Lunch Deatails</h1>
 	<form action="update-lunch.php" method="POST">
         <label for="week"><h2>Select Week</h2></label>

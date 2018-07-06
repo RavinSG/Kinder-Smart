@@ -27,31 +27,39 @@
 			
 		}
 		else{
-			$query = "SELECT * FROM super_table WHERE email='{$email}' and password='{$password}'";
-			$result_set = mysqli_query($connection,$query);
+		    $query = "SELECT * FROM parent_db WHERE email='{$email}'";
+            $result = mysqli_query($connection,$query);
+            if(!mysqli_num_rows($result)){
+                $query = "SELECT * FROM super_table WHERE email='{$email}' and password='{$password}'";
+                $result_set = mysqli_query($connection,$query);
 
-			if(!(mysqli_num_rows($result_set))){
+                if(!(mysqli_num_rows($result_set))){
 
-				$query = "INSERT INTO parent_db (salutation,full_name,ini_name,nic,email,address,tele_no,mobile_no,occupation,password) VALUES('{$salutation}','{$full_name}','{$ini_name}','{$nic}','{$email}','{$address}','{$tele_no}','{$mobile_no}','{$occupation}','{$password}')";
-				
-				$result = mysqli_query($connection,$query);
+                    $query = "INSERT INTO parent_db (salutation,full_name,ini_name,nic,email,address,tele_no,mobile_no,occupation,password) VALUES('{$salutation}','{$full_name}','{$ini_name}','{$nic}','{$email}','{$address}','{$tele_no}','{$mobile_no}','{$occupation}','{$password}')";
 
-				if (!($result)) {
-					echo "<h1>Registration Failed!</h1>";
-				}
-				else{
-                    $query = "SELECT uid FROM parent_db where email = '{$email}'";
                     $result = mysqli_query($connection,$query);
-                    $row = mysqli_fetch_assoc($result);
 
-                    $query = "INSERT INTO super_table (email,password,uid,acc_type) VALUES ('{$email}','{$password}','{$row["uid"]}','parent')";
-                    $result = mysqli_query($connection,$query);
-                    header("Location: ../");
-				}
-			}
-			else{
-				echo "<h1>This E - Mail already exist</h1>";
-			}
+                    if (!($result)) {
+                        echo "<h1>Registration Failed!</h1>";
+                    }
+                    else{
+                        $query = "SELECT id FROM parent_db where email = '{$email}'";
+                        $result = mysqli_query($connection,$query);
+                        $row = mysqli_fetch_assoc($result);
+
+                        $query = "INSERT INTO super_table (email,password,uid,acc_type) VALUES ('{$email}','{$password}','{$row["id"]}','parent')";
+                        $result = mysqli_query($connection,$query);
+                        header("Location: ../");
+                    }
+                }
+                else{
+                    echo "<h1>Error!</h1> <a href='registration.parent.php'>Try Again</a>";
+                }
+            }
+            else{
+                echo "This Email Already Exist!<br> <a href='registration.parent.php'>Try Again</a>";
+            }
+
 		}
 	}
 

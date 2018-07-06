@@ -6,20 +6,20 @@ session_start();
 <html>
 <head>
     <title>Add Child</title>
-    <link rel="stylesheet" href="../include/style.css">
-    <link rel="stylesheet" href="../include/form.css">
+    <link rel="stylesheet" href="../../include/style.css">
+    <link rel="stylesheet" href="../../include/form.css">
 </head>
 <body>
 <div class="navbar">
-    <a href="home.html">Home</a>
+    <a href="../home.php">Home</a>
     <a href="addTeacher.php">Add Teacher Info</a>
     <a class="active" href="addChild.php">Add Child</a>
     <a href="registration.parent.php">Register Parent</a>
-    <a href="viewLeave.php">Manage Leave</a>
-    <a href="update-lunch-front.php">Update Food</a>
+    <a href="../viewLeave.php">Manage Leave</a>
+    <a href="../food/update-lunch-front.php">Update Food</a>
 </div>
 <h2>Add Child</h2>
-<form action="../include/conToChildren.php" method="post">
+<form action="../../include/conToChildren.php" method="post">
     <?php
     if(isset($_GET['first'])){
         $first = $_GET['first'];
