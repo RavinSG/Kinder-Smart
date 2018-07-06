@@ -33,7 +33,7 @@
 	 	<form action="add-food.php" method="POST">
 	 		<?php $i=0; while ( $i< $_POST['number']):; $i++;?>
 				<label for=<?php echo "item-{$i}" ?>><?php echo "Item-{$i} : " ?></label>
-				<input type="text" name=<?php  echo "item-{$i}" ?>><br>
+				<input type="text" pattern="[a-zA-Z]+" title="Food name can contain alphabetic characters only" name=<?php  echo "item-{$i}" ?>><br>
 	 		<?php endwhile ?>
 	 		<input type="submit" value="Submit">
 	 	</form>
