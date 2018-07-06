@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="../include/shards/css/shards.min.css?v=2.0.1">
+    <link rel="stylesheet" href="../include/boot/css/bootstrap.min.css">
+    <link href="../include/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+    <style media="screen" type="text/css">
+        body{
+            height: 100%;
+            background: url('../images/future1.jpg') no-repeat center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<div class="card align-items-center" style="width: 20rem; margin: 180px auto 0;">
+
+    <div class="card-body">
+        <h4 class="card-title">Login</h4>
+        <form action="login.php" method="post">
+
+            <div class="input-group input-group-seamless" style="width: 200px">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i class="fa fa-at"></i>
+                    </div>
+                </div>
+                <input type="text" class="form-control" name="email" placeholder="E mail" value="">
+            </div>
+            <div class="input-group input-group-seamless" style="width: 200px">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i class="fa fa-key"></i>
+                    </div>
+                </div>
+                <input type="password" class="form-control" name="password" placeholder="Password" value="">
+            </div>
+            <label for="acc_type">Account Type :</label>
+            <select name="acc_type" id="acc_type" class="custom-select" style="width: 200px">
+                <option value="teacher">Teacher</option>
+                <option value="parent">Parent</option>
+                <option value="administration">Administration</option>
+            </select>
+            <br><br>
+            <input type="submit" class="btn btn-info btn-pill text-center" name="submit" value="Login" >
+
+
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>

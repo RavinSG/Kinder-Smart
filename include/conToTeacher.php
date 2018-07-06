@@ -15,7 +15,7 @@ if (isset($_POST['submit'])){
         header("Location: ../Admin/addTeacher.php?add=invalidemail&first=$first&last=$last&phone=$phone&email=$email&leave=$leave");
         return;
     } else{
-        $sql = "INSERT INTO teachers (teacher_fname, teacher_lname, teacher_phone, teacher_email, leave_avail) 
+        $sql = "INSERT INTO teacher_db (teacher_fname, teacher_lname, teacher_phone, teacher_email, leave_avail) 
 VALUES (:fname, :lname, :phone, :email, :leave)";
         $stmt = $pdo->prepare($sql);
         $stmt->execute(array(

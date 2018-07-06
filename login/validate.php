@@ -28,7 +28,7 @@
 		if ((!(empty($email) || empty($password)) && filter_var($email,FILTER_VALIDATE_EMAIL))) {
 			$hashed_password = sha1($password);			
 			
-			if($array = validate("parent_login",$connection,$email,$hashed_password)){
+			if($array = validate("parent_db",$connection,$email,$hashed_password)){
                 $parent = new KinderParent($array['id']);
                 $_SESSION['parent'] = $parent;
 				if (isset($_POST['remember'])) {

@@ -3,6 +3,7 @@
 <head>
     <title>Apply Leave</title>
     <link rel="stylesheet" href="../include/style.css">
+    <link rel="stylesheet" href="../include/form.css">
 </head>
 <body>
 <div class="navbar">

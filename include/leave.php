@@ -25,7 +25,7 @@ if (empty($id) or empty($leave_date) or empty($leave_duration) or empty($note)){
     return;
 
 } else {
-    $chkleave = "SELECT * FROM teachers WHERE id=:id";
+    $chkleave = "SELECT * FROM teacher_db WHERE id=:id";
     $stmtchk = $pdo->prepare($chkleave);
     $stmtchk->execute(array('id' => $id));
     $row = $stmtchk->fetch(PDO::FETCH_ASSOC);

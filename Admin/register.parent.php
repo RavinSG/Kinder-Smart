@@ -28,12 +28,12 @@
 			
 		}
 		else{
-			$query = "SELECT * FROM parent_login WHERE email='{$email}'";
+			$query = "SELECT * FROM parent_db WHERE email='{$email}'";
 			$result_set = mysqli_query($connection,$query);
 
 			if(!(mysqli_num_rows($result_set))){
 				$password = sha1($nic);
-				$query = "INSERT INTO parent_login (salutation,full_name,ini_name,nic,email,address,tele_no,mobile_no,occupation,password) VALUES('{$salutation}','{$full_name}','{$ini_name}','{$nic}','{$email}','{$address}','{$tele_no}','{$mobile_no}','{$occupation}','{$password}')";
+				$query = "INSERT INTO parent_db (salutation,full_name,ini_name,nic,email,address,tele_no,mobile_no,occupation,password) VALUES('{$salutation}','{$full_name}','{$ini_name}','{$nic}','{$email}','{$address}','{$tele_no}','{$mobile_no}','{$occupation}','{$password}')";
 				echo $query;
 				$result = mysqli_query($connection,$query);
 
