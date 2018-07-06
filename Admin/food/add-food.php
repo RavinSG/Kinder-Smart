@@ -14,13 +14,11 @@
 				$result = mysqli_query($connection,$query);
 			}
 		}
-<<<<<<< HEAD
+
 	echo "<script> alert('Food item added successfully'); </script>";
 	
 	echo "<meta http-equiv='refresh' content=\"0 ; URL = '../'\">";
-=======
-	header("Location: ../food/add-food-front.php");
->>>>>>> 2bcf23aeea00c43b9ca27537b819461a77a3786b
+
 	}
 	else{
 		echo "Error! Login Again";
