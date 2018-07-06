@@ -2,10 +2,20 @@
 <html>
 <head>
     <title>Requests for child removal from transport</title>
-    <link rel="stylesheet" href="include/table.css">
-    <link rel="stylesheet" href="include/style.css">
+    <link rel="stylesheet" href="../include/table.css">
+    <link rel="stylesheet" href="../include/style.css">
 </head>
 <body>
+<div class="navbar">
+    <a class="active" href="home.html">Home</a>
+    <a href="applyLeave.php">Apply Leave</a>
+    <a href="markAttendance.php">Mark Attendance</a>
+    <a href="viewSyllabus.php">Syllabus</a>
+    <a href="viewChildRemoveRequests.php">Child Remove Requests</a>
+    <a href="sentMessage.php">Send Message</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+</div>
 <div class="table-users">
     <div class="header">Requests</div>
 
@@ -21,7 +31,7 @@
 
         <?php
 
-        require_once 'classes/childRemoveRequest.php';
+        require_once '../classes/childRemoveRequest.php';
         $request = new ChildRemoveRequest();
         $requests = $request->getRequests();
         foreach ($requests as $row){

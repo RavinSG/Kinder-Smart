@@ -1,20 +1,33 @@
 <?php 
-$connection = mysqli_connect("localhost","root","","kindersmart");
-if (!$connection){
-	die("Database connection failed". mysqli_error());
-}
+require_once('../include/connectDbaseMysql.php');
 
 if (!isset($_GET["note"])) {
 	$_GET["note"]="";
 }
+if (!isset($_GET["message"])) {
+    $_GET["message"]="";
+}
+
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Sent Message</title>
+    <link rel="stylesheet" type="text/css" href="../include/syllabus.css">
+    <link rel="stylesheet" type="text/css" href="../include/style.css">
 </head>
 <body>
+<div class="navbar">
+    <a class="active" href="home.html">Home</a>
+    <a href="applyLeave.php">Apply Leave</a>
+    <a href="markAttendance.php">Mark Attendance</a>
+    <a href="viewSyllabus.php">Syllabus</a>
+    <a href="viewChildRemoveRequests.php">Child Remove Requests</a>
+    <a href="sentMessage.php">Send Message</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+</div>
 	<h1>Children List</h1>
 	<table cellspacing="0">
         <tr>
@@ -52,13 +65,17 @@ if (!isset($_GET["note"])) {
         <fieldset>
 		  <label>Message:</label>
 		  <br>
-          <input type="text" name="message" value="" required>
+          <input type="text" name="message" required value = <?php  echo $_GET["message"];?> >
         </fieldset>
 		
         <button type="submit">Send</button>
       </form>
-      <?php 
-      	echo $_GET["note"];
+      <h1>
+      <?php
+      if (!$_GET["note"]=="") {
+          echo "<script>alert('{$_GET["note"]}')</script>";
+      }
        ?>
+       <h1>
 </body>
 </html>

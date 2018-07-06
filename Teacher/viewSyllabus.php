@@ -7,10 +7,14 @@
 </head>
 <body>
 <div class="navbar">
-    <a href="home.html">Home</a>
-    <a href="applyLeave.php">Apply for Leave</a>
+    <a class="active" href="home.html">Home</a>
+    <a href="applyLeave.php">Apply Leave</a>
     <a href="markAttendance.php">Mark Attendance</a>
-    <a class="active" href="viewSyllabus.php">View Syllabus</a>
+    <a href="viewSyllabus.php">Syllabus</a>
+    <a href="viewChildRemoveRequests.php">Child Remove Requests</a>
+    <a href="sentMessage.php">Send Message</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
 </div>
 <div class="table-title">
     <h3>Syllabus for 2018</h3>

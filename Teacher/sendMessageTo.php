@@ -1,9 +1,6 @@
 <?php  
 
-$connection = mysqli_connect("localhost","root","","kindersmart");
-if (!$connection){
-	die("Database connection failed". mysqli_error());
-}
+require_once('../include/connectDbaseMysql.php');
 $query="SELECT * FROM children";
 $children= mysqli_query($connection,$query);
 if (!$children){
@@ -15,9 +12,14 @@ foreach ($children as $row){
 	if (isset($_POST["{$row['id']}"])){
 		array_push($parents,$row["parent"]);	
 	}
+} 
+if (sizeof($parents)==0) {
+	$note="Please select children";
+	header("Location: sentMessage.php?note={$note}&message={$_POST["message"]}");
+	return;
 }
-$str = implode("|",$parents);
-if (!$parents==NULL) {
+else{
+	$str = implode("|",$parents);
 	$sql = "INSERT INTO special_notes (parent_id, d, message) VALUES ('$str', '{$today}','{$_POST["message"]}')";
 		$check=mysqli_query($connection,$sql);
 		if (!$check){

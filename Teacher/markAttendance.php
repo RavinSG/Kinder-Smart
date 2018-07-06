@@ -7,10 +7,14 @@
 
 <body>
 <div class="navbar">
-    <a href="home.html">Home</a>
+    <a class="active" href="home.html">Home</a>
     <a href="applyLeave.php">Apply Leave</a>
-    <a class="active" href="markAttendance.php">Mark Attendance</a>
-    <a href="viewSyllabus.php">View Syllabus</a>
+    <a href="markAttendance.php">Mark Attendance</a>
+    <a href="viewSyllabus.php">Syllabus</a>
+    <a href="viewChildRemoveRequests.php">Child Remove Requests</a>
+    <a href="sentMessage.php">Send Message</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
 </div>
 <form action="../include/conToAttendance.php">
     <table border="1">
