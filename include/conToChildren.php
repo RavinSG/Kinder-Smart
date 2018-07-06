@@ -10,19 +10,19 @@ if (isset($_POST['submit'])){
     $parent = $_POST['parent'];
 
     if (empty($first) or empty($last) or empty($age) or empty($contact) or empty($parent)){
-        header("Location: ../Admin/addChild.php?add=empty&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
+        header("Location: ../Admin/registration/addChild.php?add=empty&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
         return;
 
     } elseif ($age<=0){
-        header("Location: ../Admin/addChild.php?add=ageError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
+        header("Location: ../Admin/registration/addChild.php?add=ageError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
         return;
 
     } elseif ((1 === preg_match('~[0-9]~', $first)) or (1 === preg_match('~[0-9]~', $last))){
-        header("Location: ../Admin/addChild.php?add=nameError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
+        header("Location: ../Admin/registration/addChild.php?add=nameError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
         return;
 
     } elseif (preg_match('~[a-z]~', $contact)){
-        header("Location: ../Admin/addChild.php?add=contactError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
+        header("Location: ../Admin/registration/addChild.php?add=contactError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
         return;
 
     }
@@ -36,10 +36,10 @@ VALUES (:fname, :lname, :age, :contact, :parent)";
             ':age' => $age,
             ':contact' => $contact,
             ':parent' => $parent));
-        header("Location: ../Admin/addChild.php?add=successful");
+        header("Location: ../Admin/registration/addChild.php?add=successful");
         return;
     }
 
 } else{
-    header('Location: ../Admin/addChild.php?add=error');
+    header('Location: ../Admin/registration/addChild.php?add=error');
 }

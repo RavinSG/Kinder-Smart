@@ -6,15 +6,17 @@
  <!DOCTYPE html>
  <html lang="en">
  <head>
+     <link rel="stylesheet" href="../../include/style.css">
  	<meta charset="UTF-8">
  	<title>Add Food</title>
  </head>
  <body>
  <div class="navbar">
      <a href="../home.php">Home</a>
-     <a href="addTeacher.php">Add Teacher Info</a>
-     <a class="active" href="addChild.php">Add Child</a>
-     <a href="registration.parent.php">Register Parent</a>
+     <a href="../registration/addTeacher.php">Add Teacher Info</a>
+     <a class="active" href="../registration/addChild.php">Add Child</a>
+     <a href="../registration/registration.parent.php">Register Parent</a>
+     <a href="../registration/registration.admin.php">Add Admin</a>
      <a href="../viewLeave.php">Manage Leave</a>
      <a href="../food/update-lunch-front.php">Update Food</a>
  </div>

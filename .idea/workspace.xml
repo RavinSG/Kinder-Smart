@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list id="da9b2324-bb26-4074-9b31-b7cb3050fcb6" name="Revert &quot;Set theme jekyll-theme-cayman&quot;" comment="Revert &quot;Set theme jekyll-theme-cayman&quot;&#10;&#10;This reverts commit 93bce6b" />
     <list default="true" id="1acddfa8-0ddc-4155-a804-75f7564c8373" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Admin/food/update-lunch-table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e7d77361-0851-41fe-9e39-1c4f86e152e6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Harith.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/food/add-food-front.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/food/add-food-front.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin/food/add-food.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/food/add-food.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin/food/update-lunch-front.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/food/update-lunch-front.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/food/update-lunch.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/food/update-lunch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/inc/checklogin.admin.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/inc/checklogin.admin.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/registration/addChild.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/registration/addChild.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/registration/addTeacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/registration/addTeacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/registration/register.admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/registration/register.admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/registration/registration.admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/registration/registration.admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/registration/registration.parent.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/registration/registration.parent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/viewLeave.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/viewLeave.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/conToChildren.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/conToChildren.php" afterDir="false" />
     </list>
-    <list id="da9b2324-bb26-4074-9b31-b7cb3050fcb6" name="Revert &quot;Set theme jekyll-theme-cayman&quot;" comment="Revert &quot;Set theme jekyll-theme-cayman&quot;&#10;&#10;This reverts commit 93bce6b" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -71,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/Admin/registration/registration.parent.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="199">
-              <caret line="33" column="238" selection-start-line="33" selection-start-column="238" selection-end-line="33" selection-end-column="238" />
+              <caret line="43" column="238" selection-start-line="43" selection-start-column="238" selection-end-line="43" selection-end-column="238" />
             </state>
           </provider>
         </entry>
@@ -80,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/Admin/food/update-lunch-front.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="131" column="53" selection-start-line="131" selection-start-column="53" selection-end-line="131" selection-end-column="53" />
+              <caret line="133" column="53" selection-start-line="133" selection-start-column="53" selection-end-line="133" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -333,7 +344,7 @@
       <workItem from="1530627791242" duration="1620000" />
       <workItem from="1530678545851" duration="16892000" />
       <workItem from="1530850092630" duration="9269000" />
-      <workItem from="1530868317373" duration="24717000" />
+      <workItem from="1530868317373" duration="24936000" />
     </task>
     <task id="LOCAL-00001" summary="Added function to view applied leave.">
       <created>1524384218990</created>
@@ -444,7 +455,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153752000" />
+    <option name="totallyTimeSpent" value="153971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -819,7 +830,7 @@
     <entry file="file://$PROJECT_DIR$/Admin/registration/registration.parent.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
-          <caret line="33" column="238" selection-start-line="33" selection-start-column="238" selection-end-line="33" selection-end-column="238" />
+          <caret line="43" column="238" selection-start-line="43" selection-start-column="238" selection-end-line="43" selection-end-column="238" />
         </state>
       </provider>
     </entry>
@@ -847,7 +858,7 @@
     <entry file="file://$PROJECT_DIR$/Admin/food/update-lunch-front.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="131" column="53" selection-start-line="131" selection-start-column="53" selection-end-line="131" selection-end-column="53" />
+          <caret line="133" column="53" selection-start-line="133" selection-start-column="53" selection-end-line="133" selection-end-column="53" />
         </state>
       </provider>
     </entry>
