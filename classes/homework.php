@@ -1,6 +1,9 @@
-<?php 
+<?php
 
 
+/**
+ * @property string deatails
+ */
 class Homework{
 	private $date;
 	private $details;
@@ -9,12 +12,22 @@ class Homework{
 	private function __construct(){
 		$connection = mysqli_connect('localhost','root','','kindersmart');
 		$date = new DateTime("tomorrow");
+		$day = $date->format("l");
 		$date = $date->format("Y-m-d");
 		$this->date = $date;
-		$query = "SELECT homework FROM daily_notes WHERE date='{$date}'";
-		$result = mysqli_query($connection,$query);
-		$array = mysqli_fetch_assoc($result);
-		$this->details = $array['homework'];
+        if($day == 'sunday'){
+            $date =  date("Y-m-d",strtotime('- 1 day'));
+        }
+        else if($day == 'monday'){
+            $date =  date("Y-m-d",strtotime('- 2 day'));
+        }
+
+        $query = "SELECT homework FROM daily_notes WHERE date='{$date}'";
+        $result = mysqli_query($connection,$query);
+        $array = mysqli_fetch_assoc($result);
+        $this->details = $array['homework'];
+
+
 	}
 
 	public function getDetails(){

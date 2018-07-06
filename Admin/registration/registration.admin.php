@@ -32,7 +32,7 @@
         <a href="../viewLeave.php">Manage Leave</a>
         <a href="../food/update-lunch-front.php">Update Food</a>
     </div>
-		<h1>admin Registration</h1>
+		<h1>Admin Registration</h1>
 		<form action="register.admin.php" method="post">
 			<label for='salutation'>Select Salutation</label>
 			<select name="salutation" value=<?php echo $_SESSION['salutation'] ?>>
@@ -45,13 +45,13 @@
             <br />
             <label>Name with Initials:</label><input type="text" name="ini_name" title="Please enter alphabetic characters only" pattern="[a-zA-Z.]+" required value=<?php if(isset($_SESSION['admin_ini_name'])){echo "{$_SESSION['admin_ini_name']}";} else{echo "";}?>>
             <br />
-            <label>NIC number :</label> <input type="text" name="nic" size="10" minlength="10" maxlength="10" pattern="[0-9]{9}[V|X]" required value=<?php if(isset($_SESSION['nic'])){echo "{$_SESSION['nic']}";} else{echo "";}?>  >
+            <label>NIC number :</label> <input type="text" name="nic" size="10" minlength="10" maxlength="10" pattern="[0-9]{9}[V|X]" title="000000000V or 00000000X"required value=<?php if(isset($_SESSION['nic'])){echo "{$_SESSION['nic']}";} else{echo "";}?>  >
             <br />
             <label>Address :</label> <input type="text" name="address" required value= <?php if(isset($_SESSION['admin_address'])){echo "{$_SESSION['admin_address']}";} else{echo "";}?> >
             <br />
             <label>Email :</label> <input type="text" name="email" required pattern="[a-z0-9._%]+@[a-z0-9.]+\.[a-z]{2,3}$" title="e.g example@example.com" value=<?php if(isset($_SESSION['email'])){echo "{$_SESSION['email']}";} else{echo "";}?> >
             <br />
-            <label>Telephone Number :</label> <input type="text" name="tele_no" required  minlength="10" pattern="[0-9+-]+" maxlength="15" title="Only numbers and +- can be entered" value=<?php if(isset($_SESSION['tele_no'])){echo "{$_SESSION['tele_no']}";} else{echo "";}?>>
+            <label>Telephone Number :</label> <input type="text" name="tele_no" required  minlength="10" pattern="[0-9+-]+" maxlength="15" title="Only numbers and +- can be entered" value=<?php if(isset($_SESSION['tele_no'])){echo "{$_SESSION['tele_no']}";} else{echo "";}?>><br>
             <label>Mobile Number :</label> <input type="text" name="mobile_no" minlength="10" maxlength="15" required pattern="[0-9+-]+" title="Only numbers and +- can be entered" value=<?php if(isset($_SESSION['mobile_no'])){echo "{$_SESSION['mobile_no']}";} else{echo "";}?> >
 			<br />
 			<input type="submit" name="submit" value="Submit" />

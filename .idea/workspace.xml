@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1acddfa8-0ddc-4155-a804-75f7564c8373" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Admin/food/add-food.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/food/add-food.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/registration/registration.admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/registration/registration.admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/SpecialNote.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SpecialNote.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/homework.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/homework.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/lunch.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/lunch.php" afterDir="false" />
     </list>
     <list id="da9b2324-bb26-4074-9b31-b7cb3050fcb6" name="Revert &quot;Set theme jekyll-theme-cayman&quot;" comment="Revert &quot;Set theme jekyll-theme-cayman&quot;&#10;&#10;This reverts commit 93bce6b" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -37,15 +39,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="update-lunch.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/food/update-lunch.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin/index.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add-food.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="add-food.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin/food/add-food.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -64,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="changepassword.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login/changepassword.php">
+      <file leaf-file-name="registration.admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Admin/registration/registration.admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="79" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
+            <state relative-caret-position="63">
+              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -76,53 +69,58 @@
       <file leaf-file-name="registration.parent.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin/registration/registration.parent.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="43" column="238" selection-start-line="43" selection-start-column="238" selection-end-line="43" selection-end-column="238" />
+            <state relative-caret-position="386">
+              <caret line="54" column="48" lean-forward="true" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update-lunch-front.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/food/update-lunch-front.php">
+      <file leaf-file-name="DailyDetails.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Parent/DailyDetails.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="133" column="53" selection-start-line="133" selection-start-column="53" selection-end-line="133" selection-end-column="53" />
+            <state relative-caret-position="340">
+              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update-lunch-table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/food/update-lunch-table.php">
+      <file leaf-file-name="lunch.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/lunch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="124" column="24" lean-forward="true" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
+            <state relative-caret-position="238">
+              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.parent.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/registration/register.parent.php">
+      <file leaf-file-name="homework.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/homework.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="37" column="189" selection-start-line="37" selection-start-column="189" selection-end-line="37" selection-end-column="189" />
+            <state relative-caret-position="408">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="27" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addTeacher.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/registration/addTeacher.php">
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="153">
+              <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addChild.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/registration/addChild.php">
+      <file leaf-file-name="leave.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/leave.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="SpecialNote.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/classes/SpecialNote.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="323">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -161,10 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/include/conToChildren.php" />
-        <option value="$PROJECT_DIR$/Teacher/markAttendance.php" />
-        <option value="$PROJECT_DIR$/include/conToAttendance.php" />
-        <option value="$PROJECT_DIR$/classes/syllabus.php" />
         <option value="$PROJECT_DIR$/Admin/addfood.php" />
         <option value="$PROJECT_DIR$/classes/parent.php" />
         <option value="$PROJECT_DIR$/include/logout.inc.php" />
@@ -199,7 +193,6 @@
         <option value="$PROJECT_DIR$/Admin/registration/register.admin.php" />
         <option value="$PROJECT_DIR$/Admin/registration/register.parent.php" />
         <option value="$PROJECT_DIR$/Admin/registration/registration.parent.php" />
-        <option value="$PROJECT_DIR$/Admin/registration/registration.admin.php" />
         <option value="$PROJECT_DIR$/Admin/food/add-food-front.php" />
         <option value="$PROJECT_DIR$/Admin/home.php" />
         <option value="$PROJECT_DIR$/login/validate.php" />
@@ -212,6 +205,11 @@
         <option value="$PROJECT_DIR$/Admin/food/update-lunch.php" />
         <option value="$PROJECT_DIR$/Admin/index.php" />
         <option value="$PROJECT_DIR$/Admin/food/add-food.php" />
+        <option value="$PROJECT_DIR$/Admin/registration/registration.admin.php" />
+        <option value="$PROJECT_DIR$/classes/lunch.php" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/classes/homework.php" />
+        <option value="$PROJECT_DIR$/classes/SpecialNote.php" />
       </list>
     </option>
   </component>
@@ -249,18 +247,7 @@
             <path>
               <item name="Kinder-Smart" type="b2602c69:ProjectViewProjectNode" />
               <item name="Kinder-Smart" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Kinder-Smart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kinder-Smart" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="food" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Kinder-Smart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kinder-Smart" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -330,7 +317,7 @@
       <workItem from="1530627791242" duration="1620000" />
       <workItem from="1530678545851" duration="16892000" />
       <workItem from="1530850092630" duration="9269000" />
-      <workItem from="1530868317373" duration="25300000" />
+      <workItem from="1530868317373" duration="27496000" />
     </task>
     <task id="LOCAL-00001" summary="Added function to view applied leave.">
       <created>1524384218990</created>
@@ -448,7 +435,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154335000" />
+    <option name="totallyTimeSpent" value="156531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -566,31 +553,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/classes/lunch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Teacher/acceptChildRemoveRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Teacher/sendMessageTo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Teacher/viewChildRemoveRequests.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Teacher/sentMessage.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/KinderParent.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-243">
@@ -655,13 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-30">
           <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/DailyDetails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -748,13 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/registration/registration.admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="44" column="278" selection-start-line="44" selection-start-column="278" selection-end-line="44" selection-end-column="278" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Admin/registration/register.admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -811,13 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/registration/registration.parent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="43" column="238" selection-start-line="43" selection-start-column="238" selection-end-line="43" selection-end-column="238" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/changepassword.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -864,6 +805,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/registration/registration.admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/registration/registration.parent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="54" column="48" lean-forward="true" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/DailyDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/leave.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/lunch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/homework.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="27" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/SpecialNote.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
         </state>
       </provider>
     </entry>
