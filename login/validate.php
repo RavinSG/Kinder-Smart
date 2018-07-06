@@ -1,6 +1,6 @@
 <?php 
 	session_start();
-
+    include_once '../classes/KinderParent.php';
 	function validate($table,$connection,$email,$hashed_password){
 		$query = "SELECT * FROM {$table} WHERE email = '".mysqli_real_escape_string($connection,$email)."' and password = '".mysqli_real_escape_string($connection,$hashed_password)."'";
 		$result = mysqli_query($connection,$query);
@@ -28,7 +28,9 @@
 		if ((!(empty($email) || empty($password)) && filter_var($email,FILTER_VALIDATE_EMAIL))) {
 			$hashed_password = sha1($password);			
 			
-			if($array = validate("parent_db",$connection,$email,$hashed_password)){
+			if($array = validate("parent_login",$connection,$email,$hashed_password)){
+                $parent = new KinderParent($array['id']);
+                $_SESSION['parent'] = $parent;
 				if (isset($_POST['remember'])) {
 					setcookie('type','parent',time()+60*60*24*30,"/");
 				}

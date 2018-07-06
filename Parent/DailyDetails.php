@@ -4,7 +4,7 @@ require_once('../classes/homework.php');
 require_once('../classes/SpecialNote.php');
 session_start();
 if (!isset($_SESSION['parent'])) {
-    header("Location: ../Login/login.html?error=login");
+    header("Location: ../Login/index.html?error=login");
     return;
 }
 include('navbar.html');

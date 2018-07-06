@@ -25,6 +25,8 @@ class KinderParent{
         $this->nicNo = $row['nic'];
         $this->email = $row['email'];
         $this->telNo = $row['tele_no'];
+        $this->address = $row['address'];
+        $this->mobileNo = $row['mobie_no'];
         array_push($this->children,$row['children']);
 
     }

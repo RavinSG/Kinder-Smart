@@ -16,6 +16,7 @@
     <a href="home.html">Home</a>
     <a href="addTeacher.php">Add Teacher Info</a>
     <a href="addChild.php">Add Child</a>
+    <a href="registration.parent.php">Register Parent</a>
     <a href="viewLeave.php">Manage Leave</a>
     <a class="active" href="update-lunch-front.php">Update Food</a>
 </div>
