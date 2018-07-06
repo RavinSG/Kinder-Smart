@@ -1,7 +1,5 @@
-<?php
-session_start();
-?>
 
+<?php require_once('../inc/checklogin.admin.inc.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
