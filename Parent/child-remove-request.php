@@ -1,8 +1,10 @@
 <?php
+session_start();
 if (!isset($_SESSION['parent'])) {
     header("Location: ../Login/index.html?error=login");
     return;
 }
+include('navbar.html');
 	if (!isset($_GET["remove_date"])){
 		$_GET["remove_date"]="";
 	}

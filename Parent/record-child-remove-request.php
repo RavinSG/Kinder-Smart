@@ -1,14 +1,15 @@
 <?php
+require "../classes/KinderParent.php";
+session_start();
 if (!isset($_SESSION['parent'])) {
     header("Location: ../Login/index.html?error=login");
     return;
 }
+
 	$connection = mysqli_connect("localhost","root","","kindersmart");
 	if (!$connection){
 		die("Database connection failed". mysqli_error());
 	}
-	include "../classes/KinderParent.php";
-	session_start();
 	date_default_timezone_set("Asia/Colombo");
 	$noteForMethod="";
 	$noteForDate="";
@@ -56,7 +57,6 @@ if (!isset($_SESSION['parent'])) {
 		header("Location: child-remove-request.php?remove_date=$removeDate&note=$nte&note_for_date=$noteForDate&note_for_method=$noteForMethod&note_for_time=$noteForTime");
 		return;
 	}
-
 	$parent=$_SESSION['parent'];
 	$child_id=$parent->getChildren()[0];
 	$query="SELECT * FROM children where id='{$child_id}'";
@@ -73,4 +73,5 @@ if (!isset($_SESSION['parent'])) {
 	$sql = "INSERT INTO remove_children (child_id, child_name, method, remove_date, remove_time) VALUES ({$row['id']},{$row['child_fname']},{$_POST['note']},{$_POST['remove_date']},{$_POST['remove_time']})";
 	mysqli_query($connection,$sql);
 	echo "Successfully Sent";
+	echo $sql;
 ?>

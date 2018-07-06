@@ -3,29 +3,41 @@
   <component name="ChangeListManager">
     <list id="da9b2324-bb26-4074-9b31-b7cb3050fcb6" name="Revert &quot;Set theme jekyll-theme-cayman&quot;" comment="Revert &quot;Set theme jekyll-theme-cayman&quot;&#10;&#10;This reverts commit 93bce6b" />
     <list default="true" id="1acddfa8-0ddc-4155-a804-75f7564c8373" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Admin/register.parent.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Admin/registration.parent.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Parent/child-remove-request.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Parent/parentNote.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Parent/record-child-remove-request.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Parent/styleSheet.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Teacher/acceptChildRemoveRequest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Teacher/sendMessageTo.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Teacher/sentMessage.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Teacher/viewChildRemoveRequests.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Admin/addChild.php" afterPath="$PROJECT_DIR$/Admin/addChild.php" />
-      <change beforePath="$PROJECT_DIR$/Admin/addTeacher.php" afterPath="$PROJECT_DIR$/Admin/addTeacher.php" />
-      <change beforePath="$PROJECT_DIR$/Admin/home.html" afterPath="$PROJECT_DIR$/Admin/home.html" />
-      <change beforePath="$PROJECT_DIR$/Admin/update-lunch-front.php" afterPath="$PROJECT_DIR$/Admin/update-lunch-front.php" />
-      <change beforePath="$PROJECT_DIR$/Admin/viewLeave.php" afterPath="$PROJECT_DIR$/Admin/viewLeave.php" />
-      <change beforePath="$PROJECT_DIR$/Parent/DailyDetails.php" afterPath="$PROJECT_DIR$/Parent/DailyDetails.php" />
-      <change beforePath="$PROJECT_DIR$/Parent/about.php" afterPath="$PROJECT_DIR$/Parent/about.php" />
-      <change beforePath="$PROJECT_DIR$/Parent/index.php" afterPath="$PROJECT_DIR$/Parent/index.php" />
-      <change beforePath="$PROJECT_DIR$/Parent/logout.php" afterPath="$PROJECT_DIR$/Parent/logout.php" />
-      <change beforePath="$PROJECT_DIR$/classes/KinderParent.php" afterPath="$PROJECT_DIR$/classes/KinderParent.php" />
-      <change beforePath="$PROJECT_DIR$/login/index.html" afterPath="$PROJECT_DIR$/login/index.html" />
-      <change beforePath="$PROJECT_DIR$/login/validate.php" afterPath="$PROJECT_DIR$/login/validate.php" />
+      <change beforePath="$PROJECT_DIR$/Harith/admin/food/addfood.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/admin/food/update-lunch-front.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/admin/food/update-lunch.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/admin/registration/register.parent.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/admin/registration/registration.parent.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/classes/SpecialNote.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/classes/homework.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/classes/lunch.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/classes/parent.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/inc/connection.inc.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/inc/logout.inc.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/login/changepassword.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/login/changepassword.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/login/img/login.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/login/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/login/style/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/login/validate.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/parent/DailyDetails.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/parent/home.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/parent/index2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Harith/parent/navbar.parent.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Parent/child-remove-request.php" afterPath="$PROJECT_DIR$/Parent/child-remove-request.php" />
+      <change beforePath="$PROJECT_DIR$/Parent/navbar.html" afterPath="$PROJECT_DIR$/Parent/navbar.html" />
+      <change beforePath="$PROJECT_DIR$/Parent/record-child-remove-request.php" afterPath="$PROJECT_DIR$/Parent/record-child-remove-request.php" />
+      <change beforePath="$PROJECT_DIR$/isuri/parent/child-remove-request.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/isuri/parent/record-child-remove-request.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/isuri/parent/styleSheet.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/isuri/teacher/acceptChildRemoveRequest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/isuri/teacher/sendMessageTo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/isuri/teacher/sentMessage.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/isuri/teacher/viewChildRemoveRequests.php" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -86,7 +98,6 @@
         <option value="$PROJECT_DIR$/shards/css/font-awesome.css" />
         <option value="$PROJECT_DIR$/shards/shards-demo.html" />
         <option value="$PROJECT_DIR$/Parent/test.php" />
-        <option value="$PROJECT_DIR$/Parent/navbar.html" />
         <option value="$PROJECT_DIR$/Login/login.html" />
         <option value="$PROJECT_DIR$/Login/login1.html" />
         <option value="$PROJECT_DIR$/Login/form.html" />
@@ -125,11 +136,12 @@
         <option value="$PROJECT_DIR$/Admin/update-lunch-front.php" />
         <option value="$PROJECT_DIR$/Admin/registration.parent.php" />
         <option value="$PROJECT_DIR$/classes/KinderParent.php" />
-        <option value="$PROJECT_DIR$/Parent/child-remove-request.php" />
         <option value="$PROJECT_DIR$/Parent/logout.php" />
         <option value="$PROJECT_DIR$/Parent/DailyDetails.php" />
-        <option value="$PROJECT_DIR$/Parent/record-child-remove-request.php" />
         <option value="$PROJECT_DIR$/Parent/index.php" />
+        <option value="$PROJECT_DIR$/Parent/record-child-remove-request.php" />
+        <option value="$PROJECT_DIR$/Parent/navbar.html" />
+        <option value="$PROJECT_DIR$/Parent/child-remove-request.php" />
       </list>
     </option>
   </component>
@@ -171,11 +183,6 @@
             <path>
               <item name="KinderSmart" type="b2602c69:ProjectViewProjectNode" />
               <item name="KinderSmart" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="KinderSmart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KinderSmart" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Teacher" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -371,7 +378,7 @@
       <workItem from="1527833092509" duration="37000" />
       <workItem from="1530627791242" duration="1620000" />
       <workItem from="1530678545851" duration="16892000" />
-      <workItem from="1530850092630" duration="4494000" />
+      <workItem from="1530850092630" duration="6606000" />
     </task>
     <task id="LOCAL-00001" summary="Added function to view applied leave.">
       <created>1524384218990</created>
@@ -464,11 +471,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530803572236</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Resolved database connection errors and connected isuri's pages.">
+      <created>1530861549632</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1530861549632</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124260000" />
+    <option name="totallyTimeSpent" value="126372000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -551,22 +565,16 @@
     <MESSAGE value="Added input validations for applyLeave form." />
     <MESSAGE value="Tested adding attendance marking." />
     <MESSAGE value="Resolved all dependencies and cleaned the code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Resolved all dependencies and cleaned the code." />
+    <MESSAGE value="Resolved database connection errors and connected isuri's pages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolved database connection errors and connected isuri's pages." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Admin/betterForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="31" column="50" lean-forward="false" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/SpecialNote.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-33">
@@ -580,13 +588,6 @@
     <entry file="file://$PROJECT_DIR$/Login/changepassword.html" />
     <entry file="file://$PROJECT_DIR$/Login/changepassword.php" />
     <entry file="file://$PROJECT_DIR$/Parent/DailyDetails1.php" />
-    <entry file="file://$PROJECT_DIR$/Parent/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Parent/home.php" />
     <entry file="file://$PROJECT_DIR$/Parent/navbar.parent.php" />
     <entry file="file://$PROJECT_DIR$/classes/parent.php">
@@ -702,24 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="31" column="6" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login/validate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="60" lean-forward="true" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
-          <folding>
-            <marker date="1530854493458" expanded="true" signature="149:314" ph="SELECT * FRO... $" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Harith/parent/DailyDetails.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -817,65 +800,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/KinderParent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-          <folding>
-            <marker date="1530861007897" expanded="true" signature="329:368" ph="SELECT * FRO... parent_login" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Admin/addChild.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="54" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/DailyDetails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/parentNote.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/record-child-remove-request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <marker date="1530861229689" expanded="true" signature="1955:2000" ph="SELECT * FRO... children" />
-            <marker date="1530861229689" expanded="true" signature="2285:2323" ph="UPDATE children... " />
-            <marker date="1530861229689" expanded="true" signature="2348:2541" ph="INSERT INTO remove_children... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -894,30 +823,6 @@
           <folding>
             <marker date="1524766608196" expanded="true" signature="300:354" ph="SELECT ${{$d... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/child-remove-request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-633">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -967,6 +872,119 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/KinderParent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243">
+          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <marker date="1530861007897" expanded="true" signature="329:368" ph="SELECT * FRO... parent_login" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/validate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="60" lean-forward="true" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+          <folding>
+            <marker date="1530854493458" expanded="true" signature="149:314" ph="SELECT * FRO... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="31" column="6" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/DailyDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/navbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/record-child-remove-request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="63" column="24" lean-forward="true" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+          <folding>
+            <marker date="1530862800466" expanded="true" signature="1953:1998" ph="SELECT * FRO... children" />
+            <marker date="1530862800466" expanded="true" signature="2283:2321" ph="UPDATE children... " />
+            <marker date="1530862800466" expanded="true" signature="2346:2439" ph="INSERT INTO remove_children... " />
+            <marker date="1530862800466" expanded="true" signature="2346:2539" ph="INSERT INTO remove_children... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/parentNote.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="909">
+          <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/child-remove-request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding />
         </state>
       </provider>
