@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list id="da9b2324-bb26-4074-9b31-b7cb3050fcb6" name="Revert &quot;Set theme jekyll-theme-cayman&quot;" comment="Revert &quot;Set theme jekyll-theme-cayman&quot;&#10;&#10;This reverts commit 93bce6b" />
     <list default="true" id="1acddfa8-0ddc-4155-a804-75f7564c8373" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Harith.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Harith.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/addChild.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/addTeacher.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/food/add-food-front.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/food/add-food-front.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/food/update-lunch-front.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/food/update-lunch-front.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/inc/navbar.admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/inc/navbar.admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/registration/register.admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/registration/register.admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/registration/register.parent.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/registration/register.parent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/changepassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/login/changepassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/login/validate.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -76,8 +66,8 @@
       <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Admin/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+            <state relative-caret-position="306">
+              <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -256,6 +246,12 @@
             <path>
               <item name="Kinder-Smart" type="b2602c69:ProjectViewProjectNode" />
               <item name="Kinder-Smart" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="food" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kinder-Smart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kinder-Smart" type="462c0819:PsiDirectoryNode" />
               <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -325,7 +321,7 @@
       <workItem from="1530627791242" duration="1620000" />
       <workItem from="1530678545851" duration="16892000" />
       <workItem from="1530850092630" duration="9269000" />
-      <workItem from="1530868317373" duration="8050000" />
+      <workItem from="1530868317373" duration="8413000" />
     </task>
     <task id="LOCAL-00001" summary="Added function to view applied leave.">
       <created>1524384218990</created>
@@ -436,7 +432,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137085000" />
+    <option name="totallyTimeSpent" value="137448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -834,8 +830,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Admin/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+        <state relative-caret-position="306">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
         </state>
       </provider>
     </entry>
