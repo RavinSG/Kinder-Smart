@@ -12,7 +12,7 @@ class Lunch
 		$date = new DateTime("tomorrow");
 		$day = strtolower($date->format("l"));
         $this->day = $day;
-		if($day == 'friday' or $day == 'saturday'){
+		if($day == 'sunday' or $day == 'saturday'){
 		    $this->food_list = array("Tomorrow is a holiday");
         }
         else{

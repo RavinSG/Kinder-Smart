@@ -20,8 +20,8 @@
                     echo "Query Failed!";
                 }
                 else{
-                    $url = "Location: ../".$_SESSION['type'];
-                    header($url);
+
+                    header("Location: ../{$_SESSION['type']}");
                 }
             }
             else{

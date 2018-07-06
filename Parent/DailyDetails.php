@@ -3,10 +3,7 @@ require_once('../classes/lunch.php');
 require_once('../classes/homework.php');
 require_once('../classes/SpecialNote.php');
 session_start();
-if (!isset($_SESSION['parent'])) {
-    header("Location: ../Login/index.html?error=login");
-    return;
-}
+require_once ("checklogin.parent.php");
 include('navbar.html');
 ?>
 <!DOCTYPE html>
@@ -19,12 +16,12 @@ include('navbar.html');
 <body>
 	<div class="wrapper">
 		<h1 class="topic"> <?php 
-			$tom = new DateTime('tomorrow');
+			$tom = new DateTime('today');
 			echo "Daily Details - ".$tom->format('Y/m/d'); ?> 
 		</h1>
 		
 		<div class="lunch">
-			<h2>Lunch Details</h2>
+			<h2>Tomorrow Lunch Details</h2>
 			<p>
 				<?php 
 					$food_list = $lunch->getFoodList();
