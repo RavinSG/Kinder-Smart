@@ -12,7 +12,6 @@
             $hashed_password = sha1($password);
             $query = "SELECT * FROM super_table WHERE email = '" . mysqli_real_escape_string($connection, $email) . "' and password = '" . mysqli_real_escape_string($connection, $hashed_password) . "'";
             $result = mysqli_query($connection, $query);
-            print_r($result);
             if (mysqli_num_rows($result)) {
                 $array = mysqli_fetch_assoc($result);
                 $_SESSION['uid'] = $array['uid'];
