@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list id="da9b2324-bb26-4074-9b31-b7cb3050fcb6" name="Revert &quot;Set theme jekyll-theme-cayman&quot;" comment="Revert &quot;Set theme jekyll-theme-cayman&quot;&#10;&#10;This reverts commit 93bce6b" />
     <list default="true" id="1acddfa8-0ddc-4155-a804-75f7564c8373" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Teacher/checklogin.teacher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Teacher/acceptChildRemoveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Teacher/acceptChildRemoveRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Teacher/applyLeave.php" beforeDir="false" afterPath="$PROJECT_DIR$/Teacher/applyLeave.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Teacher/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Teacher/markAttendance.php" beforeDir="false" afterPath="$PROJECT_DIR$/Teacher/markAttendance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Teacher/sendMessageTo.php" beforeDir="false" afterPath="$PROJECT_DIR$/Teacher/sendMessageTo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Teacher/sentMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/Teacher/sentMessage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Teacher/update-daily-details-front.php" beforeDir="false" afterPath="$PROJECT_DIR$/Teacher/update-daily-details-front.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Teacher/update-daily-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/Teacher/update-daily-details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Teacher/viewChildRemoveRequests.php" beforeDir="false" afterPath="$PROJECT_DIR$/Teacher/viewChildRemoveRequests.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Teacher/viewSyllabus.php" beforeDir="false" afterPath="$PROJECT_DIR$/Teacher/viewSyllabus.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -59,8 +48,26 @@
       <file leaf-file-name="update-daily-details-front.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Teacher/update-daily-details-front.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+            <state relative-caret-position="391">
+              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Teacher/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="18" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Parent/navbar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -118,27 +125,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applyLeave.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Teacher/applyLeave.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="markAttendance.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Teacher/markAttendance.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="41" />
-              <folding>
-                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -262,6 +248,11 @@
               <item name="Kinder-Smart" type="b2602c69:ProjectViewProjectNode" />
               <item name="Kinder-Smart" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Kinder-Smart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kinder-Smart" type="462c0819:PsiDirectoryNode" />
+              <item name="Teacher" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -330,7 +321,7 @@
       <workItem from="1530627791242" duration="1620000" />
       <workItem from="1530678545851" duration="16892000" />
       <workItem from="1530850092630" duration="9269000" />
-      <workItem from="1530868317373" duration="35028000" />
+      <workItem from="1530868317373" duration="35487000" />
     </task>
     <task id="LOCAL-00001" summary="Added function to view applied leave.">
       <created>1524384218990</created>
@@ -448,7 +439,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164063000" />
+    <option name="totallyTimeSpent" value="164522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -737,13 +728,6 @@
     <entry file="file://$PROJECT_DIR$/Parent/navbar.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parent/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Parent/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -824,9 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Teacher/home.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Teacher/markAttendance.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -896,10 +877,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Teacher/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Teacher/update-daily-details-front.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+        <state relative-caret-position="391">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
         </state>
       </provider>
     </entry>
