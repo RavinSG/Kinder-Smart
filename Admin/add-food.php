@@ -1,6 +1,6 @@
 <?php 
-	require_once('../inc/checklogin.admin.inc.php');
-	require_once("../../include/connection.inc.php");
+	require_once('checklogin.admin.inc.php');
+	require_once("../include/connection.inc.php");
 	if (isset($_POST['item-1'])) {
 		$food_list = array();
 		$query = "SELECT food from food_list";

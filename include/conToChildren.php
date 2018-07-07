@@ -17,6 +17,10 @@ if (isset($_POST['submit'])){
         header("Location: ../Admin/registration/addChild.php?add=ageError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
         return;
 
+    } elseif ($age>10){
+        header("Location: ../Admin/registration/addChild.php?add=old&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
+        return;
+
     } elseif ((1 === preg_match('~[0-9]~', $first)) or (1 === preg_match('~[0-9]~', $last))){
         header("Location: ../Admin/registration/addChild.php?add=nameError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
         return;

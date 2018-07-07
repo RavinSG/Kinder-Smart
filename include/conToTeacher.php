@@ -10,10 +10,10 @@ if (isset($_POST['submit'])){
     $email = $_POST['email'];
     $leave = $_POST['leave'];
     if (empty($first) or empty($last) or empty($phone) or empty($email) or empty($leave)){
-        header("Location: ../Admin/registration/addTeacher.php?add=empty&first=$first&last=$last&phone=$phone&email=$email&leave=$leave");
+        header("Location: ../Admin/registration/addTeacher.php?add=empty&first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic");
         return;
     } elseif (!filter_var($email,FILTER_VALIDATE_EMAIL)){
-        header("Location: ../Admin/registration/addTeacher.php?add=invalidemail&first=$first&last=$last&phone=$phone&email=$email&leave=$leave");
+        header("Location: ../Admin/registration/addTeacher.php?add=invalidemail&first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic");
         return;
     } else{
         $sql = "INSERT INTO teacher_db (teacher_fname, teacher_lname,nic, teacher_phone, teacher_email, leave_avail) 

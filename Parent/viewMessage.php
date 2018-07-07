@@ -1,12 +1,12 @@
 <?php
-require_once ("checklogin.parent.php");
-	include '../include/conToParentMessage.php';
+    require_once ("checklogin.parent.php");
+	//include '../include/conToParentMessage.php';
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>view messages</title>
-	<link rel="stylesheet" href="include/table.css">
+	<link rel="stylesheet" href="../include/table.css">
 </head>
 <body>
     <?php

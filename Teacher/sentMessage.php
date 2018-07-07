@@ -1,7 +1,11 @@
 <?php
 session_start();
+<<<<<<< HEAD
+require_once ("checklogin.teacher.php");
+=======
 require_once ("checklogin.teacher.php")?>
 <?php
+>>>>>>> 5cccbd26dad81eaefe3c946f634bee031cc96e1a
 require_once('../include/connection.inc.php');
 
 if (!isset($_GET["note"])) {

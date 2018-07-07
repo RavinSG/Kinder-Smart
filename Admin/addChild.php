@@ -1,24 +1,24 @@
 
-<?php require_once('../inc/checklogin.admin.inc.php'); ?>
+<?php require_once('checklogin.admin.inc.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
     <title>Add Child</title>
-    <link rel="stylesheet" href="../../include/style.css">
-    <link rel="stylesheet" href="../form.css">
+    <link rel="stylesheet" href="../include/style.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
 <div class="navbar">
-    <a href="../home.php">Home</a>
+    <a href="home.php">Home</a>
     <a href="addTeacher.php">Add Teacher Info</a>
     <a class="active" href="addChild.php">Add Child</a>
     <a href="registration.parent.php">Register Parent</a>
     <a href="registration.admin.php">Add Admin</a>
-    <a href="../viewLeave.php">Manage Leave</a>
-    <a href="../food/update-lunch-front.php">Update Food</a>
+    <a href="viewLeave.php">Manage Leave</a>
+    <a href="update-lunch-front.php">Update Food</a>
 </div>
 <h2 align="center" style="margin-bottom: auto">Add Child</h2>
-<form action="../../include/conToChildren.php" method="post">
+<form action="../include/conToChildren.php" method="post">
     <ul style="margin-top: auto" class="form-style-1">
     <?php
 
@@ -87,6 +87,9 @@ else {
 
     }elseif ($check == 'ageError'){
         echo "<p class = 'error'>Please enter a valid age!</p>";
+
+    }elseif ($check == 'old'){
+        echo "<p class = 'error'>Please enter an age suitable for a kindergarten child!</p>";
 
     }elseif ($check == 'nameError'){
         echo "<p class = 'error'>Please enter a valid name!</p>";

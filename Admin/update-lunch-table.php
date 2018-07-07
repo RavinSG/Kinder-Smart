@@ -1,7 +1,6 @@
 <?php
 require_once("../include/connection.inc.php");
-$query = "SELECT  *
-   FROM (
+$query = "SELECT  * FROM (
         SELECT  DATE_ADD('2018-01-01', 
             INTERVAL n4.num*1000+n3.num*100+n2.num*10+n1.num DAY ) AS DATE 
           FROM  (
