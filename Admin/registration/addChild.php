@@ -88,6 +88,9 @@ else {
     }elseif ($check == 'ageError'){
         echo "<p class = 'error'>Please enter a valid age!</p>";
 
+    }elseif ($check == 'old'){
+        echo "<p class = 'error'>Please enter an age suitable for a kindergarten child!</p>";
+
     }elseif ($check == 'nameError'){
         echo "<p class = 'error'>Please enter a valid name!</p>";
 

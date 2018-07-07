@@ -1,4 +1,5 @@
 <?php
+session_start();
     require_once('../../include/connection.inc.php');
     //require_once('../inc/checklogin.admin.inc.php');
 
@@ -24,7 +25,12 @@
 			echo '<h1>Please Enter a valid e - mail</h1>';
 			echo "<a href='registration.admin.php'>Please Enter Details Again</a>";
 			
-		}
+		}else if((1 === preg_match('~[0-9]~', $full_name)) or (1 === preg_match('~[0-9]~', $ini_name))){
+            autofill($salutation,$full_name,$ini_name,$nic,$email,$address,$tele_no,$mobile_no);
+            echo '<h1>Please Enter valid name!</h1>';
+            echo "<a href='registration.admin.php'>Please Enter Details Again</a>";
+
+        }
 		else{
             $query = "SELECT * FROM admin_db WHERE email='{$email}'";
             $result = mysqli_query($connection,$query);
@@ -56,6 +62,7 @@
                 }
             }
             else{
+                print_r($query);
                 echo "This Email Already Exist!<br> <a href='registration.admin.php'>Try Again</a>";
             }
 		}

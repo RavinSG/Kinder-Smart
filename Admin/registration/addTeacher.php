@@ -20,57 +20,46 @@
 <h2>Add Teacher</h2>
 <form action="../../include/conToTeacher.php" method="post">
     <?php
-        if(isset($_GET['first'])){
-            $first = $_GET['first'];
-            echo '<input type="text" name="first" placeholder="First Name"  value="'.$first.'">';
-        }
-        else{
-            echo '<input type="text" name="first" placeholder="First Name">';
-        }
 
-        if(isset($_GET['last'])){
-            $last = $_GET['last'];
-            echo '<input type="text" name="last" placeholder="Last Name" value="'.$last.'">';
-        }
-        else{
-            echo '<input type="text" name="last" placeholder="Last Name">';
-        }
-
-        if(isset($_GET['email'])){
-            $email = $_GET['email'];
-            echo '<input type="text" name="email" placeholder="E-mail" value="'.$email.'">';
-        }
-        else{
-            echo '<input type="text" name="email" placeholder="E-mail">';
-        }
-
-        if(isset($_GET['nic'])){
-            $nic = $_GET['nic'];
-            echo '<input type="text" name="nic" placeholder="National Identity Card No"  value="'.$nic.'">';
-        }
-        else{
-            echo '<input type="text" name="nic" placeholder="National Identity Card No">';
-        }
-
-        if(isset($_GET['phone'])){
-            $phone = $_GET['phone'];
-            echo '<input type="tel" name="phone" placeholder="Phone Number" value="'.$phone.'">';
-        }
-        else{
-            echo '<input type="tel" name="phone" placeholder="Phone Number">';
-
-        }
-
-        if(isset($_GET['leave'])){
-            $leave = $_GET['leave'];
-            echo '<input type="number" name="leave" placeholder="Available leave" value="'.$leave.'">';
-        }
-        else{
-            echo '<input type="number" name="leave" placeholder="Available leave">';
-
-        }
-
+    if (isset($_GET['first'])){
+        $first = $_GET['first'];
+    } else {
+        $first = "";
+    }
+    if(isset($_GET['last'])) {
+        $last = $_GET['last'];
+    } else {
+        $last = "";
+    }
+    if(isset($_GET['email'])) {
+        $email = $_GET['email'];
+    } else {
+        $email = "";
+    }
+    if(isset($_GET['phone'])) {
+        $phone = $_GET['phone'];
+    } else {
+        $phone = "";
+    }
+    if(isset($_GET['nic'])){
+        $nic = $_GET['nic'];
+    } else {
+        $nic = "";
+    }
+    if(isset($_GET['leave'])){
+        $leave = $_GET['leave'];
+    } else {
+        $leave = "";
+    }
     ?>
+    <input type="text" name="first" placeholder="First Name"  value="<?=$first?>">
+    <input type="text" name="last" placeholder="Last Name" value="<?=$last?>">
+    <input type="text" name="email" placeholder="E-mail" value="<?=$email?>">
+    <input type="text" name="nic" placeholder="National Identity Card No"  value="<?=$nic?>">
+    <input type="tel" name="phone" placeholder="Phone Number" value="<?=$phone?>">
+    <input type="number" name="leave" placeholder="Available leave" value="<?=$leave?>">
+
+
     <input type="submit" name="submit" value="Submit">
 
 </form>

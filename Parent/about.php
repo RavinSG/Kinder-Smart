@@ -1,9 +1,9 @@
 <?php
 session_start();
-if (!isset($_SESSION['parent'])) {
+/*if (!isset($_SESSION['parent'])) {
     header("Location: ../Login/index.html?error=login");
     return;
-}
+}*/
 include('navbar.html');
 ?>
 
