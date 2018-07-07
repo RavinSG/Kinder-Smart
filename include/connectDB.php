@@ -5,10 +5,17 @@
 		echo "Connection failed! ". mysqli_connect_error();
 		die();
 	}
-	$query="SELECT * FROM super_table where uid='{$_SESSION['uid']}' and acc_type='{$_SESSION['type']}'";
-	$remove_child= mysqli_query($connection,$query);
-	if (!$remove_child){
+	$queryForSuperTable="SELECT * FROM super_table where uid='{$_SESSION['uid']}' and acc_type='{$_SESSION['type']}'";
+	$q_rowFromSupperTable= mysqli_query($connection,$queryForSuperTable);
+	if (!$q_rowFromSupperTable){
 		die("Database query failed: " . mysqli_connect_error());
 	}
-	$row = mysqli_fetch_assoc($remove_child);
+	$rowFromSupperTable = mysqli_fetch_assoc($q_rowFromSupperTable);
+
+	$queryForParentDB="SELECT * FROM parent_db where id='{$_SESSION['uid']}'";
+	$qqueryForParentDB= mysqli_query($connection,$queryForParentDB);
+	if (!$qqueryForParentDB){
+		die("Database query failed: " . mysqli_connect_error());
+	}
+	$rowFromParentDB = mysqli_fetch_assoc($qqueryForParentDB);
 ?>

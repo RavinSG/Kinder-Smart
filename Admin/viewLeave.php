@@ -1,3 +1,6 @@
+<?php
+require_once('checklogin.admin.inc.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>

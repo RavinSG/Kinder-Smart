@@ -1,4 +1,6 @@
-<?php require_once('checklogin.admin.inc.php'); ?>
+<?php
+    require_once('checklogin.admin.inc.php');
+?>
 <html>
 	<head>
         <link rel="stylesheet" href="../include/style.css">

@@ -1,6 +1,6 @@
 <?php
-    require_once ("checklogin.parent.php");
-	//include '../include/conToParentMessage.php';
+    //require_once ("checklogin.parent.php");
+	include '../include/conToUnreadParentMessage.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,6 +31,8 @@
 			}
 			echo "</table>";
 		}
+        echo "<br>";
+        echo "<a href='../include/viewAllParentMessages.php'>View Read Messages</a>";
 	?>
 	
 </body>

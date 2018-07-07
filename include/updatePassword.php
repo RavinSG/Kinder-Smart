@@ -8,7 +8,8 @@
 
 	if(isset($_POST['update'])){
 		$new_password = $_POST['new_password'];
-		$rePassword = $_POST['rePassword'];
+		$rePassword = $_POST['rePassword
+		'];
 		if((!(empty($new_password)||empty($rePassword))) && $new_password == $rePassword){
 			$hashed_password = sha1($_POST['new_password']);
 			$query = "SELECT id FROM super_table WHERE uid='{$_SESSION['uid']}' and password='{$_POST['old_password']}'";

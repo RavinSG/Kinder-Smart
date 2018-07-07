@@ -1,5 +1,6 @@
-<?php require_once('../include/connection.inc.php');
-		require_once('checklogin.admin.inc.php');
+<?php
+    require_once('checklogin.admin.inc.php');
+    require_once('../include/connection.inc.php');
  ?>
 <?php
 	if (isset($_POST['submit'])) {

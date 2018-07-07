@@ -1,4 +1,5 @@
 <?php
+
 require_once("../include/connection.inc.php");
 $query = "SELECT  * FROM (
         SELECT  DATE_ADD('2018-01-01', 

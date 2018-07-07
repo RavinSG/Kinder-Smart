@@ -1,7 +1,7 @@
 <?php
+require_once('checklogin.admin.inc.php');
 session_start();
     require_once('../include/connection.inc.php');
-    //require_once('../inc/checklogin.admin.inc.php');
 
 	if (isset($_POST['submit'])) {
 		$salutation = $_POST['salutation'];
