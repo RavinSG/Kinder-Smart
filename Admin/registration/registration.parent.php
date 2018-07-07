@@ -41,6 +41,7 @@
 				<option name="salutation" value="Mrs."> Mrs. </option>
 			</select>
 			<br />
+			<div class="row">
             <label>Full Name :</label> <input type="text" name="full_name" pattern="[a-zA-Z]+" title="Please enter alphabetic characters only" required value=<?php if(isset($_SESSION['admin_full_name'])){echo "{$_SESSION['admin_full_name']}";} else{echo "";}?> >
             <br />
             <label>Name with Initials:</label><input type="text" name="ini_name" title="Please enter alphabetic characters only" pattern="[a-zA-Z.]+" required value=<?php if(isset($_SESSION['admin_ini_name'])){echo "{$_SESSION['admin_ini_name']}";} else{echo "";}?>>

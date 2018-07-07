@@ -14,7 +14,7 @@ class KinderParent{
     function __construct($id)
     {
         global $pdo;
-        $stmt = $pdo->prepare("SELECT * FROM parent_login WHERE id=:id");
+        $stmt = $pdo->prepare("SELECT * FROM parent_db WHERE id=:id");
         $stmt->execute(array(
             'id'=>$id
         ));
@@ -26,7 +26,7 @@ class KinderParent{
         $this->email = $row['email'];
         $this->telNo = $row['tele_no'];
         $this->address = $row['address'];
-        $this->mobileNo = $row['mobie_no'];
+        $this->mobileNo = $row['mobile_no'];
         array_push($this->children,$row['children']);
 
     }

@@ -1,5 +1,5 @@
 <?php
-require_once ("checklogin.parent.php");
+    require_once ("checklogin.parent.php");
 	include '../include/conToParentMessage.php';
 ?>
 <!DOCTYPE html>

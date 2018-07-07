@@ -13,7 +13,8 @@ include('navbar.html');
 </head>
 <body>
 <?php
-$parent = $_SESSION['parent'];
+$parent_uid = $_SESSION['uid'];
+$parent=new KinderParent($parent_uid);
 echo("Welcome to Our web page ".$parent->getName());
 ?>
 

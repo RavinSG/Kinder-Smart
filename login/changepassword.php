@@ -1,7 +1,6 @@
 <?php 
 	session_start();
 	require_once('../include/connection.inc.php');
-
 	if(isset($_POST['Submit'])){
 		$newPassword = $_POST['newPassword'];
 		$rePassword = $_POST['rePassword'];
