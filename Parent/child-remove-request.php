@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once ("checklogin.parent.php");
 include('navbar.html');
 	if (!isset($_GET["remove_date"])){

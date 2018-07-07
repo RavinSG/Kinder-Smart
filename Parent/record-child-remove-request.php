@@ -1,6 +1,4 @@
 <?php
-require "../classes/KinderParent.php";
-session_start();
 require_once ("checklogin.parent.php");
 
 	$connection = mysqli_connect("localhost","root","","kindersmart");
@@ -70,5 +68,5 @@ require_once ("checklogin.parent.php");
 	$sql = "INSERT INTO remove_children (child_id, child_name, method, remove_date, remove_time) VALUES ({$row['id']},{$row['child_fname']},{$_POST['note']},{$_POST['remove_date']},{$_POST['remove_time']})";
 	mysqli_query($connection,$sql);
 	echo "Successfully Sent";
-	echo $sql;
+    header("Location: child-remove-request.php?msg=success")
 ?>

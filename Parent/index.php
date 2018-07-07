@@ -1,7 +1,9 @@
 <?php
-require_once "../classes/KinderParent.php";
-session_start();
 require_once ("checklogin.parent.php");
+if (!isset($_SESSION['parent'])){
+    echo "first time only!";
+    $_SESSION['parent'] = new KinderParent($_SESSION['uid']);
+}
 include('navbar.html');
 ?>
 
@@ -13,9 +15,9 @@ include('navbar.html');
 </head>
 <body>
 <?php
-$parent_uid = $_SESSION['uid'];
-$parent=new KinderParent($parent_uid);
+$parent = $_SESSION['parent'];
 echo("Welcome to Our web page ".$parent->getName());
+//print_r($_SESSION);
 ?>
 
 <h2></h2>

@@ -1,6 +1,6 @@
 <?php 
-	require_once ('../classes/parent.php');
-	require_once('../inc/connection.inc.php');
+	require_once ('../classes/KinderTeacher.php');
+	require_once('../include/connection.inc.php');
 
  ?>
 <!DOCTYPE html>
@@ -11,15 +11,12 @@
 </head>
 <body>
 	<?php
-	if (isset($_SESSION['uid'])) {
-		$parent = Parent_::getInstance($connection);
+	if (isset($_SESSION['parent'])) {
+		$parent = $_SESSION['parent'];
 		echo "Hello! ".$parent->getFullName();
-		require('inc/navbar.parent.php');
+		require('navbar.php');
 	} 
-	else {
-		
-	}
-	
+
 	?>
 </body>
 </html>

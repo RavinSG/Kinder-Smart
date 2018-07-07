@@ -37,7 +37,9 @@
 	 		<?php endwhile ?>
 	 		<input type="submit" value="Submit">
 	 	</form>
- 	<?php endif;?>
+ 	<?php endif;
+ 	print_r($_SESSION);
+ 	?>
 
  </body>
  </html>

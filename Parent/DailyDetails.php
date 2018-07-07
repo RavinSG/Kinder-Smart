@@ -2,7 +2,6 @@
 require_once('../classes/lunch.php');
 require_once('../classes/homework.php');
 require_once('../classes/SpecialNote.php');
-session_start();
 require_once ("checklogin.parent.php");
 include('navbar.html');
 ?>

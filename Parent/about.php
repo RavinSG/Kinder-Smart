@@ -1,9 +1,5 @@
 <?php
-session_start();
-/*if (!isset($_SESSION['parent'])) {
-    header("Location: ../Login/index.html?error=login");
-    return;
-}*/
+require_once ("checklogin.parent.php");
 include('navbar.html');
 ?>
 

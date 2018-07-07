@@ -146,7 +146,9 @@
                 <input type="number" name="fri_num" max="10" min="1" required>
                 <input type="submit" formaction="update-lunch-front.php" value="Next">
             </form>
-        <?php endif ?>
+        <?php endif ;
+        print_r($_SESSION);
+        ?>
 
         <button type="submit" name="submit" value="submit">Submit</button>
 	</form>
