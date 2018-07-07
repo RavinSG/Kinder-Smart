@@ -3,54 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to KinderSmart</title>
-    <link rel="shortcut icon" href="../images/K.png">
-    <link rel="stylesheet" href="../include/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../style/css/materialize.min.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-<div class="navbar">
-    <a class="active" href="home.html">Home</a>
-    <a href="applyLeave.php">Apply Leave</a>
-    <a href="markAttendance.php">Mark Attendance</a>
-    <a href="viewSyllabus.php">Syllabus</a>
-    <a href="viewChildRemoveRequests.php">Child Remove Requests</a>
-    <a href="sentMessage.php">Send Message</a>
-    <a href="#">Settings</a>
-    <a href="#">Logout</a>
+<nav>
+<div class="nav-wrapper blue">
+    <a href="#" class="brand-logo left">KinderSmart</a>
+    <ul class="right hide-on-med-and-down">
+        <li class="active"><a href="home.html"><i class="material-icons left">home</i>Home</a></li>
+        <li><a href="#" ><i class="material-icons left">settings</i>Settings</a></li>
+        <li class="red"><a href="#"><i class="material-icons left">phonelink_erase</i>Logout</a></li>
+    </ul>
 </div>
+</nav>
+<div class="row">
+    <div class="col s12 xl4">
+        <div class="hoverable">
+            <a href="applyLeave.php">
+            <h2 class="header black-text">Apply Leave</h2>
+            <div class="card horizontal red">
 
-<div class="slideshow-container">
-    <div class="slide">
-        <img src="../images/future1.jpg" style="width: 100%">
+                    <div class="card-image">
+                        <i class="material-icons large white-text">assignment</i>
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content white-text">
+                            <p>You can apply for leave using this software</p>
+                        </div>
+                        <a href="applyLeave.php" class="card-action white-text">Go to page<i class="material-icons right">arrow_forward</i></a>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
+    <div class="col s12 xl4">
+        <div class="hoverable">
+            <a href="markAttendance.php">
+            <h2 class="header black-text">Mark Attendance</h2>
+            <div class="card horizontal amber darken-3">
 
-    <div class="slide">
-        <img src="../images/future2.jpg" style="width: 100%">
+                    <div class="card-image">
+                        <i class="material-icons large white-text">class</i>
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content white-text">
+                            <p>You can mark attendance using this software</p>
+                        </div>
+                        <a href="markAttendance.php" class="card-action white-text">Go to page<i class="material-icons right">arrow_forward</i></a>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
+    <div class="col s12 xl4">
+        <div class="hoverable">
+            <a href="viewSyllabus.php">
+            <h2 class="header black-text">View Syllabus</h2>
+            <div class="card horizontal purple">
 
-    <div class="slide">
-        <img src="../images/future3.png" style="width: 100%">
+                    <div class="card-image">
+                        <i class="material-icons large white-text">description</i>
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content white-text">
+                            <p>You can view syllabus using this software</p>
+                        </div>
+                        <a href="viewSyllabus.php" class="card-action white-text">Go to page<i class="material-icons right">arrow_forward</i></a>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
-
-
 </div>
+    <div class="row">
+        <div class="col s12 xl4">
+            <div class="hoverable">
+                <a href="viewChildRemoveRequests.php">
+                <h2 class="header black-text">Transportation</h2>
+                <div class="card horizontal red">
 
+                        <div class="card-image">
+                            <i class="material-icons large white-text">directions_bus</i>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content white-text">
+                                <p>You can view transportation details using this software</p>
+                            </div>
+                            <a href="viewChildRemoveRequests.php" class="card-action white-text">Go to page<i class="material-icons right">arrow_forward</i></a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 xl4">
+            <div class="hoverable">
+                <a href="sentMessage.php">
+                <h2 class="header black-text">Send Messages</h2>
+                <div class="card horizontal amber darken-3">
+
+                        <div class="card-image">
+                            <i class="material-icons large white-text">message</i>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content white-text">
+                                <p>You can send messages to parents using this software</p>
+                            </div>
+                            <a href="sentMessage.php" class="card-action white-text">Go to page<i class="material-icons right">arrow_forward</i></a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 xl4">
+            <div class="hoverable">
+                <a href="update-daily-details-front.php">
+                <h2 class="header black-text">Daily Details</h2>
+                <div class="card horizontal purple">
+
+                        <div class="card-image">
+                            <i class="material-icons large white-text">date_range</i>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content white-text">
+                                <p>You can update daily details using this software</p>
+                            </div>
+                            <a href="#" class="card-action white-text">Go to page<i class="material-icons right">arrow_forward</i></a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 <script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("slide");
-        for (i = 0; i < slides.length; i++){
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length){
-            slideIndex = 1
-        }
-        slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides(),2000);
-    }
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
 </script>
+
 </body>
 </html>

@@ -44,6 +44,14 @@
             echo '<input type="text" name="email" placeholder="E-mail">';
         }
 
+        if(isset($_GET['nic'])){
+            $nic = $_GET['nic'];
+            echo '<input type="text" name="nic" placeholder="National Identity Card No"  value="'.$nic.'">';
+        }
+        else{
+            echo '<input type="text" name="nic" placeholder="National Identity Card No">';
+        }
+
         if(isset($_GET['phone'])){
             $phone = $_GET['phone'];
             echo '<input type="tel" name="phone" placeholder="Phone Number" value="'.$phone.'">';

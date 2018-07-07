@@ -16,6 +16,7 @@
                 $array = mysqli_fetch_assoc($result);
                 $_SESSION['uid'] = $array['uid'];
                 $_SESSION['type'] = $array['acc_type'];
+                $_SESSION['email']= $array['email'];
                 if (isset($_POST['remember'])) {
                     setcookie('uid', $array['id'], time() + 60 * 60 * 24 * 30, "/");
                     setcookie('type', $array['acc_type'], time() + 60 * 60 * 24 * 30, "/");

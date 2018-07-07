@@ -6,7 +6,7 @@
 		$rePassword = $_POST['rePassword'];
 		if((!(empty($newPassword)||empty($rePassword))) && $newPassword == $rePassword){
 			$hashed_password = sha1($_POST['newPassword']);
-			$query = "SELECT id FROM super_table WHERE uid='{$_SESSION['uid']}' and password='{$hashed_password}'";
+			$query = "SELECT id FROM super_table WHERE email='{$_SESSION['email']}' and password='{$hashed_password}'";
 			$result = mysqli_query($connection,$query);
 			if(!mysqli_num_rows($result)){
                 $query = "UPDATE super_table SET password = '{$hashed_password}' WHERE uid='{$_SESSION['uid']}' and acc_type='{$_SESSION['type']}'";

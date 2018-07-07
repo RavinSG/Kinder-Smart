@@ -5,20 +5,14 @@ require_once ("checklogin.teacher.php")?>
 <html>
 <head>
     <title>Requests for child removal from transport</title>
-    <link rel="stylesheet" href="../include/table.css">
-    <link rel="stylesheet" href="../include/style.css">
+    <meta charset="UTF-8">
+    <title>Welcome to KinderSmart</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../style/css/materialize.min.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-<div class="navbar">
-    <a class="active" href="home.html">Home</a>
-    <a href="applyLeave.php">Apply Leave</a>
-    <a href="markAttendance.php">Mark Attendance</a>
-    <a href="viewSyllabus.php">Syllabus</a>
-    <a href="viewChildRemoveRequests.php">Child Remove Requests</a>
-    <a href="sentMessage.php">Send Message</a>
-    <a href="#">Settings</a>
-    <a href="#">Logout</a>
-</div>
+<?php require("navbar.teacher.html");?>
 <div class="table-users">
     <div class="header">Requests</div>
 
@@ -61,5 +55,15 @@ require_once ("checklogin.teacher.php")?>
     </table>
 
 </div>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
+</script>
 </body>
 </html>

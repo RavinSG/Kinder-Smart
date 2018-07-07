@@ -1,6 +1,11 @@
 <?php
 session_start();
+<<<<<<< HEAD
 require_once ("checklogin.teacher.php");
+=======
+require_once ("checklogin.teacher.php")?>
+<?php
+>>>>>>> 5cccbd26dad81eaefe3c946f634bee031cc96e1a
 require_once('../include/connection.inc.php');
 
 if (!isset($_GET["note"])) {
@@ -16,20 +21,14 @@ if (!isset($_GET["message"])) {
 <html>
 <head>
 	<title>Sent Message</title>
-    <link rel="stylesheet" type="text/css" href="../include/syllabus.css">
-    <link rel="stylesheet" type="text/css" href="../include/style.css">
+    <meta charset="UTF-8">
+    <title>Welcome to KinderSmart</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../style/css/materialize.min.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-<div class="navbar">
-    <a class="active" href="home.html">Home</a>
-    <a href="applyLeave.php">Apply Leave</a>
-    <a href="markAttendance.php">Mark Attendance</a>
-    <a href="viewSyllabus.php">Syllabus</a>
-    <a href="viewChildRemoveRequests.php">Child Remove Requests</a>
-    <a href="sentMessage.php">Send Message</a>
-    <a href="#">Settings</a>
-    <a href="#">Logout</a>
-</div>
+<?php require("navbar.teacher.html");?>
 	<h1>Children List</h1>
 	<table cellspacing="0">
         <tr>
@@ -56,7 +55,9 @@ if (!isset($_GET["message"])) {
             echo "</td><td>";
             echo ($row['child_lname']);
             echo "</td><td>";
-            echo "<input type='checkbox' name='{$row["id"]}' value = '{$row["id"]}'></input>";
+            echo "<p><label>";
+            echo "<input type='checkbox' name='{$row["id"]}' value = '{$row["id"]}'><span></span>";
+            echo "</label></p>";
             $i++;
         }
         ?>
@@ -67,7 +68,7 @@ if (!isset($_GET["message"])) {
         <fieldset>
 		  <label>Message:</label>
 		  <br>
-          <input type="text" name="message" required value = <?php  echo $_GET["message"];?> >
+            <textarea name="message" required value = <?php  echo $_GET["message"];?>></textarea>
         </fieldset>
 		
         <button type="submit">Send</button>
@@ -79,5 +80,16 @@ if (!isset($_GET["message"])) {
       }
        ?>
        <h1>
+           <script type="text/javascript" src="js/materialize.min.js"></script>
+           <script
+                   src="https://code.jquery.com/jquery-3.3.1.min.js"
+                   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                   crossorigin="anonymous"></script>
+           <script>
+               $(document).ready(function(){
+                   $('.sidenav').sidenav();
+               });
+           </script>
+
 </body>
 </html>

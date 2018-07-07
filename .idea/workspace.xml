@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list id="da9b2324-bb26-4074-9b31-b7cb3050fcb6" name="Revert &quot;Set theme jekyll-theme-cayman&quot;" comment="Revert &quot;Set theme jekyll-theme-cayman&quot;&#10;&#10;This reverts commit 93bce6b" />
     <list default="true" id="1acddfa8-0ddc-4155-a804-75f7564c8373" name="Default" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/Teacher/update-daily-details-front.php" beforeDir="false" afterPath="$PROJECT_DIR$/Teacher/update-daily-details-front.php" afterDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Admin/registration/addChild.php" afterPath="$PROJECT_DIR$/Admin/registration/addChild.php" />
+>>>>>>> refs/remotes/origin/master
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,8 +44,49 @@
       <file leaf-file-name="addChild.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Admin/registration/addChild.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update-daily-details-front.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Teacher/update-daily-details-front.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Teacher/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="18" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Parent/navbar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewChildRemoveRequests.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Teacher/viewChildRemoveRequests.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+=======
             <state relative-caret-position="-1578">
               <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+>>>>>>> refs/remotes/origin/master
               <folding>
                 <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -60,16 +105,58 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="viewSyllabus.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Teacher/viewSyllabus.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+=======
       <file leaf-file-name="betterForm.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin/betterForm.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="630">
               <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="7" />
               <folding />
+>>>>>>> refs/remotes/origin/master
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="checklogin.teacher.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Teacher/checklogin.teacher.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="acceptChildRemoveRequest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Teacher/acceptChildRemoveRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sendMessageTo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Teacher/sendMessageTo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sentMessage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Teacher/sentMessage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+=======
       <file leaf-file-name="conToChildren.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/conToChildren.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,6 +169,7 @@
                 <marker date="1530939995828" expanded="true" signature="1534:1603" ph="ALTER TABLE attendance... " />
                 <marker date="1530939995828" expanded="true" signature="1534:1622" ph="ALTER TABLE attendance... " />
               </folding>
+>>>>>>> refs/remotes/origin/master
             </state>
           </provider>
         </entry>
@@ -245,6 +333,11 @@
               <item name="KinderSmart" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Teacher" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="Kinder-Smart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kinder-Smart" type="462c0819:PsiDirectoryNode" />
+              <item name="Teacher" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -315,8 +408,13 @@
       <workItem from="1527833092509" duration="37000" />
       <workItem from="1530627791242" duration="1620000" />
       <workItem from="1530678545851" duration="16892000" />
+<<<<<<< HEAD
+      <workItem from="1530850092630" duration="9269000" />
+      <workItem from="1530868317373" duration="35487000" />
+=======
       <workItem from="1530850092630" duration="21229000" />
       <workItem from="1530938203318" duration="4651000" />
+>>>>>>> refs/remotes/origin/master
     </task>
     <task id="LOCAL-00001" summary="Added function to view applied leave.">
       <created>1524384218990</created>
@@ -448,7 +546,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="164522000" />
+=======
     <option name="totallyTimeSpent" value="170974000" />
+>>>>>>> refs/remotes/origin/master
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -714,6 +816,12 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Parent/navbar.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parent/navbar.php">
+=======
     <entry file="file://$PROJECT_DIR$/Teacher/sentMessage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -722,6 +830,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Teacher/viewChildRemoveRequests.php">
+>>>>>>> refs/remotes/origin/master
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
@@ -806,6 +915,9 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Teacher/markAttendance.php">
+=======
     <entry file="file://$PROJECT_DIR$/Parent/about.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -814,6 +926,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Parent/child-remove-request.php">
+>>>>>>> refs/remotes/origin/master
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-741">
           <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
@@ -897,6 +1010,26 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Parent/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Teacher/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Teacher/update-daily-details-front.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+=======
     <entry file="file://$PROJECT_DIR$/include/conToChildren.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -929,6 +1062,7 @@
             <marker date="1530942272687" expanded="true" signature="2006:2147" ph="..." />
             <marker date="1530942272687" expanded="true" signature="2006:2173" ph="..." />
           </folding>
+>>>>>>> refs/remotes/origin/master
         </state>
       </provider>
     </entry>
