@@ -1,7 +1,8 @@
-<?php 
-	session_start();
+<?php
     include_once '../classes/KinderParent.php';
-
+    include_once '../classes/KinderAdmin.php';
+    include_once '../classes/KinderTeacher.php';
+	session_start();
 
 	if(isset($_POST['email']) && isset($_POST['password'])) {
         $email = trim($_POST['email']);
@@ -18,7 +19,7 @@
                 $_SESSION['type'] = $array['acc_type'];
                 $_SESSION['email']= $array['email'];
                 if (isset($_POST['remember'])) {
-                    setcookie('uid', $array['id'], time() + 60 * 60 * 24 * 30, "/");
+                    setcookie('uid', $array['uid'], time() + 60 * 60 * 24 * 30, "/");
                     setcookie('type', $array['acc_type'], time() + 60 * 60 * 24 * 30, "/");
                 }
                 if (!$array['pass_changed']) {
@@ -27,14 +28,17 @@
                 }
                 switch ($array['acc_type']) {
                     CASE 'parent':
+                        $_SESSION['parent'] = new KinderParent($_SESSION['uid']);
                         header("Location: ../parent");
                         break;
 
                     CASE 'admin':
+                        $_SESSION['admin'] = new KinderAdmin($_SESSION['uid']);
                         header("Location: ../admin");
                         break;
 
                     CASE 'teacher':
+                        $_SESSION['teacher'] = new KinderTeacher($_SESSION['uid']);
                         header("Location: ../teacher");
                         break;
                 }

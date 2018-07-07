@@ -1,6 +1,6 @@
 <?php
-   require_once('../inc/checklogin.admin.inc.php');
-	require_once('../../include/connection.inc.php');
+   require_once('checklogin.admin.inc.php');
+	require_once('../include/connection.inc.php');
 
 	$query = "SELECT * FROM food_list";
 	$result = mysqli_query($connection,$query);
@@ -13,18 +13,19 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <link rel="stylesheet" href="../../include/style.css">
+    <link rel="stylesheet" href="../include/style.css">
 	<title>Update Lunch</title>
 </head>
 <body>
 <div class="navbar">
-    <a href="../home.php">Home</a>
-    <a href="../registration/addTeacher.php">Add Teacher Info</a>
-    <a href="../registration/addChild.php">Add Child</a>
-    <a href="../registration/registration.parent.php">Register Parent</a>
-    <a href="../registration/registration.admin.php">Add Admin</a>
-    <a href="../viewLeave.php">Manage Leave</a>
-    <a class="active" href="../food/update-lunch-front.php">Update Food</a>
+    <a href="home.php">Home</a>
+    <a href="addTeacher.php">Add Teacher Info</a>
+    <a href="addChild.php">Add Child</a>
+    <a href="registration.parent.php">Register Parent</a>
+    <a href="registration.admin.php">Add Admin</a>
+    <a href="viewLeave.php">Manage Leave</a>
+    <a class="active" href="update-lunch-front.php">Update Food</a>
+    <a href="../include/logout.inc.php">Logout</a>
 </div>
 <div class = "form">
 	<h1>Lunch Deatails</h1>

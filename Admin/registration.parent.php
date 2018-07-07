@@ -1,7 +1,7 @@
-<?php require_once('../inc/checklogin.admin.inc.php'); ?>
+<?php require_once('checklogin.admin.inc.php'); ?>
 <html>
 	<head>
-        <link rel="stylesheet" href="../../include/style.css">
+        <link rel="stylesheet" href="../include/style.css">
 		<title>Parent Registration</title>
 		<style>
 		input[type="text"] {
@@ -24,13 +24,13 @@
 	</head>
 	<body>
     <div class="navbar">
-        <a href="../home.php">Home</a>
+        <a href="home.php">Home</a>
         <a href="addTeacher.php">Add Teacher Info</a>
         <a href="addChild.php">Add Child</a>
         <a class="active" href="registration.parent.php">Register Parent</a>
         <a href="registration.admin.php">Add Admin</a>
-        <a href="../viewLeave.php">Manage Leave</a>
-        <a href="../food/update-lunch-front.php">Update Food</a>
+        <a href="viewLeave.php">Manage Leave</a>
+        <a href="update-lunch-front.php">Update Food</a>
     </div>
 		<h1>Parent Registration</h1>
 		<form action="register.parent.php" method="post">

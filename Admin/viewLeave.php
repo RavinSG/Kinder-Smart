@@ -9,12 +9,12 @@
 <body>
 <div class="navbar">
     <a href="home.php">Home</a>
-    <a href="registration/addTeacher.php">Add Teacher Info</a>
-    <a href="registration/addChild.php">Add Child</a>
-    <a href="registration/registration.parent.php">Register Parent</a>
-    <a href="registration/registration.admin.php">Add Admin</a>
+    <a href="addTeacher.php">Add Teacher Info</a>
+    <a href="addChild.php">Add Child</a>
+    <a href="registration.parent.php">Register Parent</a>
+    <a href="registration.admin.php">Add Admin</a>
     <a class="active" href="viewLeave.php">Manage Leave</a>
-    <a href="food/update-lunch-front.php">Update Food</a>
+    <a href="update-lunch-front.php">Update Food</a>
 </div>
 <div class="table-users">
     <div class="header">Applied Leaves</div>

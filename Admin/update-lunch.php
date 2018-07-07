@@ -1,5 +1,5 @@
-<?php require_once('../inc/checklogin.admin.inc.php');
-require_once ("../../include/connection.inc.php");
+<?php require_once('checklogin.admin.inc.php');
+require_once ("../include/connection.inc.php");
     if(isset($_POST['submit'])){
         unset($_POST['submit']);
         $monday="";
