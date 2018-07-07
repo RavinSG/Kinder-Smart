@@ -5,7 +5,7 @@
 <head>
     <title>Add Child</title>
     <link rel="stylesheet" href="../../include/style.css">
-    <link rel="stylesheet" href="../../include/form.css">
+    <link rel="stylesheet" href="../form.css">
 </head>
 <body>
 <div class="navbar">
@@ -17,54 +17,59 @@
     <a href="../viewLeave.php">Manage Leave</a>
     <a href="../food/update-lunch-front.php">Update Food</a>
 </div>
-<h2>Add Child</h2>
+<h2 align="center" style="margin-bottom: auto">Add Child</h2>
 <form action="../../include/conToChildren.php" method="post">
+    <ul style="margin-top: auto" class="form-style-1">
     <?php
-    if(isset($_GET['first'])){
+
+    if (isset($_GET['first'])){
         $first = $_GET['first'];
-        echo '<input type="text" name="first" placeholder="First Name"  value="'.$first.'">';
+    } else {
+        $first = "";
     }
-    else{
-        echo '<input type="text" name="first" placeholder="First Name">';
-    }
-
-    if(isset($_GET['last'])){
+    if(isset($_GET['last'])) {
         $last = $_GET['last'];
-        echo '<input type="text" name="last" placeholder="Last Name" value="'.$last.'">';
+    } else {
+        $last = "";
     }
-    else{
-        echo '<input type="text" name="last" placeholder="Last Name">';
-    }
-
-    if(isset($_GET['age'])){
+    if(isset($_GET['age'])) {
         $age = $_GET['age'];
-        echo '<input type="number" name="age" placeholder="Age" value="'.$age.'">';
+    } else {
+        $age = "";
     }
-    else{
-        echo '<input type="number" name="age" placeholder="Age">';
-    }
-
-    if(isset($_GET['contact'])){
+    if(isset($_GET['contact'])) {
         $contact = $_GET['contact'];
-        echo '<input type="tel" name="contact" placeholder="Contact Number" value="'.$contact.'">';
+    } else {
+        $contact = "";
     }
-    else{
-        echo '<input type="tel" name="contact" placeholder="Contact Number">';
-
-    }
-
     if(isset($_GET['parent'])){
         $parent = $_GET['parent'];
-        echo '<input type="text" name="parent" placeholder="Parent of Child" value="'.$parent.'">';
-    }
-    else{
-        echo '<input type="text" name="parent" placeholder="Parent of Child">';
-
+    } else {
+        $parent = "";
     }
 
+    echo '<li>
+            <label>Full Name <span class="required">*</span></label>
+            <input type="text" name="first" class="field-divided" placeholder="First" value='.$first.'>&nbsp;<input type="text" name="last" class="field-divided" placeholder="Last" value='.$last.'>
+            </li>';
+    echo '<li>
+            <label>Phone Number <span class="required">*</span></label>
+            <input type="text" name="contact" class="field-long" value='.$contact.'>
+        </li>';
+    echo '<li>
+            <label>Age</label>
+            <input type="number" class="field-divided" name="age" placeholder="Age" value='.$age.'>
+        </li>';
+    echo '<li>
+            <label>Parent Name<span class="required">*</span></label>
+            <input type="text" name="parent" class="field-long" value='.$parent.'>
+        </li>';
     ?>
-    <input type="submit" name="submit" value="Submit">
+        <li style="margin-left: 150px;">
+            <input style="width: 100px" type="submit" value="Submit" name="submit">
+        </li>
 
+    </ul>
 </form>
 
 <?php
