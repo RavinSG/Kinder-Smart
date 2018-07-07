@@ -47,15 +47,18 @@ require_once ("checklogin.teacher.php")?>
             </tbody>
         </table>
     </div>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
-<script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
 <script>
-    $(document).ready(function(){
-        $('.sidenav').sidenav();
-    });
+    (function($){
+        $(function(){
+
+            $('.sidenav').sidenav();
+
+        }); // end of document ready
+    })(jQuery); // end of jQuery name space
+
 </script>
 </body>
 </html>

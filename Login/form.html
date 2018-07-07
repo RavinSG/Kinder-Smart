@@ -3,17 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kinder Smart</title>
-	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="../style/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link rel="stylesheet" href="style/style.css">
 	<script type="text/javascript">
 		function validateForm(){
 			var email=document.getElementById('email').value;
-			var password=document.getElementById('password').value;
 			var err_msg = document.getElementById('err_msg');
 				
 			var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 			if(!reg.test(email)){
-				err_msg.innerHTML = "Enter a valid email"
+				err_msg.innerHTML = "Enter a valid email";
 				err_msg.style.color = "red";
 				return false;
 			}
@@ -21,27 +22,36 @@
 	</script>
 </head>
 <body>
-	<div class="wrapper">
-		<div class="name"><h1><span>Kinder<span>Smart</h1></div>
+	<div class="container form">
+		<div class="name center"><h1><span class="amber-text text-darken-4">Kinder</span>Smart</h1></div>
 		<div class="login">
 			<img src="" alt="">
+			<div class="row">
 			<form action="validate.php" method='POST' onsubmit="return validateForm();">
-				<label for="email">email</label>
-				<span class="inputWithIcon">
-					<i class="fas fa-user icon"></i>
-					<input type="text" name="email" id="email" required><br>
-				</span>
-				<label for="password">Password</label>
-				<span class="inputWithIcon">
-					<i class="fas fa-unlock-alt icon"></i>
-					<input type="password" name="password" id="password" required><br>
-				</span>
-				<input type="checkbox" name="remember" value="remember">Keep me logged in<br>
-				<p id="err_msg"></p>
-				<button type="submit">Login</button>
+				<div class="row">
+					<div class="input-field col s12">
+						<i class="material-icons prefix">account_circle</i>
+						<input id="email" type="text" name="email" class="validate" required>
+						<label for="email">Email</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<i class="material-icons prefix">lock</i>
+						<input id="password" type="password" name="password" class="validate" required>
+						<label for="password">Password</label>
+					</div>
+				</div>
+				<div class="center"><label><input type="checkbox" name="remember" value="remember"><span>Keep me logged in</span></label></div><br>
+				<div class="center"><button type="submit" class="btn green white-text">Login</button></div>
 			</form>
+				<p id="err_msg"></p>
+			</div>
 			<p>Forgot login details? <a href="../login/recovery.php">Click Here</a></p>
 		</div>
 	</div>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../style/js/materialize.min.js"></script>
 </body>
 </html>
+
