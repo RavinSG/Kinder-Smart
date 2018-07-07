@@ -12,16 +12,7 @@ require_once ("checklogin.teacher.php")?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-<nav>
-    <div class="nav-wrapper blue">
-        <a href="#" class="brand-logo left">KinderSmart</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="home.html"><i class="material-icons left">home</i>Home</a></li>
-            <li><a href="#" ><i class="material-icons left">settings</i>Settings</a></li>
-            <li class="red"><a href="#"><i class="material-icons left">phonelink_erase</i>Logout</a></li>
-        </ul>
-    </div>
-</nav>
+<?php require("navbar.teacher.html");?>
 <h2 class="center">Leave Form</h2>
 <div class="container" style="width: 40%">
     <form action="../include/leave.php" method="post" id="target">
@@ -96,6 +87,16 @@ require_once ("checklogin.teacher.php")?>
     }
     ?>
 </div>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
+</script>
 </body>
 </html>
 
