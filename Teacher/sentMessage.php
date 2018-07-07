@@ -17,20 +17,23 @@ if (!isset($_GET["message"])) {
 <html>
 <head>
 	<title>Sent Message</title>
-    <link rel="stylesheet" type="text/css" href="../include/syllabus.css">
-    <link rel="stylesheet" type="text/css" href="../include/style.css">
+    <meta charset="UTF-8">
+    <title>Welcome to KinderSmart</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../style/css/materialize.min.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-<div class="navbar">
-    <a class="active" href="home.html">Home</a>
-    <a href="applyLeave.php">Apply Leave</a>
-    <a href="markAttendance.php">Mark Attendance</a>
-    <a href="viewSyllabus.php">Syllabus</a>
-    <a href="viewChildRemoveRequests.php">Child Remove Requests</a>
-    <a href="sentMessage.php">Send Message</a>
-    <a href="#">Settings</a>
-    <a href="#">Logout</a>
-</div>
+<nav>
+    <div class="nav-wrapper blue">
+        <a href="#" class="brand-logo left">KinderSmart</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="home.html"><i class="material-icons left">home</i>Home</a></li>
+            <li><a href="#" ><i class="material-icons left">settings</i>Settings</a></li>
+            <li class="red"><a href="#"><i class="material-icons left">phonelink_erase</i>Logout</a></li>
+        </ul>
+    </div>
+</nav>
 	<h1>Children List</h1>
 	<table cellspacing="0">
         <tr>
