@@ -30,9 +30,9 @@ require_once ("checklogin.teacher.php")?>
                 echo $row['child_fname'];
                 $name = $row['child_fname'];
                 echo "</td><td style='text-align: center;'>";
-                echo"<p><label for 'check'>";
-                echo "<input type='checkbox' id='name' name='name[]'
-                value=$name><span></span></label></p>";
+                echo"<p><label>";
+                echo "<input type='checkbox' id='name' name='name[]' value={$name}>";
+                echo "<span></span></label></p>";
             }
             ?>
         </table>
