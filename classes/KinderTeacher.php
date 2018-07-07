@@ -1,31 +1,30 @@
 <?php
+
 require_once '../include/pdo.inc.php';
 
-class KinderAdmin
+class KinderTeacher
 {
+
     private $id;
-    private $fullname;
-    private $nicNo;
-    private $email;
-    private $address;
+    private $name;
     private $telNo;
-    private $mobileNo;
+    private $email;
+    private $leave_avail;
 
     function __construct($id)
     {
         global $pdo;
-        $stmt = $pdo->prepare("SELECT * FROM admin_db WHERE id=:id");
+        $stmt = $pdo->prepare("SELECT * FROM teacher_db WHERE id=:id");
         $stmt->execute(array(
             'id'=>$id
         ));
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
         $this->id = $id;
-        $this->fullname = $row['full_name'];
-        $this->nicNo = $row['nic'];
+        $this->name = $row['full_name'];
         $this->email = $row['email'];
         $this->telNo = $row['tele_no'];
-        $this->address = $row['address'];
+        $this->leave_avail = $row['leave_avail'];
         $this->mobileNo = $row['mobile_no'];
 
     }
@@ -42,17 +41,16 @@ class KinderAdmin
 
     public function getName()
     {
-        return $this->fullname;
+        return $this->name;
     }
 
-    public function getNicNo()
+    public function getLeaveAvail()
     {
-        return $this->nicNo;
+        return $this->leave_avail;
     }
 
-    public function getTelNo()
+    public function getMobileNo()
     {
-        return $this->telNo;
+        return $this->mobileNo;
     }
-
 }
