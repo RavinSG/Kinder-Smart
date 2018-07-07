@@ -2,7 +2,7 @@
 session_start();
 require_once ("checklogin.teacher.php")?>
 <?php
-require_once('../include/connectDbaseMysql.php');
+require_once('../include/connection.inc.php');
 
 if (!isset($_GET["note"])) {
 	$_GET["note"]="";
@@ -57,7 +57,7 @@ if (!isset($_GET["message"])) {
             echo "</td><td>";
             echo ($row['child_lname']);
             echo "</td><td>";
-            echo "<input type='checkbox' name='{$row["id"]}' value = '{$row["id"]}'></input>";
+            echo "<input type='checkbox' name='{$row["id"]}' value = '{$row["id"]}'>";
             $i++;
         }
         ?>
@@ -68,7 +68,7 @@ if (!isset($_GET["message"])) {
         <fieldset>
 		  <label>Message:</label>
 		  <br>
-          <input type="text" name="message" required value = <?php  echo $_GET["message"];?> >
+            <textarea name="message" required value = <?php  echo $_GET["message"];?>></textarea>
         </fieldset>
 		
         <button type="submit">Send</button>
