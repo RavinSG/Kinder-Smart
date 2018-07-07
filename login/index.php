@@ -22,6 +22,6 @@
 	}
 
 	else{
-		header("Location: login");
+		header("Location: form.html");
 	}
  ?>

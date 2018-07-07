@@ -22,8 +22,8 @@
 	</form>
 	<?php
 
-		if (!($_GET['note']=="")) {
-			echo "<script>alert('{$_GET['note']}')</script>";
+		if (!empty($_GET['note'])) {
+		    echo $_GET['note'];
 		}
 	?>
 </body>

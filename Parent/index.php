@@ -16,7 +16,7 @@ include('navbar.html');
 <body>
 <?php
 $parent = $_SESSION['parent'];
-echo("Welcome to Our web page ".$parent->getName());
+echo("Welcome to Our web page ".$parent->getId());
 //print_r($_SESSION);
 ?>
 

@@ -13,7 +13,7 @@
 	<?php
 	if (isset($_SESSION['parent'])) {
 		$parent = $_SESSION['parent'];
-		echo "Hello! ".$parent->getFullName();
+		echo "Hello! ".$parent->getId();
 		require('navbar.php');
 	} 
 
