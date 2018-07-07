@@ -36,8 +36,15 @@ VALUES (:fname, :lname, :age, :contact, :parent)";
             ':age' => $age,
             ':contact' => $contact,
             ':parent' => $parent));
+
+        $sql = "ALTER TABLE attendance ADD ".html_entity_decode($first)." varchar(10) NOT NULL DEFAULT 0";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+
         header("Location: ../Admin/registration/addChild.php?add=successful");
         return;
+
+
     }
 
 } else{
