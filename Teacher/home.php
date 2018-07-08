@@ -28,7 +28,7 @@ require_once "checklogin.teacher.php";
         <div class="hoverable">
             <a href="applyLeave.php">
                 <h2 class="header black-text">Apply Leave</h2>
-                <div class="card horizontal red">
+                <div class="card horizontal red lighten-1">
 
                     <div class="card-image">
                         <i class="material-icons large white-text">assignment</i>
@@ -48,7 +48,7 @@ require_once "checklogin.teacher.php";
     <div class="hoverable">
         <a href="markAttendance.php">
             <h2 class="header black-text">Mark Attendance</h2>
-            <div class="card horizontal amber darken-3">
+            <div class="card horizontal orange lighten-1">
 
                 <div class="card-image">
                     <i class="material-icons large white-text">class</i>
@@ -68,7 +68,7 @@ require_once "checklogin.teacher.php";
     <div class="hoverable">
         <a href="viewSyllabus.php">
             <h2 class="header black-text">View Syllabus</h2>
-            <div class="card horizontal purple">
+            <div class="card horizontal blue-grey lighten-1">
 
                 <div class="card-image">
                     <i class="material-icons large white-text">description</i>
@@ -89,7 +89,7 @@ require_once "checklogin.teacher.php";
         <div class="hoverable">
             <a href="viewChildRemoveRequests.php">
                 <h2 class="header black-text">Transportation</h2>
-                <div class="card horizontal red">
+                <div class="card horizontal red lighten-1">
 
                     <div class="card-image">
                         <i class="material-icons large white-text">directions_bus</i>
@@ -109,7 +109,7 @@ require_once "checklogin.teacher.php";
     <div class="hoverable">
         <a href="sentMessage.php">
             <h2 class="header black-text">Send Messages</h2>
-            <div class="card horizontal amber darken-3">
+            <div class="card horizontal orange lighten-1">
                 <div class="card-image">
                     <i class="material-icons large white-text">message</i>
                 </div>
@@ -127,7 +127,7 @@ require_once "checklogin.teacher.php";
     <div class="hoverable">
         <a href="update-daily-details-front.php">
             <h2 class="header black-text">Daily Details</h2>
-            <div class="card horizontal purple">
+            <div class="card horizontal blue-grey lighten-1">
 
                 <div class="card-image">
                     <i class="material-icons large white-text">date_range</i>

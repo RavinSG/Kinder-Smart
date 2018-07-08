@@ -1,6 +1,6 @@
 <?php
 require_once ("checklogin.parent.php");
-include('navbar.html');
+require ("navbar.parent.php");
 	if (!isset($_GET["remove_date"])){
 		$_GET["remove_date"]="";
 	}
@@ -29,54 +29,72 @@ include('navbar.html');
 <html>  
   <head>
         <title>Child Remove Request Form</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="../style/css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="style/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 
     </head>
     <body>
-    <h1>Child Remove Request</h1>
-      
-    <div class="row">
-      <form class="col s12" action="record-child-remove-request.php" method="post">
-
+    <h1 class="center">Child Remove Request</h1>
+    <div class="container">
         <div class="row">
-          <div class="input-field col s6">
-            <i class="material-icons prefix">account_circle</i>
-            <input id="remove_date" type="date" name="remove_date" required min=<?php echo date('y-m-d') ?> max=<?php echo date('y-m-d',strtotime('+ 1 week')) ?> value=<?php echo $_GET['remove_date'] ?>>
-            <label for="remove_date">Remove Date</label>
-          </div>
-          <div>
-            <p class="err_msg"><?php echo $_GET["note_for_date"]; ?></p>
-          </div>
+          <form class="col s12" action="record-child-remove-request.php" method="post">
+              <div class="row">
+              <div class="col s12 xl6 offset-xl3">
+                  <div class="input-field">
+                      <i class="material-icons prefix">date_range</i>
+                      <input id="remove_date" class="datepicker autoClose" type="text">
+                      <label for="remove_date">Remove Date</label>
+                  </div>
+              </div>
+              </div>
+                <div class="row">
+                    <div class="col s11 xl4 offset-xl3">
+                        <p><i class="material-icons prefix">wallpaper</i>   Enter Remove Time :</p>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col s6 xl3 offset-xl4">
+                      <label>
+                          <input id="remove_time" type="radio" value="Morning" checked name="remove_time" required value=<?php echo $_GET['remove_time'] ?>>
+                          <span for="morning" class="light">Morning</span>
+                      </label>
+                  </div>
+                    <div class="col s6 xl3">
+                        <label>
+                            <input id="remove_time" type="radio" value="Evening" name="remove_time" required value=<?php echo $_GET['remove_time'] ?>>
+                            <span for="morning" class="light">Evening</span>
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="input-field col s6 xl6 offset-xl3">
+                        <i class="material-icons prefix">airport_shuttle</i>
+                        <textarea id="note" name="note" class="materialize-textarea" required><?php echo $_GET['note'] ?></textarea>
+                        <label for="note">How will you pick up your child</label>
+                  </div>
+                </div>
+
+
+                    <div class="center">
+                      <button type="submit" class="btn green">Send</button>
+                    </div>
+             </form>
+            </div>
         </div>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../style/js/materialize.min.js"></script>
+    <script>
+        (function($){
+            $(function(){
 
-        <div class="row">
-          <div class="input-field col s6">
-            <i class="material-icons prefix">phone</i>
-            <input id="remove_time" type="radio" value="Morning" name="remove_time" required value=<?php echo $_GET['remove_time'] ?>><label for="morning" class="light">Morning</label>
-            <input id="remove_time" type="radio" value="Evening" name="remove_time" required value=<?php echo $_GET['remove_time'] ?>><label for="morning" class="light">Evening</label>
-            <label for="remove_time">Time</label>
-          </div>
-          <div>
-            <p class="err_msg"><?php echo $_GET["note_for_time"]; ?></p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="input-field col s6">
-            <i class="material-icons prefix">phone</i>
-            <textarea id="note" name="note" required><?php echo $_GET['note'] ?></textarea>
-            <label for="note">How will you pick up your child</label>
-          </div>
-          <div>
-            <p class="err_msg"><?php echo $_GET["note_for_method"]; ?></p>
-          </div>
-        </div>
-
-        <div class="center">
-          <button type="submit">Send</button>
-        </div>
-
-      </form>
-    </div>
-
+                $('.sidenav').sidenav();
+                $('.datepicker').datepicker();
+            }); // end of document ready
+        })(jQuery); // end of jQuery name space
+        </script>
     </body>
 </html>

@@ -20,17 +20,20 @@ require_once ("checklogin.teacher.php")?>
 <body>
 <?php require("navbar.teacher.html");?>
     <h2 class="center">Daily Details</h2>
-    <div class="container" style="width: 40%">
+    <div class="container form">
         <form action="update-daily-details.php" method="POST">
-            <label for="homework"><h5 class="black-text">Homework :</h5>
-                <textarea name="homework" placeholder="Enter Homework For the Day Here" rows="10"></textarea>
-            </label>
-
-            <label for="spec_note"><h5 class="black-text">Special note :</h5>
-                <textarea name="spec_note" placeholder="Enter Special Notes For the Day Here" rows="10"></textarea>
-            </label>
-
-            <input type="submit" value="submit" class="btn green">
+            <div class="input-field">
+                <textarea name="homework" id="spec_note" placeholder="Enter Homework For the Day Here" required class="materialize-textarea validate"></textarea>
+                <label for="homework">Homework :</label>
+            </div>
+            <br><br>
+            <div class="input-field">
+                <textarea name="spec_note" id="spec_note" placeholder="Enter special notes For the Day Here" required class="materialize-textarea validate"></textarea>
+                <label for="spec_note">Special Notices :</label>
+            </div>
+            <div class="center">
+                <input type="submit" value="submit" class="btn green">
+            </div>
         </form>
     </div>
 <script type="text/javascript" src="../style/js/materialize.min.js"></script>
