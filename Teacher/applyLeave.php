@@ -1,6 +1,32 @@
 <?php
+include "../classes/KinderTeacher.php";
 session_start();
-require_once ("checklogin.teacher.php")?>
+require_once ("checklogin.teacher.php");
+
+$teacher = $_SESSION['teacher'];
+$id = $teacher->getID();
+
+$date ="";
+if (isset($_GET['date'])){
+    $date = $_GET['date'];
+}
+
+$duration = "";
+if(isset($_GET['duration'])) {
+    $duration = $_GET['duration'];
+}
+
+$note = "";
+if(isset($_GET['note'])) {
+    $note = $_GET['note'];
+}
+
+$nopay ="";
+if (isset($_GET['nopay'])) {
+    $nopay = $_GET['nopay'];
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,60 +35,53 @@ require_once ("checklogin.teacher.php")?>
     <title>Welcome to KinderSmart</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../style/css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
 <?php require("navbar.teacher.html");?>
 <h2 class="center">Leave Form</h2>
+<div class="row">
 <div class="container" style="width: 40%">
-    <form action="../include/leave.php" method="post" id="target">
-        <?php
-        if(isset($_GET['id'])){
-            $id = $_GET['id'];
-            echo '<input type="text" name="id" placeholder="Teacher ID"  value="'.$id.'">';
-        }
-        else{
-            echo '<input type="text" name="id" placeholder="Teacher ID">';
-        }
-        if (isset($_GET['nopay'])){
-            $nopay = $_GET['nopay'];
-            echo '<input type="checkbox" class="box" name="nopay" value=$nopay>';
-        }
-        else {
-            echo '<input type="checkbox" class="box" name="nopay" >';
-        }
-        if(isset($_GET['date'])){
-            $date = $_GET['date'];
-            echo '<input type="date" name="date" placeholder="Date" value="'.$date.'">';
-        }
-        else{
-            echo '<input type="date" name="date" placeholder="Date">';
+    <form class="col s12" action="../include/leave.php" method="post">
 
-        }
-        if(isset($_GET['duration'])){
-            $duration = $_GET['duration'];
-            echo '<input type="number" name="duration" placeholder="Duration" value="'.$duration.'">';
-        }
-        else{
-            echo '<input type="number" name="duration" placeholder="Duration">';
-        }
+        <div class="row">
+            <div class="input-field col s12">
+                <input type="text" disabled name="id" placeholder="Teacher ID" value="<?php echo $id?>">
+                <label for="text">Teacher ID</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <label>No Pay
+                    <input type="checkbox" name="nopay" value="<?php echo $nopay?>">
+                    <span> </span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input type="date" name="date" placeholder="Date" value="<?php echo $date?>">
+                <label for="date">Leave Date</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input type="number" name="duration" placeholder="Duration" value="<?php echo $duration?>">
+                <label for="duration">Leave Duration</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input type="text" name="note" placeholder="Note" value="<?php echo $note?>">
+                <label for="note">Note</label>
+            </div>
+        </div>
 
-        if(isset($_GET['note'])){
-            $note = $_GET['note'];
-            echo '<input type="text" class="note" name="note" placeholder="Note" value="'.$note.'">';
-        }
-        else{
-            echo '<input type="text" class="note" name="note" placeholder="Note">';
-        }
-
-        ?>
         <button type="submit" name="submit" value="Submit" class="btn green center-block">Submit</button>
 
     </form>
-
+</div>
     <?php
-
     if (isset($_GET['msg'])){
         $msg = $_GET['msg'];
 

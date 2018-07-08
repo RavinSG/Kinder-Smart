@@ -1,7 +1,9 @@
 <?php
-
+include "../classes/KinderTeacher.php";
+session_start();
+require_once ("../Teacher/checklogin.teacher.php");
 require_once 'pdo.inc.php';
-$id = $_POST['id'];
+$id = $_SESSION['teacher']->getID();
 $leave_date = $_POST['date'];
 $leave_duration = $_POST['duration'];
 $note = $_POST['note'];
@@ -12,16 +14,16 @@ if (isset($_POST['nopay'])){
     $nopay = false;
 }
 
-if (empty($id) or empty($leave_date) or empty($leave_duration) or empty($note)){
-    header("Location: ../Teacher/applyLeave.php?msg=empty&id=$id&date=$leave_date&duration=$leave_duration&note=$note");
+if (empty($leave_date) or empty($leave_duration) or empty($note)){
+    header("Location: ../Teacher/applyLeave.php?msg=empty&date=$leave_date&duration=$leave_duration&note=$note");
     return;
 
 } elseif($leave_duration < 1){
-    header("Location: ../Teacher/applyLeave.php?msg=duration&id=$id&date=$leave_date&duration=$leave_duration&note=$note");
+    header("Location: ../Teacher/applyLeave.php?msg=duration&date=$leave_date&duration=$leave_duration&note=$note");
     return;
 
 }  elseif(strtotime($leave_date)<strtotime(date('y-m-d'))){
-    header("Location: ../Teacher/applyLeave.php?msg=date&id=$id&date=$leave_date&duration=$leave_duration&note=$note");
+    header("Location: ../Teacher/applyLeave.php?msg=date&date=$leave_date&duration=$leave_duration&note=$note");
     return;
 
 } else {
@@ -34,7 +36,7 @@ if (empty($id) or empty($leave_date) or empty($leave_duration) or empty($note)){
     if (isset($leave_left)){
 
         if (($leave_left < $leave_duration) && !($nopay)){
-            header("Location: ../Teacher/applyLeave.php?msg=insufficient&id=$id&date=$leave_date&duration=$leave_duration&note=$note");
+            header("Location: ../Teacher/applyLeave.php?msg=insufficient&date=$leave_date&duration=$leave_duration&note=$note");
             return;
 
         } else {
@@ -53,7 +55,7 @@ VALUES (:id, :leave_date, :leave_duration, :nopay, :note, :state)";
             return;
         }
     } else {
-        header("Location: ../Teacher/applyLeave.php?msg=unavailable&id=$id&date=$leave_date&duration=$leave_duration&note=$note");
+        header("Location: ../Teacher/applyLeave.php?msg=unavailable&date=$leave_date&duration=$leave_duration&note=$note");
         return;
     }
 
