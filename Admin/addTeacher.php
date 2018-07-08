@@ -97,7 +97,6 @@ if(isset($_GET['leave'])){
                 <input id="leave" type="number" name="leave" value=<?php echo $leave?>>
                 <label for="leave">Leave</label>
             </div>
-
         </div>
         <div class="center">
             <input type="submit" name="submit" value="Submit" class="btn green">
@@ -106,12 +105,20 @@ if(isset($_GET['leave'])){
     </form>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../style/js/materialize.min.js"></script>
+<script>
+    (function($){
+        $(function(){
 
+            $('.sidenav').sidenav();
+            $('select').formSelect()
+        }); // end of document ready
+    })(jQuery); // end of jQuery name space
+
+</script>
 <?php
-    if (!isset($_SESSION['add'])){
-        exit();
-    }
-    else {
+    if (isset($_SESSION['add'])){
         $check = $_SESSION['add'];
         unset($_SESSION['add']);
 
@@ -130,19 +137,9 @@ if(isset($_GET['leave'])){
     }
 
 
+
 ?>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="../style/js/materialize.min.js"></script>
-<script>
-    (function($){
-        $(function(){
 
-            $('.sidenav').sidenav();
-
-        }); // end of document ready
-    })(jQuery); // end of jQuery name space
-
-</script>
 </body>
 </html>
 
