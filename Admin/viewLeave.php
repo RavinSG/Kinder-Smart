@@ -4,24 +4,17 @@ require_once('checklogin.admin.inc.php');
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Accept</title>
-    <link rel="stylesheet" href="../include/table.css">
-    <link rel="stylesheet" href="../include/style.css">
-    <link rel="stylesheet" href="../include/form.css">
+    <title>View Leave Applications</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../style/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-<div class="navbar">
-    <a href="home.php">Home</a>
-    <a href="addTeacher.php">Add Teacher Info</a>
-    <a href="addChild.php">Add Child</a>
-    <a href="registration.parent.php">Register Parent</a>
-    <a href="registration.admin.php">Add Admin</a>
-    <a class="active" href="viewLeave.php">Manage Leave</a>
-    <a href="update-lunch-front.php">Update Food</a>
-</div>
+<?php include ("navbar.admin.php");?>
 <div class="table-users">
-    <div class="header">Applied Leaves</div>
-
+    <h1 class="center">Applied Leaves</h1>
+    <div class="container">
     <table cellspacing="0">
         <tr>
             <th>ID</th>
@@ -46,14 +39,14 @@ require_once('checklogin.admin.inc.php');
             echo "</td><td>";
             echo ($row['note']);
             echo "</td><td>";
-            echo "<a href='../include/deleteLeave.php?state=accept&id=".$row['id']."' class='button'>Accept</a>
-<a href='../include/deleteLeave.php?state=decline&id=".$row['id']."' class='button'>Decline</a>";
+            echo "<a href='../include/deleteLeave.php?state=accept&id=".$row['id']."' class='btn'>Accept</a>
+<a href='../include/deleteLeave.php?state=decline&id=".$row['id']."' class='btn'>Decline</a>";
             echo "</td><td style='text-align: center'>";
             echo ($row['state']);
             echo "</td></tr>\n";
         }
         ?>
-    </table>
+    </table></div>
 
 </div>
 <?php
@@ -62,15 +55,27 @@ require_once('checklogin.admin.inc.php');
         $id = $_GET['id'];
         if ($msg == 'decline'){
 
-            echo "<p class='error' style='font-size: 18px'>You rejected ".$id."'s leave </p>";
+            echo "<div class='center'><p class='btn red white-text' style='font-size: 18px'>You rejected ".$id."'s leave </p></div>";
         }
 
         elseif ($msg =='accept') {
 
-            echo "<p class='success'  style='font-size: 18px'>You accepted ".$id."'s leave</p>";
+            echo "<div class='center'><p class='btn green white-text'  style='font-size: 18px'>You accepted ".$id."'s leave</p></div>";
 
         }
     }
 ?>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../style/js/materialize.min.js"></script>
+<script>
+    (function($){
+        $(function(){
+
+            $('.sidenav').sidenav();
+
+        }); // end of document ready
+    })(jQuery); // end of jQuery name space
+
+</script>
 </body>
 </html>

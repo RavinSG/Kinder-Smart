@@ -49,7 +49,7 @@ require_once ("checklogin.teacher.php")?>
     </div>
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="../style/js/materialize.min.js"></script>
 <script>
     (function($){
         $(function(){

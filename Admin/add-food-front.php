@@ -11,16 +11,7 @@
  	<title>Add Food</title>
  </head>
  <body>
- <div class="navbar">
-     <a href="home.php">Home</a>
-     <a href="addTeacher.php">Add Teacher Info</a>
-     <a class="active" href="addChild.php">Add Child</a>
-     <a href="registration.parent.php">Register Parent</a>
-     <a href="registration.admin.php">Add Admin</a>
-     <a href="viewLeave.php">Manage Leave</a>
-     <a href="update-lunch-front.php">Update Food</a>
-     <a href="../include/logout.inc.php">Logout</a>
- </div>
+ <?php include ("navbar.admin.php");?>
  	<?php if(!isset($_POST['number'])):;?>
 	 	<h1>Add Food items to list</h1>
 	 	<form action= "add-food-front.php" method="POST">
@@ -41,6 +32,17 @@
  	<?php endif;
  	print_r($_SESSION);
  	?>
+ <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ <script type="text/javascript" src="../style/js/materialize.min.js"></script>
+ <script>
+     (function($){
+         $(function(){
 
+             $('.sidenav').sidenav();
+
+         }); // end of document ready
+     })(jQuery); // end of jQuery name space
+
+ </script>
  </body>
  </html>

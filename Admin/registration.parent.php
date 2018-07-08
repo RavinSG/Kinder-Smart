@@ -1,64 +1,101 @@
-<?php
-    require_once('checklogin.admin.inc.php');
-?>
+<?php require_once('checklogin.admin.inc.php'); ?>
 <html>
 	<head>
-        <link rel="stylesheet" href="../include/style.css">
 		<title>Parent Registration</title>
-		<style>
-		input[type="text"] {
-			width:100px;
-			height:30px;
-			border-radius:5px;
-			margin-left:2px;
-			position:relative;
-		}
-
-		label{
-			position:relative;
-			width:300px;
-			margin:20px;
-			padding:5px;
-			font-family:AR CENA;
-			font-size:20px;
-		}
-		</style>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="../style/css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="style/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 	<body>
-    <div class="navbar">
-        <a href="home.php">Home</a>
-        <a href="addTeacher.php">Add Teacher Info</a>
-        <a href="addChild.php">Add Child</a>
-        <a class="active" href="registration.parent.php">Register Parent</a>
-        <a href="registration.admin.php">Add Admin</a>
-        <a href="viewLeave.php">Manage Leave</a>
-        <a href="update-lunch-front.php">Update Food</a>
+    <?php include ("navbar.admin.php");?>
+		<h1 class="center">Parent Registration</h1>
+        <div class="container form">
+		<div class="row">
+			<form class="col s12" action="register.parent.php" method="post">
+				<div class="row">
+					<div class="input-field col s3">
+                        <i class="material-icons prefix">account_circle</i>
+						<select name="salutation" required>
+                            <option value="" disabled selected> Select Salutation </option>
+							<option name="salutation" value="Mr."> Mr. </option>
+							<option name="salutation" value="Ms."> Ms. </option>
+							<option name="salutation" value="Mrs."> Mrs. </option>
+						</select>
+                        <label>Salutation</label>
+					</div>
+
+                    <div class="input-field col s9">
+                      <input id="ini_name" type="text" name="ini_name" pattern="[a-zA-Z]+" title="Please enter alphabetic characters only" required value=<?php if(isset($_SESSION['admin_ini_name'])){echo "{$_SESSION['admin_ini_name']}";} else{echo "";}?> >
+                      <label for="ini_name">Name with Initials</label>
+                    </div>
+                </div>
+				<div class="row">
+			    <div class="input-field col s12">
+                    <i class="material-icons prefix">account_circle</i>
+			      <input id="full_name" type="text" name="full_name" title="Please enter alphabetic characters only" pattern="[a-zA-Z.]+" required value=<?php if(isset($_SESSION['admin_ini_name'])){echo "{$_SESSION['admin_ini_name']}";} else{echo "";}?>>
+			      <label for="full_name">Full Name</label>
+			    </div>
+			  </div>
+
+			  <div class="row">
+		        <div class="input-field col s6">
+		          <i class="material-icons prefix">chrome_reader_mode</i>
+		          <input id="nic" type="text" name="nic" size="10" minlength="10" maxlength="10" pattern="[0-9]{9}[V|X]" required value=<?php if(isset($_SESSION['nic'])){echo "{$_SESSION['nic']}";} else{echo "";}?>  >
+		          <label for="nic">NIC number</label>
+		        </div>
+		        <div class="input-field col s6">
+		          <i class="material-icons prefix">home</i>
+		          <input id="address" type="text" name="address" required value= <?php if(isset($_SESSION['admin_address'])){echo "{$_SESSION['admin_address']}";} else{echo "";}?> >
+		          <label for="address">Address</label>
+		        </div>
+		      </div>
+
+		      <div class="row">
+		        <div class="input-field col s6">
+		          <i class="material-icons prefix">email</i>
+		          <input id="email" type="text" name="email" required pattern="[a-z0-9._%]+@[a-z0-9.]+\.[a-z]{2,3}$" title="e.g example@example.com" value=<?php if(isset($_SESSION['email'])){echo "{$_SESSION['email']}";} else{echo "";}?> >
+		          <label for="email">Email</label>
+		        </div>
+		        <div class="input-field col s6">
+		          <i class="material-icons prefix">work</i>
+		          <input id="occupation" type="text" name="occupation" required pattern="[a-zA-Z]+" title="Please enter alphabetic characters only" value=<?php if(isset($_SESSION['occupation'])){echo "{$_SESSION['occupation']}";} else{echo "";}?>>
+		          <label for="occupation">Occupation</label>
+		        </div>
+		      </div>
+
+		      <div class="row">
+		        <div class="input-field col s6">
+		          <i class="material-icons prefix">phone</i>
+		          <input id="tele_no" type="text" name="tele_no" required size="15" minlength="10" pattern="[0-9+-]+" maxlength="15" title="Only numbers and +- can be entered" value=<?php if(isset($_SESSION['tele_no'])){echo "{$_SESSION['tele_no']}";} else{echo "";}?>>
+		          <label for="tele_no">Telephone Number</label>
+		        </div>
+		        <div class="input-field col s6">
+		          <i class="material-icons prefix">phone_iphone</i>
+		          <input id="mobile_no" type="text" name="mobile_no" size="15" minlength="10" maxlength="15" required pattern="[0-9+-]+" title="Only numbers and +- can be entered" value=<?php if(isset($_SESSION['mobile_no'])){echo "{$_SESSION['mobile_no']}";} else{echo "";}?> >
+		          <label for="mobile_no">Mobile Number</label>
+		        </div>
+		      </div>
+
+		      <div class="center">
+		      	<input type="submit" name="submit" value="Submit" class="btn green">
+		      </div>
+		      
+
+			</form>
+		</div>
     </div>
-		<h1>Parent Registration</h1>
-		<form action="register.parent.php" method="post">
-			<label for='salutation'>Select Salutation</label>
-			<select name="salutation" value=<?php echo $_SESSION['salutation'] ?>>
-				<option name="salutation" value="Mr."> Mr. </option>
-				<option name="salutation" value="Ms."> Ms. </option>
-				<option name="salutation" value="Mrs."> Mrs. </option>
-			</select>
-			<br />
-			<div class="row">
-            <label>Full Name :</label> <input type="text" name="full_name" pattern="[a-zA-Z]+" title="Please enter alphabetic characters only" required value=<?php if(isset($_SESSION['admin_full_name'])){echo "{$_SESSION['admin_full_name']}";} else{echo "";}?> >
-            <br />
-            <label>Name with Initials:</label><input type="text" name="ini_name" title="Please enter alphabetic characters only" pattern="[a-zA-Z.]+" required value=<?php if(isset($_SESSION['admin_ini_name'])){echo "{$_SESSION['admin_ini_name']}";} else{echo "";}?>>
-            <br />
-            <label>NIC number :</label> <input type="text" name="nic" size="10" minlength="10" maxlength="10" pattern="[0-9]{9}[V|X]" required value=<?php if(isset($_SESSION['nic'])){echo "{$_SESSION['nic']}";} else{echo "";}?>  >
-            <br />
-            <label>Address :</label> <input type="text" name="address" required value= <?php if(isset($_SESSION['admin_address'])){echo "{$_SESSION['admin_address']}";} else{echo "";}?> >
-            <br />
-            <label>Email :</label> <input type="text" name="email" required pattern="[a-z0-9._%]+@[a-z0-9.]+\.[a-z]{2,3}$" title="e.g example@example.com" value=<?php if(isset($_SESSION['email'])){echo "{$_SESSION['email']}";} else{echo "";}?> >
-            <br />
-            <label>Telephone Number :</label> <input type="text" name="tele_no" required size="15" minlength="10" pattern="[0-9+-]+" maxlength="15" title="Only numbers and +- can be entered" value=<?php if(isset($_SESSION['tele_no'])){echo "{$_SESSION['tele_no']}";} else{echo "";}?>>
-            <label>Mobile Number :</label> <input type="text" name="mobile_no" size="15" minlength="10" maxlength="15" required pattern="[0-9+-]+" title="Only numbers and +- can be entered" value=<?php if(isset($_SESSION['mobile_no'])){echo "{$_SESSION['mobile_no']}";} else{echo "";}?> >
-			<label>Occupation :</label> <input type="text" name="occupation" required pattern="[a-zA-Z]+" title="Please enter alphabetic characters only" value=<?php if(isset($_SESSION['occupation'])){echo "{$_SESSION['occupation']}";} else{echo "";}?>>
-			<br />
-			<input type="submit" name="submit" value="Submit" />
-		</form>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../style/js/materialize.min.js"></script>
+    <script>
+        (function($){
+            $(function(){
+
+                $('.sidenav').sidenav();
+                $('select').formSelect()
+            }); // end of document ready
+        })(jQuery); // end of jQuery name space
+
+    </script>
 	</body>
 </html>

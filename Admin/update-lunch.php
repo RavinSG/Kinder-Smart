@@ -47,7 +47,8 @@ require_once ("../include/connection.inc.php");
         $query = "UPDATE lunch SET friday='{$friday}' WHERE str_date='{$_POST['str_date']}'" ;
         $result = mysqli_query($connection,$query);
     }
-
+    resetSession();
+    header("Location: update-lunch-front.php?check=successful");
 ?>
 <?php
     function resetSession(){
@@ -57,4 +58,3 @@ require_once ("../include/connection.inc.php");
         $_SESSION['type'] = 'admin';
     }
 ?>
-<a href="../">Go to home</a>
