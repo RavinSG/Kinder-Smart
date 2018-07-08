@@ -72,7 +72,7 @@
             <div class="row">
                 <div class="input-field col s6">
                     <i class="material-icons prefix">email</i>
-                    <input id="email" type="text" name="email" required pattern="[a-z0-9._%]+@[a-z0-9.]+\.[a-z]{2,3}$" title="e.g example@example.com" value=<?php if(isset($_SESSION['email'])){echo "{$_SESSION['email']}";} else{echo "";}?> >
+                    <input id="email" type="text" name="email" required pattern="[a-z0-9._%]+@[a-z0-9.]+\.[a-z]{2,3}$" title="e.g example@example.com" value=<?php if(isset($_SESSION['admin_email'])){echo "{$_SESSION['admin_email']}";} else{echo "";}?> >
                     <label for="email">Email</label>
                 </div>
                 <div class="input-field col s6">

@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Harith
- * Date: 7/8/2018
- * Time: 3:24 AM
- */
+
 session_start();
 $uid = $_SESSION['uid'];
 $email = $_SESSION['email'];

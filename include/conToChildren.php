@@ -10,23 +10,23 @@ if (isset($_POST['submit'])){
     $parent = $_POST['parent'];
 
     if (empty($first) or empty($last) or empty($age) or empty($contact) or empty($parent)){
-        header("Location: ../Admin/registration/addChild.php?add=empty&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
+        header("Location: ../Admin/addChild.php?add=empty&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
         return;
 
     } elseif ($age<=0){
-        header("Location: ../Admin/registration/addChild.php?add=ageError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
+        header("Location: ../Admin/addChild.php?add=ageError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
         return;
 
     } elseif ($age>10){
-        header("Location: ../Admin/registration/addChild.php?add=old&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
+        header("Location: ../Admin/addChild.php?add=old&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
         return;
 
     } elseif ((1 === preg_match('~[0-9]~', $first)) or (1 === preg_match('~[0-9]~', $last))){
-        header("Location: ../Admin/registration/addChild.php?add=nameError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
+        header("Location: ../Admin/addChild.php?add=nameError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
         return;
 
     } elseif (preg_match('~[a-z]~', $contact)){
-        header("Location: ../Admin/registration/addChild.php?add=contactError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
+        header("Location: ../Admin/addChild.php?add=contactError&first=$first&last=$last&age=$age&contact=$contact&parent=$parent");
         return;
 
     }
@@ -41,16 +41,28 @@ VALUES (:fname, :lname, :age, :contact, :parent)";
             ':contact' => $contact,
             ':parent' => $parent));
 
+        $stmt = $pdo->query("SELECT * FROM children ORDER BY id DESC LIMIT 1");
+        $row = $stmt->fetch();
+        $id = $row['id'];
+
+
         $sql = "ALTER TABLE attendance ADD ".html_entity_decode($first)." varchar(10) NOT NULL DEFAULT 0";
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
 
-        header("Location: ../Admin/registration/addChild.php?add=successful");
+        $sql = "UPDATE parent_db SET children = :child WHERE parent_db.id = :pid";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute(array(
+            ':child' => $id,
+            ':pid' => $parent
+        ));
+
+        header("Location: ../Admin/addChild.php?add=successful");
         return;
 
 
     }
 
 } else{
-    header('Location: ../Admin/registration/addChild.php?add=error');
+    header('Location: ../Admin/addChild.php?add=error');
 }
