@@ -2,6 +2,7 @@
 require_once ("checklogin.parent.php");
 if (!isset($_SESSION['parent'])){
     $_SESSION['parent'] = new KinderParent($_SESSION['uid']);
+    $parent = $_SESSION['parent'];
 }
 ?>
 
@@ -19,10 +20,11 @@ if (!isset($_SESSION['parent'])){
 <nav>
     <div class="nav-wrapper blue">
         <a href="#" class="brand-logo left">KinderSmart</a>
+
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li class="active"><a href=""><i class="material-icons left">home</i>Home</a></li>
-            <li><a href="#" ><i class="material-icons left">settings</i>Settings</a></li>
+            <li><a href="../include/setting.php" ><i class="material-icons left">settings</i>Settings</a></li>
             <li class="red"><a href="../include/logout.inc.php"><i class="material-icons left">phonelink_erase</i>Logout</a></li>
         </ul>
     </div>

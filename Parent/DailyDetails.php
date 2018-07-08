@@ -24,7 +24,7 @@ include("navbar.parent.php");
 		
 		<div class="lunch">
 			<h3 class="center">Tomorrow Lunch Details</h3>
-			<p>
+			<p class="center">
 				<?php 
 					$food_list = $lunch->getFoodList();
 					foreach ($food_list as $food) {
@@ -36,7 +36,7 @@ include("navbar.parent.php");
 
 		<div class="homework">
 			<h3 class="center">Homework</h3>
-			<p>
+			<p class="center">
 				<?php 
 					$details = $homework->getDetails();
 					echo $details;
@@ -46,7 +46,7 @@ include("navbar.parent.php");
 
 		<div class="spec_note">
 			<h3 class="center">Special Notes</h3>
-			<p>
+			<p class="center">
 				<?php 
 					$details = $spec_note->getDetails();
 					echo $details;

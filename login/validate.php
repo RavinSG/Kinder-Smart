@@ -23,7 +23,7 @@
                     setcookie('type', $array['acc_type'], time() + 60 * 60 * 24 * 30, "/");
                 }
                 if (!$array['pass_changed']) {
-                    header("Location: changepassword.html");
+                    header("Location: changepassword-front.php");
                     exit;
                 }
                 switch ($array['acc_type']) {

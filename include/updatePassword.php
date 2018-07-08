@@ -1,9 +1,10 @@
 <?php
+	require_once("checklogin.inc.php");
 	require_once("connectDB.php");
 	$pw=sha1($_POST['old_password']);
 	if (!($row['password']==$pw)) {
 		$note="Curreent password is not correct.Try again";
-		header("Location: privacySetting.php?note=$note");
+		header("Location: setting.php?noteForPassword=$note");
 	}
 
 	if(isset($_POST['update'])){
@@ -23,23 +24,23 @@
 
                 if (!$result) {
                     $note="Database Connection Error";
-                    header("Location: privacySetting.php?note=$note");
+                    header("Location: setting.php?noteForPassword=$note");
                 }
                 else{
                 	$note="Password Changed";
-                	header("Location: privacySetting.php?note=$note");
+                	header("Location: setting.php?noteForPassword=$note");
                 }
             }
             else{
 			    $note= "Same Credential exists! <br> <a href='changepassword.html'>Enter a different password</a>";
-			    header("Location: privacySetting.php?note=$note");
+			    header("Location: setting.php?noteForPassword=$note");
             }
 			
 		}
 		else{
 			$note="Password confirmation doesn't match the password";
-			header("Location: privacySetting.php?note=$note");
+            $_SESSION['noteForPassword'] = $note;
+			header("Location: setting.php");
 		}
 	}
-	echo "dfghjkl";
  ?>

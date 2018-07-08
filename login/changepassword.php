@@ -24,12 +24,14 @@
                 }
             }
             else{
-			    echo "Same Credential exists! <br> <a href='changepassword.html'>Enter a different password</a>";
+                $_SESSION['change_pass']= "same_cred";
+			    header("Location: changepassword-front.php");
             }
 			
 		}
 		else{
-			echo "<h1>Error!</h1> <a href = 'changepassword.html'>Re-enter password</a>";
+		    $_SESSION['change_pass']= "error";
+            header("Location: changepassword-front.php");
 		}
 	}
  ?>
