@@ -1,11 +1,9 @@
 <?php
 session_start();
-<<<<<<< HEAD
-require_once ("checklogin.teacher.php");
-=======
+
 require_once ("checklogin.teacher.php")?>
 <?php
->>>>>>> 5cccbd26dad81eaefe3c946f634bee031cc96e1a
+
 require_once('../include/connection.inc.php');
 
 if (!isset($_GET["note"])) {
@@ -30,7 +28,10 @@ if (!isset($_GET["message"])) {
 </head>
 <body>
 <?php require("navbar.teacher.html");?>
-	<h1>Children List</h1>
+	<h1 class="center">Children List</h1>
+    <div class="container form">
+        <div class="row">
+        <form action="sendMessageTo.php" method="post" class="col s12 xl12">
 	<table cellspacing="0">
         <tr>
             <th>Child ID</th>
@@ -45,7 +46,7 @@ if (!isset($_GET["message"])) {
 		if (!$children){
 			die("Database query failed: " . mysqli_connect_error());
 		}?>
-		<form action="sendMessageTo.php" method="post">
+
         <?php
         $i = 0;
         foreach ($children as $row){
@@ -64,32 +65,38 @@ if (!isset($_GET["message"])) {
         ?>
     </table>
 
-	
-        <h1>Send Message</h1>
-        <fieldset>
-		  <label>Message:</label>
-		  <br>
-            <textarea name="message" required value = <?php  echo $_GET["message"];?>></textarea>
-        </fieldset>
-		
-        <button type="submit">Send</button>
+    <br>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea name="message" placeholder="Enter the message(required)" id="message" required rows="10" class="materialize-textarea validate" value = <?php  echo $_GET["message"];?>></textarea>
+                        <label for="message" class="black-text">Message:</label>
+                    </div>
+                </div>
+
+        <div class="center">
+        <button type="submit" class="btn green">Send</button>
+        </div>
       </form>
-      <h1>
+    </div>
+
       <?php
       if (!$_GET["note"]=="") {
           echo "<script>alert('{$_GET["note"]}')</script>";
       }
        ?>
-       <h1>
-           <script type="text/javascript" src="js/materialize.min.js"></script>
-           <script
-                   src="https://code.jquery.com/jquery-3.3.1.min.js"
-                   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                   crossorigin="anonymous"></script>
+
+           <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+           <script type="text/javascript" src="../style/js/materialize.min.js"></script>
            <script>
-               $(document).ready(function(){
-                   $('.sidenav').sidenav();
-               });
+               (function($){
+                   $(function(){
+
+                       $('.sidenav').sidenav();
+
+                   }); // end of document ready
+               })(jQuery); // end of jQuery name space
+
            </script>
 
 </body>
