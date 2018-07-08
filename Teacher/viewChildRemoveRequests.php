@@ -49,7 +49,11 @@ require_once ("../include/connection.inc.php");
             echo "</td><td>";
             echo ($row['method']);
             echo "</td><td>";
-            echo "<a href='acceptChildRemoveRequest.php?state=accept&id=".$row['child_id']."' class=<?php $string='btn' if($row['state']==){}?>>Accept</a>";
+            $str='btn';
+            if($row['state']==1){
+                $str.=' disabled';
+            }
+            echo "<a href='acceptChildRemoveRequest.php?state=accept&id=".$row['child_id']."' class='{$str} waves-effect'>Accept</a>";
             echo "</td><td style='text-align: center'>";
             if($row['state']==1){
                 echo 'Accepted';

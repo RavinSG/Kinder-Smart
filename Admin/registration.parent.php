@@ -72,7 +72,7 @@
 		        </div>
 		        <div class="input-field col s6">
 		          <i class="material-icons prefix">home</i>
-		          <input id="address" type="text" name="address" required pattern="[^*%$#@!]+" class="validate" value= <?php if(isset($_SESSION['parent_address'])){echo "{$_SESSION['parent_address']}";} else{echo "";}?> >
+		          <input id="address" type="text" name="address" required pattern="[^*%$#@!]+[a-zA-Z]+" class="validate" value= <?php if(isset($_SESSION['parent_address'])){echo "{$_SESSION['parent_address']}";} else{echo "";}?> >
 		          <label for="address">Address</label>
                     <span class="helper-text" data-error="Enter a valid address"></span>
 		        </div>
