@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="navbar">
-    <a href="home.php">Home</a>
+    <a href="index.php">Home</a>
     <a href="addTeacher.php">Add Teacher Info</a>
     <a class="active" href="addChild.php">Add Child</a>
     <a href="registration.parent.php">Register Parent</a>
@@ -77,7 +77,7 @@
             <div class="input-field col s6">
                 <i class="material-icons prefix">phone</i>
                 <input id="parent" type="text" name="parent" class="field-long" value=<?php echo $parent ?>>
-                <label for="parent">Parent Name<span class="required">*</span></label>
+                <label for="parent">Parent ID<span class="required">*</span></label>
             </div>
         </div>
         

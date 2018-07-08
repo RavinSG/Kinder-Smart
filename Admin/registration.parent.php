@@ -81,7 +81,7 @@
 		      <div class="row">
 		        <div class="input-field col s6">
 		          <i class="material-icons prefix">email</i>
-		          <input id="email" type="text" name="email" required class="validate" pattern="[a-z0-9._%]+@[a-z0-9.]+\.[a-z]{2,3}$" value=<?php if(isset($_SESSION['email'])){echo "{$_SESSION['email']}";} else{echo "";}?> >
+		          <input id="email" type="text" name="email" required class="validate" pattern="[a-z0-9._%]+@[a-z0-9.]+\.[a-z]{2,3}$" value=<?php if(isset($_SESSION['parent_email'])){echo "{$_SESSION['parent_email']}";} else{echo "";}?> >
 		          <label for="email">Email</label>
                     <span class="helper-text" data-error="Enter a valid email. e.g example@example.com"></span>
 		        </div>
@@ -128,5 +128,9 @@
         })(jQuery); // end of jQuery name space
 
     </script>
+
+    <?php
+    print_r($_SESSION);
+    ?>
 	</body>
 </html>
