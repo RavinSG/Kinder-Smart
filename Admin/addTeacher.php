@@ -18,19 +18,19 @@ if (isset($_SESSION['add'])){
     unset($_SESSION['add']);
 
     if ($check == 'error'){
-        echo "<div class='center msg'><p class='btn red'>Please don't try to cheat!</p></div>";
+        echo "<div class='center msg'><p class='btn red msg'>Please don't try to cheat!</p></div>";
 
     } elseif ($check == 'empty'){
-        echo "<div class='center msg'><p class = 'btn red'>Please fill in all the details!</p></div>";
+        echo "<div class='center msg'><p class = 'btn red msg'>Please fill in all the details!</p></div>";
 
     }elseif ($check == 'invalidemail'){
-        echo "<div class='center msg'><p class = 'btn red'>Please enter a valid email address!</p></div>";
+        echo "<div class='center msg'><p class = 'btn red msg'>Please enter a valid email address!</p></div>";
 
     }elseif ($check == 'invalidLeave'){
-        echo "<p class = 'center msg'><p class = 'btn red'>Please enter a valid number of leaves!</p>";
+        echo "<div class = 'center msg'><p class = 'btn red msg'>Please enter a valid number of leaves!</p></div>";
 
     }elseif ($check == 'successful'){
-        echo "<div class='center msg'><p class = 'btn green'>You have been registered!</p></div>";
+        echo "<div class='center msg'><p class = 'btn green msg'>You have been registered!</p></div>";
     }
 }
 ?>
