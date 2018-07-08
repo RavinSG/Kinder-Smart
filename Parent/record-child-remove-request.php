@@ -1,29 +1,35 @@
 <?php
 require_once ("checklogin.parent.php");
-
-	$connection = mysqli_connect("localhost","root","","kindersmart");
-	if (!$connection){
-		die("Database connection failed". mysqli_error());
-	}
+require_once('../include/connection.inc.php');
 	date_default_timezone_set("Asia/Colombo");
 	$noteForMethod="";
 	$noteForDate="";
 	$noteForTime="";
-	$nte=$_POST['note'];
-	$removeDate=$_POST['remove_date'];
-	$removeTime=$_POST['remove_time'];
+	//$removeTime=$_POST['remove_time'];
 	$time=time();
 	$currentTime=date('H:i:s',$time);
 
-	if (empty($_POST["note"])) {
+
+	if ($_POST["note"]=="") {
 		$noteForMethod="Please fill the method of removal";
 	}
+	else{
+		$nte=$_POST['note'];
+	}
+	if (!empty($_POST['remove_time'])) {
+		$removeTime=$_POST['remove_time'];
+	}
+	
 	if (empty($_POST["remove_date"])) {
 		$noteForDate="Please select the date";
 	}
 	else{
+		$removeDate=$_POST['remove_date'];
 		if (strtotime($_POST["remove_date"])<strtotime(date('y-m-d'))){
 			$noteForDate="The date is note valid";
+		}
+		elseif ($_POST['remove_date']>date('y-m-d',strtotime('+ 1 week'))) {
+			$noteForDate="You can only request a date withing next week";
 		}
 		else{
 			$dname= date("l", strtotime($removeDate));
@@ -49,7 +55,8 @@ require_once ("checklogin.parent.php");
 		}
 	}
 	if (!$noteForMethod=="" or !$noteForDate=="" or !$noteForTime=="") {
-		header("Location: child-remove-request.php?remove_date=$removeDate&note=$nte&note_for_date=$noteForDate&note_for_method=$noteForMethod&note_for_time=$noteForTime");
+
+		header("Location: child-remove-request.php?remove_date=$removeDate&note=$nte&remove_time=$removeTime&note_for_date=$noteForDate&note_for_method=$noteForMethod&note_for_time=$noteForTime");
 		return;
 	}
 	$parent=$_SESSION['parent'];
