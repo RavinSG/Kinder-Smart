@@ -1,10 +1,8 @@
 <?php
 require_once ("checklogin.parent.php");
 if (!isset($_SESSION['parent'])){
-    echo "first time only!";
     $_SESSION['parent'] = new KinderParent($_SESSION['uid']);
 }
-include('navbar.html');
 ?>
 
 <!DOCTYPE html>
@@ -14,12 +12,6 @@ include('navbar.html');
     <title>Home</title>
 </head>
 <body>
-<?php
-$parent = $_SESSION['parent'];
-echo("Welcome to Our web page ".$parent->getId());
-//print_r($_SESSION);
-?>
-
-<h2></h2>
+<?php include("navbar.parent.php");?>
 </body>
 </html>
