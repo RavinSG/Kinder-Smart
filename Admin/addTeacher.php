@@ -68,7 +68,7 @@ if(isset($_GET['leave'])){
             </div>
             <div class="input-field col s6">
                 <i class="material-icons prefix">account_circle</i>
-                <input id="last" type="text" name="last" value=<?php echo $last ?>>
+                <input id="last" type="text" name="last" required value=<?php echo $last ?>>
                 <label for="last">Last Name</label>
             </div>
         </div>
@@ -76,12 +76,12 @@ if(isset($_GET['leave'])){
         <div class="row">
             <div class="input-field col s6">
                 <i class="material-icons prefix">account_circle</i>
-                <input id="nic" type="text" name="nic" value=<?php echo $nic ?>>
+                <input id="nic" type="text" name="nic" required value=<?php echo $nic ?>>
                 <label for="nic">NIC number</label>
             </div>
             <div class="input-field col s6">
                 <i class="material-icons prefix">account_circle</i>
-                <input id="email" type="text" name="email" value=<?php echo $email?>>
+                <input id="email" type="text" name="email" required value=<?php echo $email?>>
                 <label for="email">Email</label>
             </div>
         </div>
@@ -89,12 +89,12 @@ if(isset($_GET['leave'])){
         <div class="row">
             <div class="input-field col s6">
                 <i class="material-icons prefix">account_circle</i>
-                <input id="phone" type="tel" name="phone" value=<?php echo $phone?>>
+                <input id="phone" type="tel" name="phone" required value=<?php echo $phone?>>
                 <label for="tel">Telephone number</label>
             </div>
             <div class="input-field col s6">
                 <i class="material-icons prefix">account_circle</i>
-                <input id="leave" type="number" name="leave" value=<?php echo $leave?>>
+                <input id="leave" type="number" name="leave" required value=<?php echo $leave?>>
                 <label for="leave">Leave</label>
             </div>
         </div>
