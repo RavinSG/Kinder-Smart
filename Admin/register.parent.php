@@ -50,15 +50,18 @@
 
                         $query = "INSERT INTO super_table (email,password,uid,acc_type) VALUES ('{$email}','{$password}','{$row["id"]}','parent')";
                         $result = mysqli_query($connection,$query);
-                        header("Location: ../");
+                        $_SESSION['parent_reg'] = 'successful';
+                        header("Location: registration.parent.php?");
                     }
                 }
                 else{
-                    echo "<h1>Error!</h1> <a href='registration.parent.php'>Try Again</a>";
+                    $_SESSION['parent_reg'] = 'error';
+                    header("Location: registration.parent.php?");
                 }
             }
             else{
-                echo "This Email Already Exist!<br> <a href='registration.parent.php'>Try Again</a>";
+                $_SESSION['parent_reg'] = 'email';
+                header("Location: registration.parent.php?");
             }
 
 		}

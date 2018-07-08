@@ -1,3 +1,6 @@
 .form{
     width : 50%;
 }
+.msg{
+    cursor: context-menu;
+}

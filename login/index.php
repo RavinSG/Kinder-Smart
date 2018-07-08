@@ -4,15 +4,15 @@
 		$type = $_COOKIE['type'];
 		switch ($type) {
 			case 'parent':
-				header("Location: parent");
+				header("Location: ../parent");
 				break;
 
 			case 'admin':
-				header("Location: admin");
+				header("Location: ../admin");
 				break;
 
 			case 'teacher':
-				header("Location: teacher");
+				header("Location: ../teacher");
 				break;
 			
 			default:

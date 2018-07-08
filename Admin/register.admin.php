@@ -54,16 +54,18 @@ session_start();
 
                         $query = "INSERT INTO super_table (email,password,uid,acc_type) VALUES ('{$email}','{$password}','{$row["id"]}','admin')";
                         $result = mysqli_query($connection,$query);
-                        header("Location: ../");
+                        $_SESSION['admin_reg'] = 'successful';
+                        header("Location: registration.admin.php?");
                     }
                 }
                 else{
-                    echo "<h1>Error!</h1> <a href='registration.admin.php'>Try Again</a>";
+                    $_SESSION['admin_reg'] = 'error';
+                    header("Location: registration.admin.php?");
                 }
             }
             else{
-                print_r($query);
-                echo "This Email Already Exist!<br> <a href='registration.admin.php'>Try Again</a>";
+                $_SESSION['admin_reg'] = 'email';
+                header("Location: registration.admin.php?");
             }
 		}
 	}

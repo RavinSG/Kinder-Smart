@@ -10,6 +10,21 @@
 	<body>
     <?php include ("navbar.admin.php");?>
 		<h1 class="center">Parent Registration</h1>
+    <?php
+    if(isset($_SESSION['parent_reg'])){
+        $check = $_SESSION['parent_reg'];
+        unset($_SESSION['parent_reg']);
+        if($check == 'successful'){
+            echo "<div class='center'><p class='btn green msg'>parent registration successful</p></div>";
+        }
+        else if($check == 'error'){
+            echo "<div class='center'><p class='btn red msg'>Error! Try again with different email</p></div>";
+        }
+        else {
+            echo "<div class='center'><p class='btn red msg'>This parent Email Already Exist</p></div>";
+        }
+    }
+    ?>
         <div class="container form">
 		<div class="row">
 			<form class="col s12" action="register.parent.php" method="post">
@@ -17,7 +32,6 @@
 					<div class="input-field col s3">
                         <i class="material-icons prefix">account_circle</i>
 						<select name="salutation" required>
-                            <option value="" disabled selected> Select Salutation </option>
 							<option name="salutation" value="Mr."> Mr. </option>
 							<option name="salutation" value="Ms."> Ms. </option>
 							<option name="salutation" value="Mrs."> Mrs. </option>
@@ -26,14 +40,14 @@
 					</div>
 
                     <div class="input-field col s9">
-                      <input id="ini_name" type="text" name="ini_name" pattern="[a-zA-Z]+" title="Please enter alphabetic characters only" required value=<?php if(isset($_SESSION['admin_ini_name'])){echo "{$_SESSION['admin_ini_name']}";} else{echo "";}?> >
+                      <input id="ini_name" type="text" name="ini_name" pattern="[a-zA-Z]+" title="Please enter alphabetic characters only" required value=<?php if(isset($_SESSION['parent_ini_name'])){echo "{$_SESSION['parent_ini_name']}";} else{echo "";}?> >
                       <label for="ini_name">Name with Initials</label>
                     </div>
                 </div>
 				<div class="row">
 			    <div class="input-field col s12">
                     <i class="material-icons prefix">account_circle</i>
-			      <input id="full_name" type="text" name="full_name" title="Please enter alphabetic characters only" pattern="[a-zA-Z.]+" required value=<?php if(isset($_SESSION['admin_ini_name'])){echo "{$_SESSION['admin_ini_name']}";} else{echo "";}?>>
+			      <input id="full_name" type="text" name="full_name" title="Please enter alphabetic characters only" pattern="[a-zA-Z.]+" required value=<?php if(isset($_SESSION['parent_ini_name'])){echo "{$_SESSION['parent_ini_name']}";} else{echo "";}?>>
 			      <label for="full_name">Full Name</label>
 			    </div>
 			  </div>
@@ -46,7 +60,7 @@
 		        </div>
 		        <div class="input-field col s6">
 		          <i class="material-icons prefix">home</i>
-		          <input id="address" type="text" name="address" required value= <?php if(isset($_SESSION['admin_address'])){echo "{$_SESSION['admin_address']}";} else{echo "";}?> >
+		          <input id="address" type="text" name="address" required value= <?php if(isset($_SESSION['parent_address'])){echo "{$_SESSION['parent_address']}";} else{echo "";}?> >
 		          <label for="address">Address</label>
 		        </div>
 		      </div>

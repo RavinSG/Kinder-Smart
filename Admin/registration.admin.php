@@ -1,7 +1,7 @@
 <?php require_once('checklogin.admin.inc.php'); ?>
 <html>
 <head>
-    <title>Parent Registration</title>
+    <title>Admin Registration</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../style/css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="style/style.css">
@@ -10,14 +10,29 @@
 <body>
 <?php include ("navbar.admin.php");?>
 <h1 class="center">Admin Registration</h1>
+<?php
+    if(isset($_SESSION['admin_reg'])){
+        $check = $_SESSION['admin_reg'];
+        unset($_SESSION['admin_reg']);
+        if($check == 'successful'){
+            echo "<div class='center'><p class='btn green msg'>Admin registration successful</p></div>";
+        }
+        else if($check == 'error'){
+            echo "<div class='center'><p class='btn red msg'>Error! Try again with different email</p></div>";
+        }
+        else {
+            echo "<div class='center'><p class='btn red msg'>This Admin Email Already Exist</p></div>";
+        }
+    }
+    ?>
+
 <div class="container form">
     <div class="row">
-        <form class="col s12" action="register.parent.php" method="post">
+        <form class="col s12" action="register.admin.php" method="post">
             <div class="row">
                 <div class="input-field col s3">
                     <i class="material-icons prefix">account_circle</i>
                     <select name="salutation" required>
-                        <option value="" disabled selected> Select Salutation </option>
                         <option name="salutation" value="Mr."> Mr. </option>
                         <option name="salutation" value="Ms."> Ms. </option>
                         <option name="salutation" value="Mrs."> Mrs. </option>
