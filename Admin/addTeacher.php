@@ -27,7 +27,7 @@ if (isset($_SESSION['add'])){
         echo "<div class='center msg'><p class = 'btn red'>Please enter a valid email address!</p></div>";
 
     }elseif ($check == 'invalidLeave'){
-        echo "<p class = 'center red'>Please enter a valid number of leaves!</p>";
+        echo "<p class = 'center msg'><p class = 'btn red'>Please enter a valid number of leaves!</p>";
 
     }elseif ($check == 'successful'){
         echo "<div class='center msg'><p class = 'btn green'>You have been registered!</p></div>";
