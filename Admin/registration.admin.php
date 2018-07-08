@@ -66,7 +66,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">home</i>
-                    <input id="address" type="text" name="address" required value= <?php if(isset($_SESSION['admin_address'])){echo "{$_SESSION['admin_address']}";} else{echo "";}?> >
+                    <input id="address" type="text" name="address" required pattern="[^*%$#@!]+" value= <?php if(isset($_SESSION['admin_address'])){echo "{$_SESSION['admin_address']}";} else{echo "";}?> >
                     <label for="address">Address</label>
                     <span class="helper-text" data-error="Enter a valid address"></span>
                 </div>
