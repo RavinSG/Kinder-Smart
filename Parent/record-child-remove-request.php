@@ -5,7 +5,7 @@ require_once('../include/connection.inc.php');
 	$noteForMethod="";
 	$noteForDate="";
 	$noteForTime="";
-	//$removeTime=$_POST['remove_time'];
+	$removeTime=$_POST['remove_time'];
 	$time=time();
 	$currentTime=date('H:i:s',$time);
 
@@ -28,7 +28,7 @@ require_once('../include/connection.inc.php');
 		if (strtotime($_POST["remove_date"])<strtotime(date('y-m-d'))){
 			$noteForDate="The date is note valid";
 		}
-		elseif ($_POST['remove_date']>date('y-m-d',strtotime('+ 1 week'))) {
+		elseif ($_POST['remove_date']>date('Y-m-d',strtotime('+ 1 week'))) {
 			$noteForDate="You can only request a date withing next week";
 		}
 		else{
