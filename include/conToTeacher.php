@@ -9,21 +9,22 @@ if (isset($_POST['submit'])){
     $phone = $_POST['phone'];
     $email = $_POST['email'];
     $leave = $_POST['leave'];
+    $address = $_POST['address'];
     if (empty($first) or empty($last) or empty($phone) or empty($email) or empty($leave)){
         $_SESSION['add']='empty';
-        header("Location: ../Admin/addTeacher.php?first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic");
+        header("Location: ../Admin/addTeacher.php?first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic&address=$address");
         return;
     } elseif (!filter_var($email,FILTER_VALIDATE_EMAIL)){
         $_SESSION['add'] = 'invalidemail';
-        header("Location: ../Admin/addTeacher.php?first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic");
+        header("Location: ../Admin/addTeacher.php?first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic&address=$address");
         return;
     }  elseif ($leave < 0){
         $_SESSION['add'] = 'invalidLeave';
-        header("Location: ../Admin/addTeacher.php?first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic");
+        header("Location: ../Admin/addTeacher.php?first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic&address=$address");
         return;
     }   elseif ($leave > 40){
         $_SESSION['add'] = 'excessLeave';
-        header("Location: ../Admin/addTeacher.php?first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic");
+        header("Location: ../Admin/addTeacher.php?first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic&address=$address");
         return;
     } else{
         $sql = "INSERT INTO teacher_db (teacher_fname, teacher_lname,nic, teacher_phone, teacher_email, leave_avail) 

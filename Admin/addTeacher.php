@@ -26,6 +26,9 @@ if (isset($_SESSION['add'])){
     }elseif ($check == 'invalidemail'){
         echo "<p class = 'btn red'>Please enter a valid email address!</p>";
 
+    }elseif ($check == 'invalidLeave'){
+        echo "<p class = 'btn red'>Please enter a valid number of leaves!</p>";
+
     }elseif ($check == 'successful'){
         echo "<p class = 'btn green'>You have been registered!</p>";
     }
@@ -57,6 +60,12 @@ $leave = "";
 if(isset($_GET['leave'])){
     $leave = $_GET['leave'];
 }
+$address = "";
+if(isset($_GET['address'])){
+    $address = $_GET['address'];
+}
+
+
 ?>
 <div class="container form">
     <div class="row">
@@ -76,13 +85,13 @@ if(isset($_GET['leave'])){
         <div class="row">
             <div class="input-field col s6">
                 <i class="material-icons prefix">chrome_reader_mode</i>
-                <input id="nic" type="text" name="nic" size="10" minlength="10" maxlength="10" pattern="[0-9]{9}[V|X|v|x]" class="validate" required value=<?php if(isset($_SESSION['nic'])){echo "{$_SESSION['nic']}";} else{echo "";}?>  >
+                <input id="nic" type="text" name="nic" size="10" minlength="10" maxlength="10" pattern="[0-9]{9}[V|X|v|x]" class="validate" required value=<?php echo $nic ?>  >
                 <label for="nic">NIC number</label>
                 <span class="helper-text" data-error="Enter a valid nic number"></span>
             </div>
             <div class="input-field col s6">
                 <i class="material-icons prefix">email</i>
-                <input id="email" type="text" name="email" required class="validate" pattern="[a-z0-9._%]+@[a-z0-9.]+\.[a-z]{2,3}$" value=<?php if(isset($_SESSION['parent_email'])){echo "{$_SESSION['parent_email']}";} else{echo "";}?> >
+                <input id="email" type="text" name="email" required class="validate" pattern="[a-z0-9._%]+@[a-z0-9.]+\.[a-z]{2,3}$" value=<?php echo $email ?> >
                 <label for="email">Email</label>
                 <span class="helper-text" data-error="Enter a valid email. e.g example@example.com"></span>
             </div>
@@ -91,13 +100,13 @@ if(isset($_GET['leave'])){
         <div class="row">
             <div class="input-field col s6">
                 <i class="material-icons prefix">phone</i>
-                <input id="tele_no" type="text" name="tele_no" required class="validate" size="15" minlength="10" pattern="[0-9+-]+" maxlength="15" value=<?php if(isset($_SESSION['tele_no'])){echo "{$_SESSION['tele_no']}";} else{echo "";}?>>
+                <input id="tele_no" type="text" name="phone" required class="validate" size="15" minlength="10" pattern="[0-9+-]+" maxlength="15" value=<?php echo  $phone?>>
                 <label for="tele_no">Telephone Number</label>
                 <span class="helper-text" data-error="Enter a valid phone number containing numbers and +-"></span>
             </div>
             <div class="input-field col s6">
                 <i class="material-icons prefix">home</i>
-                <input id="address" type="text" name="address" required pattern="[^*%$#@!]+" class="validate" value= <?php if(isset($_SESSION['parent_address'])){echo "{$_SESSION['parent_address']}";} else{echo "";}?> >
+                <input id="address" type="text" name="address" required pattern="[^*%$#@!]+" class="validate" value= <?php echo $address?> >
                 <label for="address">Address</label>
                 <span class="helper-text" data-error="Enter a valid address"></span>
             </div>
