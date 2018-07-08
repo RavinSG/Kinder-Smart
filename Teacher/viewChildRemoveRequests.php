@@ -1,6 +1,9 @@
 <?php
 session_start();
-require_once ("checklogin.teacher.php")?>
+require_once ("checklogin.teacher.php");
+require_once ("../include/connection.inc.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,8 +17,8 @@ require_once ("checklogin.teacher.php")?>
 </head>
 <body>
 <?php require("navbar.teacher.html");?>
-<div class="table-users">
-    <div class="header">Requests</div>
+<h2 class="center">Requests to Remove from Transport</h2>
+<div class="table-users container">
 
     <table cellspacing="0">
         <tr>
@@ -24,14 +27,18 @@ require_once ("checklogin.teacher.php")?>
             <th>Time</th>
             <th>Method</th>
             <th align="center">Action</th>
-            <th>Remove State</th>
+            <th class="center">Remove State</th>
         </tr>
 
         <?php
 
-        require_once '../classes/childRemoveRequest.php';
-        $request = new ChildRemoveRequest();
-        $requests = $request->getRequests();
+        $date=date('y-m-d');
+        $query="SELECT * FROM remove_children where remove_date='{$date}'";
+        $requests= mysqli_query($connection,$query);
+        if (!$requests){
+            die("Database query failed: " . mysqli_connect_error());
+        }
+
         foreach ($requests as $row){
             echo "<tr><td>";
             echo ($row['child_id']);
@@ -42,7 +49,7 @@ require_once ("checklogin.teacher.php")?>
             echo "</td><td>";
             echo ($row['method']);
             echo "</td><td>";
-            echo "<a href='acceptChildRemoveRequest.php?state=accept&id=".$row['child_id']."' class='button'>Accept</a>";
+            echo "<a href='acceptChildRemoveRequest.php?state=accept&id=".$row['child_id']."' class='btn'>Accept</a>";
             echo "</td><td style='text-align: center'>";
             if($row['state']==1){
                 echo 'Accepted';

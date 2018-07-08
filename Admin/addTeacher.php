@@ -11,26 +11,27 @@
 </head>
 <body>
 <?php require("navbar.admin.php");?>
-<h2 class="center">Add Teacher</h2>
+<h1 class="center">Add Teacher</h1>
 <?php
 if (isset($_SESSION['add'])){
     $check = $_SESSION['add'];
+    unset($_SESSION['add']);
 
     if ($check == 'error'){
-        echo "<div class='center'><p class='btn red'>Please don't try to cheat!</p></div>";
+        echo "<p class='btn red'>Please don't try to cheat!</p>";
 
     } elseif ($check == 'empty'){
-        echo "<div class='center'><p class = 'btn red'>Please fill in all the details!</p></div>";
+        echo "<p class = 'btn red'>Please fill in all the details!</p>";
 
     }elseif ($check == 'invalidemail'){
-        echo "<div class='center'><p class = 'btn red'>Please enter a valid email address!</p></div>";
+        echo "<p class = 'btn red'>Please enter a valid email address!</p>";
 
     }elseif ($check == 'successful'){
-        echo "<div class='center'><p class = 'btn green'>You have been registered!</p></div>";
+        echo "<p class = 'btn green'>You have been registered!</p>";
     }
 }
-
 ?>
+
 <?php
 $first = "";
 if (isset($_GET['first'])){
@@ -63,39 +64,49 @@ if(isset($_GET['leave'])){
         <div class="row">
             <div class="input-field col s6">
                 <i class="material-icons prefix">account_circle</i>
-                <input id="first" type="text" name="first" required value=<?php echo $first; ?>>
+                <input id="first" type="text" name="first" required class="validate" value=<?php echo $first; ?>>
                 <label for="first">First Name</label>
             </div>
             <div class="input-field col s6">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="last" type="text" name="last" required value=<?php echo $last ?>>
+                <input id="last" type="text" name="last" required class="validate" value=<?php echo $last ?>>
                 <label for="last">Last Name</label>
             </div>
         </div>
 
         <div class="row">
             <div class="input-field col s6">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="nic" type="text" name="nic" required value=<?php echo $nic ?>>
+                <i class="material-icons prefix">chrome_reader_mode</i>
+                <input id="nic" type="text" name="nic" size="10" minlength="10" maxlength="10" pattern="[0-9]{9}[V|X|v|x]" class="validate" required value=<?php if(isset($_SESSION['nic'])){echo "{$_SESSION['nic']}";} else{echo "";}?>  >
                 <label for="nic">NIC number</label>
+                <span class="helper-text" data-error="Enter a valid nic number"></span>
             </div>
             <div class="input-field col s6">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="email" type="text" name="email" required value=<?php echo $email?>>
+                <i class="material-icons prefix">email</i>
+                <input id="email" type="text" name="email" required class="validate" pattern="[a-z0-9._%]+@[a-z0-9.]+\.[a-z]{2,3}$" value=<?php if(isset($_SESSION['parent_email'])){echo "{$_SESSION['parent_email']}";} else{echo "";}?> >
                 <label for="email">Email</label>
+                <span class="helper-text" data-error="Enter a valid email. e.g example@example.com"></span>
             </div>
         </div>
 
         <div class="row">
             <div class="input-field col s6">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="phone" type="tel" name="phone" required value=<?php echo $phone?>>
-                <label for="tel">Telephone number</label>
+                <i class="material-icons prefix">phone</i>
+                <input id="tele_no" type="text" name="tele_no" required class="validate" size="15" minlength="10" pattern="[0-9+-]+" maxlength="15" value=<?php if(isset($_SESSION['tele_no'])){echo "{$_SESSION['tele_no']}";} else{echo "";}?>>
+                <label for="tele_no">Telephone Number</label>
+                <span class="helper-text" data-error="Enter a valid phone number containing numbers and +-"></span>
             </div>
             <div class="input-field col s6">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="leave" type="number" name="leave" required value=<?php echo $leave?>>
-                <label for="leave">Leave</label>
+                <i class="material-icons prefix">home</i>
+                <input id="address" type="text" name="address" required pattern="[^*%$#@!]+" class="validate" value= <?php if(isset($_SESSION['parent_address'])){echo "{$_SESSION['parent_address']}";} else{echo "";}?> >
+                <label for="address">Address</label>
+                <span class="helper-text" data-error="Enter a valid address"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6 offset-s3">
+                <i class="material-icons prefix">date_range</i>
+                <input id="leave" type="number" name="leave" required class="validate" value=<?php echo $leave?>>
+                <label for="leave">Available no. of leaves</label>
             </div>
         </div>
         <div class="center">
@@ -117,28 +128,6 @@ if(isset($_GET['leave'])){
     })(jQuery); // end of jQuery name space
 
 </script>
-<?php
-    if (isset($_SESSION['add'])){
-        $check = $_SESSION['add'];
-        unset($_SESSION['add']);
-
-        if ($check == 'error'){
-            echo "<p class='btn red'>Please don't try to cheat!</p>";
-
-        } elseif ($check == 'empty'){
-            echo "<p class = 'btn red'>Please fill in all the details!</p>";
-
-        }elseif ($check == 'invalidemail'){
-            echo "<p class = 'btn red'>Please enter a valid email address!</p>";
-
-        }elseif ($check == 'successful'){
-            echo "<p class = 'btn green'>You have been registered!</p>";
-        }
-    }
-
-
-
-?>
 
 </body>
 </html>
