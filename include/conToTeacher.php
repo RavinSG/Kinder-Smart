@@ -14,7 +14,15 @@ if (isset($_POST['submit'])){
         header("Location: ../Admin/addTeacher.php?first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic");
         return;
     } elseif (!filter_var($email,FILTER_VALIDATE_EMAIL)){
-        $_SESSION[add] = 'invalidemail';
+        $_SESSION['add'] = 'invalidemail';
+        header("Location: ../Admin/addTeacher.php?first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic");
+        return;
+    }  elseif ($leave < 0){
+        $_SESSION['add'] = 'invalidLeave';
+        header("Location: ../Admin/addTeacher.php?first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic");
+        return;
+    }   elseif ($leave > 40){
+        $_SESSION['add'] = 'excessLeave';
         header("Location: ../Admin/addTeacher.php?first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic");
         return;
     } else{
