@@ -45,21 +45,23 @@ VALUES (:fname, :lname, :age, :contact, :parent)";
         $row = $stmt->fetch();
         $id = $row['id'];
 
+        try{
+            $sql = "UPDATE parent_db SET children = :child WHERE parent_db.id = :pid";
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute(array(
+                ':child' => $id,
+                ':pid' => $parent
+            ));
+        }catch (PDOException $e){}
 
-        $sql = "ALTER TABLE attendance ADD ".html_entity_decode($first)." tinyint(1) NOT NULL DEFAULT 0";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute();
-
-        $sql = "UPDATE parent_db SET children = :child WHERE parent_db.id = :pid";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute(array(
-            ':child' => $id,
-            ':pid' => $parent
-        ));
+        try {
+            $sql = "ALTER TABLE attendance ADD " . html_entity_decode($first) . " TINYINT(1) NOT NULL DEFAULT 0";
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute();
+        } catch (PDOException $e){}
 
         header("Location: ../Admin/addChild.php?add=successful");
         return;
-
 
     }
 
