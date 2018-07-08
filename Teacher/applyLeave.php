@@ -5,6 +5,7 @@ require_once ("checklogin.teacher.php");
 
 $teacher = $_SESSION['teacher'];
 $id = $teacher->getID();
+require_once "getLeave.php";
 
 $date ="";
 if (isset($_GET['date'])){
@@ -117,6 +118,21 @@ if (isset($_GET['nopay'])) {
     })(jQuery); // end of jQuery name space
 
 </script>
+<table>
+    <tr>
+        <th>Date</th>
+        <th>State</th>
+    </tr>
+<?php
+
+    foreach ($applied as $row){
+        echo "<tr><td>";
+        echo $row['leave_date']."</td><td>";
+        echo $row['state']."</td></tr>";
+    }
+?>
+</table>
+
 </body>
 </html>
 
