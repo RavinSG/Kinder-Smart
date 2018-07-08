@@ -106,7 +106,7 @@ if(isset($_GET['address'])){
             </div>
             <div class="input-field col s6">
                 <i class="material-icons prefix">home</i>
-                <input id="address" type="text" name="address" required pattern="[^*%$#@!]+[a-zA-Z]+" class="validate" value= <?php echo $address?> >
+                <input id="address" type="text" name="address" required pattern="[a-zA-Z0-9']+[a-zA-Z0-9'/-,()& ]+" class="validate" value= <?php echo $address?> >
                 <label for="address">Address</label>
                 <span class="helper-text" data-error="Enter a valid address"></span>
             </div>

@@ -17,7 +17,7 @@
                 $array = mysqli_fetch_assoc($result);
                 $_SESSION['uid'] = $array['uid'];
                 $_SESSION['type'] = $array['acc_type'];
-                $_SESSION['email']= $array['email'];
+                $_SESSION['email'] = $array['email'];
                 if (isset($_POST['remember'])) {
                     setcookie('uid', $array['uid'], time() + 60 * 60 * 24 * 30, "/");
                     setcookie('type', $array['acc_type'], time() + 60 * 60 * 24 * 30, "/");
@@ -43,13 +43,14 @@
                         break;
                 }
             } else {
-                echo "Wrong credentials";
+                $_SESSION['login'] = 'error';
+                header("Location: form.php");
             }
+        } else {
+            $_SESSION['login'] = 'invalidemail';
+            header("Location: form.php");
         }
     }
-		else {
-			echo ('<h1>Enter valid email and password</h1><h2><a href = "../">Click here</a> to go to login page</h2>');
-		}
 
 	
  ?>

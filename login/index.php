@@ -30,6 +30,6 @@
 	}
 
 	else{
-        header("Location: form.html");
+        header("Location: form.php");
 	}
  ?>

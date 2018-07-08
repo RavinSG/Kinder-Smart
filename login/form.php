@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,27 +8,26 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="../style/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link rel="stylesheet" href="style/style.css">
-	<script type="text/javascript">
-		function validateForm(){
-			var email=document.getElementById('email').value;
-			var err_msg = document.getElementById('err_msg');
-				
-			var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-			if(!reg.test(email)){
-				err_msg.innerHTML = "Enter a valid email";
-				err_msg.style.color = "red";
-				return false;
-			}
-		}	
-	</script>
 </head>
 <body>
 	<div class="container form">
 		<div class="name center"><h1><span class="amber-text text-darken-4">Kinder</span>Smart</h1></div>
+        <?php
+        if(isset($_SESSION['login'])){
+            $check = $_SESSION['login'];
+            unset($_SESSION['login']);
+            if($check == 'error'){
+                echo "<div class='center'><p class='btn red msg'>Wrong Credentials</p></div>";
+            }
+            else{
+                echo "<div class='center'><p class='btn red msg'>Enter Valid Email and Password</p></div>";
+            }
+        }
+        ?>
 		<div class="login">
 			<img src="" alt="">
 			<div class="row">
-			<form action="validate.php" method='POST' onsubmit="return validateForm();">
+			<form action="validate.php" method='POST'>
 				<div class="row">
 					<div class="input-field col s12">
 						<i class="material-icons prefix">account_circle</i>
@@ -47,7 +47,8 @@
 			</form>
 				<p id="err_msg"></p>
 			</div>
-			<p>Forgot login details? <a href="../login/recovery.php">Click Here</a></p>
+
+			<p>Forgot login details? <a href="recovery.php">Click Here</a></p>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

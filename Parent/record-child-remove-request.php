@@ -5,13 +5,13 @@ require_once('../include/connection.inc.php');
 	$noteForMethod="";
 	$noteForDate="";
 	$noteForTime="";
-	$removeTime=$_POST['remove_time'];
+	//$removeTime=$_POST['remove_time'];
 	$time=time();
 	$currentTime=date('H:i:s',$time);
 
 
 	if ($_POST["note"]=="") {
-		$noteForMethod="Please fill the method of removal";
+		$noteForMethod=htmlentities("Please fill the method of removal");
 	}
 	else{
 		$nte=$_POST['note'];
@@ -21,33 +21,33 @@ require_once('../include/connection.inc.php');
 	}
 	
 	if (empty($_POST["remove_date"])) {
-		$noteForDate="Please select the date";
+		$noteForDate=htmlentities("Please select the date");
 	}
 	else{
 		$removeDate=$_POST['remove_date'];
 		if (strtotime($_POST["remove_date"])<strtotime(date('y-m-d'))){
-			$noteForDate="The date is note valid";
+			$noteForDate=htmlentities("The date is note valid");
 		}
 		elseif ($_POST['remove_date']>date('Y-m-d',strtotime('+ 1 week'))) {
-			$noteForDate="You can only request a date withing next week";
+			$noteForDate=htmlentities("You can only request a date withing next week");
 		}
 		else{
 			$dname= date("l", strtotime($removeDate));
 			if ($dname=='Sunday' or $dname=='Saturday') {
-				$noteForDate="The date is note valid. Please select a week day";
+				$noteForDate=htmlentities("The date is note valid. Please select a week day");
 			}
 			else{
-				if(strtotime($_POST["remove_date"])==strtotime(date('y-m-d'))){
+				if(strtotime($_POST["remove_date"])==strtotime(date('Y-m-d'))){
 					if ($removeTime=='Morning') {
 						$time1=date('H:i:s',strtotime("07:30:00"));
 						if ($currentTime>$time1){
-							$noteForTime="You can not request for child removal after 7:30 am. Please contact 0713304044 for more information";
+							$noteForTime=htmlentities("You can not request for child removal after 7:30 am. Please contact 0713304044 for more information");
 						}
 					}
 					if ($removeTime=='Evening') {
 						$time1=date('H:i:s',strtotime("12:00:00"));
 						if ($currentTime<$time1){
-							$noteForTime="You can not request for child removal after 12:00 . Please contact 0713304044 for more information";
+							$noteForTime=htmlentities("You can not request for child removal after 12:00 . Please contact 0713304044 for more information");
 						}
 					}
 				}
@@ -56,24 +56,23 @@ require_once('../include/connection.inc.php');
 	}
 	if (!$noteForMethod=="" or !$noteForDate=="" or !$noteForTime=="") {
 
-		header("Location: child-remove-request.php?remove_date=$removeDate&note=$nte&remove_time=$removeTime&note_for_date=$noteForDate&note_for_method=$noteForMethod&note_for_time=$noteForTime");
+		header("Location: child-remove-request.php?remove_date={$removeDate}&note={$nte}&remove_time={$removeTime}&note_for_date={$noteForDate}&note_for_method={$noteForMethod}&note_for_time={$noteForTime}");
 		return;
 	}
 	$parent=$_SESSION['parent'];
 	$child_id=$parent->getChildren()[0];
-	$query="SELECT * FROM children where id='{$child_id}'";
+	$query="SELECT * FROM remove_children where id='{$child_id}' and remove_time='{$_POST["remove_time"]}'";
 	$remove_child= mysqli_query($connection,$query);
-	if (!$remove_child){
-		die("Database query failed: " . mysqli_connect_error());
+	if (mysqli_num_rows($remove_child)){
+		$msg=htmlentities("Your child has been already removed.");
 	}
-	$row = mysqli_fetch_assoc($remove_child);
-	if ($row['remove']==1) {
-		die("Your child has been already removed.");
+	else{
+	    $query = "SELECT * FROM children where id='{$child_id}'";
+	    $result = mysqli_query($connection,$query);
+		$row = mysqli_fetch_assoc($result);
+		$sql = "INSERT INTO remove_children (child_id, child_fname, method, remove_date, remove_time) VALUES ('{$row["id"]}','{$row["child_fname"]}','{$_POST["note"]}','{$_POST["remove_date"]}','{$_POST["remove_time"]}')";
+		$result = mysqli_query($connection,$sql);
+		$msg= htmlentities("Successfully Sent");
 	}
-	
-	mysqli_query($connection,"UPDATE children SET remove=1 WHERE id={$row['id']}");
-	$sql = "INSERT INTO remove_children (child_id, child_name, method, remove_date, remove_time) VALUES ({$row['id']},{$row['child_fname']},{$_POST['note']},{$_POST['remove_date']},{$_POST['remove_time']})";
-	mysqli_query($connection,$sql);
-	echo "Successfully Sent";
-    header("Location: child-remove-request.php?msg=success")
+header("Location: child-remove-request.php?msg=$msg");
 ?>

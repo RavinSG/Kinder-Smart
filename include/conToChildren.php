@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once 'pdo.inc.php';
+require_once 'connection.inc.php';
 
 if (isset($_POST['submit'])){
     $first = $_POST['first'];
