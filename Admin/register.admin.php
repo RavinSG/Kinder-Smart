@@ -75,7 +75,7 @@ session_start();
 		$_SESSION['admin_full_name'] = $full_name;
 		$_SESSION['admin_ini_name'] = $ini_name;
 		$_SESSION['nic'] = $nic;
-		$_SESSION['email'] = $email;
+		$_SESSION['admin_email'] = $email;
 		$_SESSION['admin_address'] = $address;
 		$_SESSION['tele_no'] = $tele_no;
 		$_SESSION['mobile_no'] = $mobile_no;

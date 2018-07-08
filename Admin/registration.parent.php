@@ -49,17 +49,17 @@
 					</div>
 
                     <div class="input-field col s9">
-                      <input id="ini_name" type="text" name="ini_name" pattern="[a-zA-Z]+" required class="validate" value=<?php if(isset($_SESSION['parent_ini_name'])){echo "{$_SESSION['parent_ini_name']}";} else{echo "";}?> >
+                      <input id="ini_name" type="text" name="ini_name" pattern="[a-zA-Z. ]+" required class="validate" value=<?php if(isset($_SESSION['parent_ini_name'])){echo "{$_SESSION['parent_ini_name']}";} else{echo "";}?> >
                       <label for="ini_name">Name with Initials</label>
-                        <span class="helper-text" data-error="Please enter alphabetic characters only"></span>
+                        <span class="helper-text" data-error="Enter a valid input containing alphabetic characters only"></span>
                     </div>
                 </div>
 				<div class="row">
 			    <div class="input-field col s12">
                     <i class="material-icons prefix">account_circle</i>
-			      <input id="full_name" type="text" name="full_name"  pattern="[a-zA-Z.]+" required class="validate" value=<?php if(isset($_SESSION['parent_ini_name'])){echo "{$_SESSION['parent_ini_name']}";} else{echo "";}?>>
+			      <input id="full_name" type="text" name="full_name"  pattern="[a-zA-Z ]+" required class="validate" value=<?php if(isset($_SESSION['parent_ini_name'])){echo "{$_SESSION['parent_ini_name']}";} else{echo "";}?>>
 			      <label for="full_name">Full Name</label>
-                    <span class="helper-text" data-error="Please enter alphabetic characters only"></span>
+                    <span class="helper-text" data-error="Enter a valid input containing alphabetic characters only"></span>
 			    </div>
 			  </div>
 
@@ -72,7 +72,7 @@
 		        </div>
 		        <div class="input-field col s6">
 		          <i class="material-icons prefix">home</i>
-		          <input id="address" type="text" name="address" required pattern="[^*%$#@!]" class="validate" value= <?php if(isset($_SESSION['parent_address'])){echo "{$_SESSION['parent_address']}";} else{echo "";}?> >
+		          <input id="address" type="text" name="address" required pattern="[^*%$#@!]+" class="validate" value= <?php if(isset($_SESSION['parent_address'])){echo "{$_SESSION['parent_address']}";} else{echo "";}?> >
 		          <label for="address">Address</label>
                     <span class="helper-text" data-error="Enter a valid address"></span>
 		        </div>
@@ -89,7 +89,7 @@
 		          <i class="material-icons prefix">work</i>
 		          <input id="occupation" type="text" name="occupation" required class="validate" pattern="[a-zA-Z]+" value=<?php if(isset($_SESSION['occupation'])){echo "{$_SESSION['occupation']}";} else{echo "";}?>>
 		          <label for="occupation">Occupation</label>
-                    <span class="helper-text" data-error="Please enter alphabetic characters only"></span>
+                    <span class="helper-text" data-error="Enter a valid input alphabetic characters only"></span>
 		        </div>
 		      </div>
 
@@ -98,13 +98,13 @@
 		          <i class="material-icons prefix">phone</i>
 		          <input id="tele_no" type="text" name="tele_no" required class="validate" size="15" minlength="10" pattern="[0-9+-]+" maxlength="15" value=<?php if(isset($_SESSION['tele_no'])){echo "{$_SESSION['tele_no']}";} else{echo "";}?>>
 		          <label for="tele_no">Telephone Number</label>
-                    <span class="helper-text" data-error="Only numbers and +- can be entered"></span>
+                    <span class="helper-text" data-error="Enter a valid phone number containing numbers and +- can be entered"></span>
 		        </div>
 		        <div class="input-field col s6">
 		          <i class="material-icons prefix">phone_iphone</i>
 		          <input id="mobile_no" type="text" name="mobile_no" class="validate" size="15" minlength="10" maxlength="15" required pattern="[0-9+-]+" title="Only numbers and +- can be entered" value=<?php if(isset($_SESSION['mobile_no'])){echo "{$_SESSION['mobile_no']}";} else{echo "";}?> >
 		          <label for="mobile_no">Mobile Number</label>
-                    <span class="helper-text" data-error="Only numbers and +- can be entered"></span>
+                    <span class="helper-text" data-error="Enter a valid mobile number containing numbers and +-"></span>
 		        </div>
 		      </div>
 
@@ -128,9 +128,5 @@
         })(jQuery); // end of jQuery name space
 
     </script>
-
-    <?php
-    print_r($_SESSION);
-    ?>
 	</body>
 </html>

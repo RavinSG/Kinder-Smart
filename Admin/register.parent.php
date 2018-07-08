@@ -77,7 +77,7 @@
 		$_SESSION['parent_full_name'] = $full_name;
 		$_SESSION['parent_ini_name'] = $ini_name;
 		$_SESSION['nic'] = $nic;
-		$_SESSION['email'] = $email;
+		$_SESSION['parent_email'] = $email;
 		$_SESSION['parent_address'] = $address;
 		$_SESSION['tele_no'] = $tele_no;
 		$_SESSION['mobile_no'] = $mobile_no;
