@@ -20,8 +20,17 @@
         else if($check == 'error'){
             echo "<div class='center'><p class='btn red msg'>Error! Try again with different email</p></div>";
         }
-        else {
+        else if($check == 'email'){
             echo "<div class='center'><p class='btn red msg'>This Admin Email Already Exist</p></div>";
+        }
+        else if($check == 'empty'){
+            echo "<div class='center'><p class='btn red msg'>Fill all the fields</p></div>";
+        }
+        else if($check == 'invalidemail'){
+            echo "<div class='center'><p class='btn red msg'>Enter a valid email</p></div>";
+        }
+        else{
+            echo "<div class='center'><p class='btn red msg'>Invalid Details</p></div>";;
         }
     }
     ?>
@@ -39,7 +48,6 @@
                     </select>
                     <label>Salutation</label>
                 </div>
-
                 <div class="input-field col s9">
                     <input id="ini_name" type="text" name="ini_name" pattern="[a-zA-Z]+" title="Please enter alphabetic characters only" required value=<?php if(isset($_SESSION['admin_ini_name'])){echo "{$_SESSION['admin_ini_name']}";} else{echo "";}?> >
                     <label for="ini_name">Name with Initials</label>

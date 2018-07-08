@@ -16,19 +16,19 @@ session_start();
 
 		if (empty($full_name) or empty($ini_name) or empty($nic) or empty($email) or empty($address) or empty($tele_no) or empty($mobile_no)) {
 			autofill($salutation,$full_name,$ini_name,$nic,$email,$address,$tele_no,$mobile_no);
-			echo '<h1>Fill all the input fields</h1><br>';
-			echo "<a href='registration.admin.php'>Please Enter Details Again</a>";
+			$_SESSION['admin_reg'] = 'empty';
+			header("Location: registration.admin.php");
 		}
 
 		else if(!(filter_var($email,FILTER_VALIDATE_EMAIL))){
 			autofill($salutation,$full_name,$ini_name,$nic,$email,$address,$tele_no,$mobile_no);
-			echo '<h1>Please Enter a valid e - mail</h1>';
-			echo "<a href='registration.admin.php'>Please Enter Details Again</a>";
+            $_SESSION['admin_reg'] = 'invalidemail';
+            header("Location: registration.admin.php");
 			
 		}else if((1 === preg_match('~[0-9]~', $full_name)) or (1 === preg_match('~[0-9]~', $ini_name))){
             autofill($salutation,$full_name,$ini_name,$nic,$email,$address,$tele_no,$mobile_no);
-            echo '<h1>Please Enter valid name!</h1>';
-            echo "<a href='registration.admin.php'>Please Enter Details Again</a>";
+            $_SESSION['admin_reg'] = 'invalidname';
+            header("Location: registration.admin.php");
 
         }
 		else{

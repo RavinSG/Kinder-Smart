@@ -20,8 +20,17 @@
         else if($check == 'error'){
             echo "<div class='center'><p class='btn red msg'>Error! Try again with different email</p></div>";
         }
-        else {
-            echo "<div class='center'><p class='btn red msg'>This parent Email Already Exist</p></div>";
+        else if($check == 'email'){
+            echo "<div class='center'><p class='btn red msg'>This Admin Email Already Exist</p></div>";
+        }
+        else if($check == 'empty'){
+            echo "<div class='center'><p class='btn red msg'>Fill all the fields</p></div>";
+        }
+        else if($check == 'invalidemail'){
+            echo "<div class='center'><p class='btn red msg'>Enter a valid email</p></div>";
+        }
+        else{
+            echo "<div class='center'><p class='btn red msg'>Invalid Details</p></div>";;
         }
     }
     ?>

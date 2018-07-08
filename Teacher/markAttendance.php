@@ -9,6 +9,7 @@ require_once ("checklogin.teacher.php")?>
     <title>Welcome to KinderSmart</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../style/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
@@ -16,11 +17,11 @@ require_once ("checklogin.teacher.php")?>
 <?php require("navbar.teacher.html");?>
 
     <form action="../include/conToAttendance.php">
-        <div class="container" style="wdith: 40%">
+        <div class="container table" style="wdith: 40%">
         <table border="1">
             <tr>
                 <th>Child Name</th>
-                <th>Attendance</th>
+                <th class="center">Attendance</th>
             </tr>
             <?php
             require_once '../include/pdo.inc.php';
@@ -30,13 +31,16 @@ require_once ("checklogin.teacher.php")?>
                 echo $row['child_fname'];
                 $name = $row['child_fname'];
                 echo "</td><td style='text-align: center;'>";
-                echo"<p><label for 'check'>";
+                echo"<label>";
                 echo "<input type='checkbox' id='name' name='name[]'
-                value=$name><span></span></label></p>";
+                value=$name><span> </span></label>";
             }
             ?>
         </table>
-        <input type="submit" name="submit" value="Register Attendance">
+            <br>
+            <div class="center">
+                <input type="submit" name="submit" value="Register Attendance" class="btn green">
+            </div>
         </div>
     </form>
 

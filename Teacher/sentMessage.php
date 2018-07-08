@@ -25,6 +25,7 @@ if (!isset($_GET["message"])) {
     <title>Welcome to KinderSmart</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../style/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
