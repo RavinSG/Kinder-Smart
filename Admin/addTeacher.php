@@ -18,19 +18,19 @@ if (isset($_SESSION['add'])){
     unset($_SESSION['add']);
 
     if ($check == 'error'){
-        echo "<p class='btn red'>Please don't try to cheat!</p>";
+        echo "<div class='center msg'><p class='btn red'>Please don't try to cheat!</p></div>";
 
     } elseif ($check == 'empty'){
-        echo "<p class = 'btn red'>Please fill in all the details!</p>";
+        echo "<div class='center msg'><p class = 'btn red'>Please fill in all the details!</p></div>";
 
     }elseif ($check == 'invalidemail'){
-        echo "<p class = 'btn red'>Please enter a valid email address!</p>";
+        echo "<div class='center msg'><p class = 'btn red'>Please enter a valid email address!</p></div>";
 
     }elseif ($check == 'invalidLeave'){
-        echo "<p class = 'btn red'>Please enter a valid number of leaves!</p>";
+        echo "<p class = 'center red'>Please enter a valid number of leaves!</p>";
 
     }elseif ($check == 'successful'){
-        echo "<p class = 'btn green'>You have been registered!</p>";
+        echo "<div class='center msg'><p class = 'btn green'>You have been registered!</p></div>";
     }
 }
 ?>
@@ -106,7 +106,7 @@ if(isset($_GET['address'])){
             </div>
             <div class="input-field col s6">
                 <i class="material-icons prefix">home</i>
-                <input id="address" type="text" name="address" required pattern="[^*%$#@!]+" class="validate" value= <?php echo $address?> >
+                <input id="address" type="text" name="address" required pattern="[^*%$#@!]+[a-zA-Z]+" class="validate" value= <?php echo $address?> >
                 <label for="address">Address</label>
                 <span class="helper-text" data-error="Enter a valid address"></span>
             </div>
