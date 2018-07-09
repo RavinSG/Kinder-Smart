@@ -1,5 +1,6 @@
 
-<?php require_once('checklogin.admin.inc.php'); ?>
+<?php
+require_once('checklogin.admin.inc.php');?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,11 +11,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-<?php include("navbar.admin.php");?>
+<?php include("navbar.admin.php");
+?>
 <h2 align="center" style="margin-bottom: auto">Add Child</h2>
 
 <?php
 
+if (isset($_GET['add'])){
+    $check = $_GET['add'];
+
+    if ($check == 'old'){
+        echo "<div class='center msg'><p class='btn red msg'>Please enter a valid age for a child!</p></div>";
+
+    } elseif ($check == 'empty'){
+        echo "<div class='center msg'><p class = 'btn red msg'>Please fill in all the details!</p></div>";
+
+    }elseif ($check == 'ageError'){
+        echo "<div class='center msg'><p class = 'btn red msg'>Please enter a valid age!</p></div>";
+
+    }elseif ($check == 'contactError'){
+        echo "<div class = 'center msg'><p class = 'btn red msg'>Please enter a valid contact number!</p></div>";
+
+    }elseif ($check == 'nameError'){
+        echo "<div class = 'center msg'><p class = 'btn red msg'>Please enter a valid name!</p></div>";
+
+    }elseif ($check == 'successful'){
+        echo "<div class='center msg'><p class = 'btn green msg'>The child been registered!</p></div>";
+    }
+}
     if (isset($_GET['first'])){
         $first = $_GET['first'];
     } else {
@@ -98,33 +122,6 @@
         }); // end of document ready
     })(jQuery); // end of jQuery name space
 </script>
-<?php
-if (!isset($_GET['add'])){
-    exit();
-}
-else {
-    $check = $_GET['add'];
-
-    if ($check == 'error'){
-        echo "<p class='error'>Please don't try to cheat!</p>";
-
-    } elseif ($check == 'empty'){
-        echo "<p class = 'error'>Please fill in all the details!</p>";
-
-    }elseif ($check == 'ageError'){
-        echo "<p class = 'error'>Please enter a valid age!</p>";
-
-    }elseif ($check == 'nameError'){
-        echo "<p class = 'error'>Please enter a valid name!</p>";
-
-    }elseif ($check == 'contactError'){
-        echo "<p class = 'error'>Please enter a valid contact number!</p>";
-
-    }elseif ($check == 'successful'){
-        echo "<p class = 'success'>The child has been registered!</p>";
-    }
-}
-?>
 
 </body>
 </html>

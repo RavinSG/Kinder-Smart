@@ -118,10 +118,11 @@ if (isset($_GET['nopay'])) {
     })(jQuery); // end of jQuery name space
 
 </script>
-<table>
+<h2 class="center">Applied Leaves</h2>
+<table class="centered" width="">
     <tr>
-        <th>Date</th>
-        <th>State</th>
+        <th class="center">Date</th>
+        <th class="center">State</th>
     </tr>
 <?php
 
