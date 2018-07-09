@@ -14,7 +14,22 @@ require_once ("checklogin.teacher.php")?>
 </head>
 
 <body>
-<?php require("navbar.teacher.html");?>
+<?php require("navbar.teacher.html");
+
+if (isset($_GET['msg'])){
+    $check = $_GET['msg'];
+
+    if ($check == 'marked'){
+        echo "<div class='center msg'><p class='btn red msg'>You have already marked attendance for today</p></div>";
+
+    } elseif ($check == 'empty'){
+        echo "<div class='center msg'><p class = 'btn red msg'>At least pick one student</p></div>";
+
+    }elseif ($check == 'success'){
+        echo "<div class='center msg'><p class = 'btn green msg'>Attendance has been registered!</p></div>";
+    }
+}
+?>
 
     <form action="../include/conToAttendance.php">
         <div class="container table" style="wdith: 40%">
