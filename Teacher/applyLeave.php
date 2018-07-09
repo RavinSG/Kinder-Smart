@@ -39,8 +39,37 @@ if (isset($_GET['nopay'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-<?php require("navbar.teacher.html");?>
+<?php
+require("navbar.teacher.html");
+
+?>
 <h2 class="center">Leave Form</h2>
+
+<?php
+
+if (isset($_GET['msg'])){
+    $check = $_GET['msg'];
+
+    if ($check == 'insufficient'){
+        echo "<div class='center msg'><p class='btn red msg'>You don't have enough leaves left! Would you like to apply for no pay leave?</p></div>";
+
+    } elseif ($check == 'empty'){
+        echo "<div class='center msg'><p class = 'btn red msg'>Please fill in all the details!</p></div>";
+
+    }elseif ($check == 'date'){
+        echo "<div class='center msg'><p class = 'btn red msg'>Please enter a valid date!</p></div>";
+
+    }elseif ($check == 'duration'){
+        echo "<div class = 'center msg'><p class = 'btn red msg'>Please enter a valid leave duration!</p></div>";
+
+    }elseif ($check == 'fired'){
+        echo "<div class = 'center msg'><p class = 'btn red msg'>Resigning from the job might be better :P contact administration for longer leaves</p></div>";
+
+    }elseif ($check == 'registered'){
+        echo "<div class='center msg'><p class = 'btn green msg'>Your leave form has been registered!</p></div>";
+    }
+}
+?>
 <div class="row">
 <div class="container" style="width: 40%">
     <form class="col s12" action="../include/leave.php" method="post">
@@ -82,31 +111,7 @@ if (isset($_GET['nopay'])) {
 
     </form>
 </div>
-    <?php
-    if (isset($_GET['msg'])){
-        $msg = $_GET['msg'];
 
-        if ($msg == 'insufficient'){
-            echo "<p class='error'>You don't have enough leaves left!<br>Would you like to apply for no pay leave?</p>";
-
-        } elseif ($msg == 'empty'){
-            echo "<p class='error'>Please fill in all the details!</p>";
-
-        } elseif ($msg == 'date'){
-            echo "<p class='error'>Please enter a valid date!</p>";
-
-        } elseif ($msg == 'unavailable'){
-            echo "<p class='error'>Please enter a valid ID!</p>";
-
-        } elseif ($msg == 'duration'){
-            echo "<p class='error'>Please enter a valid leave duration!</p>";
-
-        }  elseif ($msg =='registered'){
-            echo "<p class='success'>Your leave form has been registered!</p>";
-
-        }
-    }
-    ?>
 </div>
 <script type="text/javascript" src="../style/js/materialize.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -122,6 +127,7 @@ if (isset($_GET['nopay'])) {
 <table class="centered" width="">
     <tr>
         <th class="center">Date</th>
+        <th class="center">Note</th>
         <th class="center">State</th>
     </tr>
 <?php
@@ -129,6 +135,7 @@ if (isset($_GET['nopay'])) {
     foreach ($applied as $row){
         echo "<tr><td>";
         echo $row['leave_date']."</td><td>";
+        echo $row['note']."</td><td>";
         echo $row['state']."</td></tr>";
     }
 ?>

@@ -39,8 +39,8 @@ require_once('checklogin.admin.inc.php');
             echo "</td><td>";
             echo ($row['note']);
             echo "</td><td>";
-            echo "<a href='../include/deleteLeave.php?state=accept&id=".$row['id']."' class='btn'>Accept</a>
-<a href='../include/deleteLeave.php?state=decline&id=".$row['id']."' class='btn'>Decline</a>";
+            echo "<a href='../include/deleteLeave.php?state=accept&lid=".$row['lid']."&id=".$row['id']."' class='btn'>Accept</a>
+<a href='../include/deleteLeave.php?state=decline&lid=".$row['lid']."&id=".$row['id']."' class='btn'>Decline</a>";
             echo "</td><td style='text-align: center'>";
             echo ($row['state']);
             echo "</td></tr>\n";

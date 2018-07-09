@@ -23,6 +23,12 @@ if (isset($_SESSION['add'])){
     } elseif ($check == 'empty'){
         echo "<div class='center msg'><p class = 'btn red msg'>Please fill in all the details!</p></div>";
 
+    }elseif ($check == 'nameError'){
+        echo "<div class='center msg'><p class = 'btn red msg'>Please enter a valid name!</p></div>";
+
+    }elseif ($check == 'excessLeave'){
+        echo "<div class='center msg'><p class = 'btn red msg'>Only a maximum of 40 leaves are allowed per year!</p></div>";
+
     }elseif ($check == 'invalidemail'){
         echo "<div class='center msg'><p class = 'btn red msg'>Please enter a valid email address!</p></div>";
 

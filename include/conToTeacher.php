@@ -22,6 +22,11 @@ if (isset($_POST['submit'])){
         $_SESSION['add'] = 'invalidLeave';
         header("Location: ../Admin/addTeacher.php?first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic&address=$address");
         return;
+    } elseif ((1 === preg_match('~[0-9]~', $first)) or (1 === preg_match('~[0-9]~', $last))){
+        $_SESSION['add'] = 'nameError';
+        header("Location: ../Admin/addTeacher.php?first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic&address=$address");
+        return;
+
     }   elseif ($leave > 40){
         $_SESSION['add'] = 'excessLeave';
         header("Location: ../Admin/addTeacher.php?first=$first&last=$last&phone=$phone&email=$email&leave=$leave&nic=$nic&address=$address");

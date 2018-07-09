@@ -22,6 +22,10 @@ if (empty($leave_date) or empty($leave_duration) or empty($note)){
     header("Location: ../Teacher/applyLeave.php?msg=duration&date=$leave_date&duration=$leave_duration&note=$note");
     return;
 
+} elseif($leave_duration > 40){
+    header("Location: ../Teacher/applyLeave.php?msg=fired&date=$leave_date&duration=$leave_duration&note=$note");
+    return;
+
 }  elseif(strtotime($leave_date)<strtotime(date('y-m-d'))){
     header("Location: ../Teacher/applyLeave.php?msg=date&date=$leave_date&duration=$leave_duration&note=$note");
     return;
