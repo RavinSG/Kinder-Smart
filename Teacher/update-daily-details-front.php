@@ -20,15 +20,37 @@ require_once ("checklogin.teacher.php")?>
 <body>
 <?php require("navbar.teacher.html");?>
     <h2 class="center">Daily Details</h2>
+    <?php
+        if(isset($_SESSION['daily_details'])){
+            $check = $_SESSION['daily_details'];
+            unset($_SESSION['daily_details']);
+
+            if($check == 'successful'){
+                echo "<div class='center'><p class='btn green msg'>Your record has been added successfully!</p></div>";
+            }
+            else if($check == 'empty'){
+                echo "<div class='center'><p class='btn red msg'>Fill in at least one field</p></div>";
+            }
+            else if($check == 'holiday'){
+                echo "<div class='center'><p class='btn red msg'>Today is a holiday!</p></div>";
+            }
+            else if($check == 'exist'){
+                echo "<div class='center'><p class='btn orange lighten-1 msg'>Older record exist! Overridden by new record</p></div>";
+            }
+            else{
+                echo "<div class='center'><p class='btn red lighten-1 msg'>Sever error! Please Try Again</p></div>";
+            }
+        }
+    ?>
     <div class="container form">
         <form action="update-daily-details.php" method="POST">
             <div class="input-field">
-                <textarea name="homework" id="spec_note" placeholder="Enter Homework For the Day Here" required class="materialize-textarea validate"></textarea>
+                <textarea name="homework" id="homework" placeholder="Enter Homework For the Day Here" class="materialize-textarea validate"></textarea>
                 <label for="homework">Homework :</label>
             </div>
             <br><br>
             <div class="input-field">
-                <textarea name="spec_note" id="spec_note" placeholder="Enter special notes For the Day Here" required class="materialize-textarea validate"></textarea>
+                <textarea name="spec_note" id="spec_note" placeholder="Enter special notes For the Day Here" class="materialize-textarea validate"></textarea>
                 <label for="spec_note">Special Notices :</label>
             </div>
             <div class="center">
